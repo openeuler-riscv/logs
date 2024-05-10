@@ -1,0 +1,79 @@
+[2024-05-08 15:13:58,246][INFO] The command is: ip link show enP1p129s0f0 | grep 'state UP'.
+[2024-05-08 15:13:58,262][INFO] Execute command ip link show enP1p129s0f0 | grep 'state UP' succeed.
+ 4: enP1p129s0f0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000
+
+[2024-05-08 15:13:58,263][INFO] The command is: ifconfig enP1p129s0f0 | grep '.*inet' | awk '{print $2}'.
+[2024-05-08 15:13:58,288][INFO] Execute command ifconfig enP1p129s0f0 | grep '.*inet' | awk '{print $2}' succeed.
+ 192.168.0.105
+fe80::ba88:9bc4:3770:e63b
+
+[2024-05-08 15:13:58,290][INFO] The command is: ifconfig enP1p129s0f0 | grep '.*ether' | awk '{print $2}'.
+[2024-05-08 15:13:58,315][INFO] Execute command ifconfig enP1p129s0f0 | grep '.*ether' | awk '{print $2}' succeed.
+ a0:36:9f:54:0c:c8
+
+[2024-05-08 15:13:58,316][INFO] The client IP address already configured.
+[2024-05-08 15:13:58,318][INFO] The command is: ping -q -c 1 -W 1 192.168.0.103 | grep 'packet loss' | awk '{print $6}'.
+[2024-05-08 15:13:58,428][INFO] Execute command ping -q -c 1 -W 1 192.168.0.103 | grep 'packet loss' | awk '{print $6}' succeed.
+ 0%
+
+[2024-05-08 15:13:58,441][INFO] Driver Name: 
+[2024-05-08 15:13:58,442][INFO] The driver version information cannot be obtained. Please view it manually.
+[2024-05-08 15:13:58,443][INFO] The command is: ls /sys/devices/platform/7062000000.pcie/pci0001:80/0001:80:00.0/0001:81:00.0/ | grep -q infiniband.
+[2024-05-08 15:13:58,459][ERROR] Execute command ls /sys/devices/platform/7062000000.pcie/pci0001:80/0001:80:00.0/0001:81:00.0/ | grep -q infiniband failed.
+ 
+[2024-05-08 15:13:58,461][INFO] Current ethernet doesn't support RoCE, no need test Roce.
+[2024-05-08 15:13:58,462][INFO] It will test normal ethernet enP1p129s0f0.
+[2024-05-08 15:13:58,463][INFO] The command is: ethtool enP1p129s0f0 | grep 'Port' | awk '{print $2}'.
+[2024-05-08 15:13:58,488][INFO] Execute command ethtool enP1p129s0f0 | grep 'Port' | awk '{print $2}' succeed.
+ Twisted
+
+[2024-05-08 15:13:58,490][INFO] The enP1p129s0f0 port type is Twisted, skip checking.
+[2024-05-08 15:13:58,491][INFO] The test interface is enP1p129s0f0.
+[2024-05-08 15:13:58,492][INFO] The server ip is 192.168.0.103.
+[2024-05-08 15:13:58,493][INFO] The client ip is 192.168.0.105
+fe80::ba88:9bc4:3770:e63b
+ on enP1p129s0f0.
+[2024-05-08 15:13:58,494][INFO] Setting interface enP1p129s0f0 down.
+[2024-05-08 15:13:58,495][INFO] The command is: ip link set down enP1p129s0f0.
+[2024-05-08 15:13:58,855][INFO] Execute command ip link set down enP1p129s0f0 succeed.
+ 
+[2024-05-08 15:13:58,857][INFO] The command is: ip link show enP1p129s0f0 | grep 'state DOWN'.
+[2024-05-08 15:13:58,874][INFO] Execute command ip link show enP1p129s0f0 | grep 'state DOWN' succeed.
+ 4: enP1p129s0f0: <BROADCAST,MULTICAST> mtu 1500 qdisc mq state DOWN mode DEFAULT group default qlen 1000
+
+[2024-05-08 15:13:58,875][INFO] Set interface enP1p129s0f0 down succeed.
+[2024-05-08 15:13:58,876][INFO] Setting interface enP1p129s0f0 up.
+[2024-05-08 15:13:58,877][INFO] The command is: ip link set up enP1p129s0f0.
+[2024-05-08 15:13:59,043][INFO] Execute command ip link set up enP1p129s0f0 succeed.
+ 
+[2024-05-08 15:13:59,045][INFO] The command is: ip link show enP1p129s0f0 | grep 'state UP'.
+[2024-05-08 15:13:59,060][ERROR] Execute command ip link show enP1p129s0f0 | grep 'state UP' failed.
+ 
+[2024-05-08 15:14:00,062][INFO] The command is: ip link show enP1p129s0f0 | grep 'state UP'.
+[2024-05-08 15:14:00,077][ERROR] Execute command ip link show enP1p129s0f0 | grep 'state UP' failed.
+ 
+[2024-05-08 15:14:01,079][INFO] The command is: ip link show enP1p129s0f0 | grep 'state UP'.
+[2024-05-08 15:14:01,094][INFO] Execute command ip link show enP1p129s0f0 | grep 'state UP' succeed.
+ 4: enP1p129s0f0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000
+
+[2024-05-08 15:14:01,096][INFO] Set interface enP1p129s0f0 up succeed.
+[2024-05-08 15:14:01,097][INFO] The command is: ethtool enP1p129s0f0 | grep Speed | awk '{print $2}'.
+[2024-05-08 15:14:01,122][INFO] Execute command ethtool enP1p129s0f0 | grep Speed | awk '{print $2}' succeed.
+ 100Mb/s
+
+[2024-05-08 15:14:01,124][INFO] The speed of enP1p129s0f0 is 100Mb/s.
+[2024-05-08 15:14:01,125][INFO] The command is: ping -q -c 500 -i 0 192.168.0.103 | grep 'packet loss' | awk '{print $6}'.
+[2024-05-08 15:14:01,150][INFO] Execute command ping -q -c 500 -i 0 192.168.0.103 | grep 'packet loss' | awk '{print $6}' succeed.
+ 
+[2024-05-08 15:14:01,152][INFO] The command is: ping -q -c 500 -i 0 192.168.0.103 | grep 'packet loss' | awk '{print $6}'.
+[2024-05-08 15:14:01,178][INFO] Execute command ping -q -c 500 -i 0 192.168.0.103 | grep 'packet loss' | awk '{print $6}' succeed.
+ 
+[2024-05-08 15:14:01,180][INFO] The command is: ping -q -c 500 -i 0 192.168.0.103 | grep 'packet loss' | awk '{print $6}'.
+[2024-05-08 15:14:01,206][INFO] Execute command ping -q -c 500 -i 0 192.168.0.103 | grep 'packet loss' | awk '{print $6}' succeed.
+ 
+[2024-05-08 15:14:01,208][ERROR] Test icmp failed.
+[2024-05-08 15:14:01,209][INFO] Stop all test servers.
+[2024-05-08 15:14:02,907][INFO] Status: 200 OK
+[2024-05-08 15:14:02,909][INFO] The command is: ifconfig enP1p129s0f0:0 | grep '.*inet' | awk '{print $2}'.
+[2024-05-08 15:14:02,933][INFO] Execute command ifconfig enP1p129s0f0:0 | grep '.*inet' | awk '{print $2}' succeed.
+ 

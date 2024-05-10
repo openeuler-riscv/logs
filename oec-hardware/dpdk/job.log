@@ -1,0 +1,16 @@
+[2024-05-08 18:55:30,456][INFO] Start to run 1/5 test suite: dpdk-enP2p197s0.
+[2024-05-08 18:55:33,160][INFO] End to run 1/5 test suite: dpdk-enP2p197s0.
+[2024-05-08 18:55:33,161][ERROR] Test dpdk failed.
+[2024-05-08 18:55:33,163][INFO] Start to run 2/5 test suite: dpdk-enP2p201s0.
+[2024-05-08 18:55:45,927][INFO] End to run 2/5 test suite: dpdk-enP2p201s0.
+[2024-05-08 18:55:45,928][ERROR] Test dpdk failed.
+[2024-05-08 18:55:45,930][INFO] Start to run 3/5 test suite: dpdk-enP1p129s0f0.
+[2024-05-08 18:55:58,656][INFO] End to run 3/5 test suite: dpdk-enP1p129s0f0.
+[2024-05-08 18:55:58,657][ERROR] Test dpdk failed.
+[2024-05-08 18:55:58,658][INFO] Start to run 4/5 test suite: dpdk-enP1p129s0f1.
+[2024-05-08 18:56:11,411][INFO] End to run 4/5 test suite: dpdk-enP1p129s0f1.
+[2024-05-08 18:56:11,412][ERROR] Test dpdk failed.
+[2024-05-08 18:56:11,413][INFO] Start to run 5/5 test suite: system.
+[2024-05-08 18:56:11,709][INFO] End to run 5/5 test suite: system.
+[2024-05-08 18:56:11,710][ERROR] Test system failed.
+[2024-05-08 18:56:11,711][INFO] There is no cert device need to export.

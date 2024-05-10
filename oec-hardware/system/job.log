@@ -1,0 +1,4 @@
+[2024-05-08 19:22:02,260][INFO] Start to run 1/1 test suite: system.
+[2024-05-08 19:22:02,556][INFO] End to run 1/1 test suite: system.
+[2024-05-08 19:22:02,557][ERROR] Test system failed.
+[2024-05-08 19:22:02,558][INFO] There is no cert device need to export.

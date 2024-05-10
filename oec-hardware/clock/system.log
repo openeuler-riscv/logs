@@ -1,0 +1,342 @@
+[2024-05-08 17:03:38,298][INFO] The command is: uname -a.
+[2024-05-08 17:03:38,307][INFO] Execute command uname -a succeed.
+ Linux openeuler-riscv64 6.6.0-19.0.0.21.oe2403.riscv64 #1 SMP Sat Apr 20 04:42:31 UTC 2024 riscv64 riscv64 riscv64 GNU/Linux
+
+[2024-05-08 17:03:38,309][INFO] The command is: lsmod.
+[2024-05-08 17:03:38,331][INFO] Execute command lsmod succeed.
+ Module                  Size  Used by
+nft_fib_inet           16384  1
+nft_fib_ipv4           32768  1 nft_fib_inet
+nft_fib_ipv6           32768  1 nft_fib_inet
+nft_fib                24576  3 nft_fib_ipv6,nft_fib_ipv4,nft_fib_inet
+nft_reject_inet        16384  6
+nf_reject_ipv4         49152  1 nft_reject_inet
+nf_reject_ipv6         65536  1 nft_reject_inet
+nft_reject             20480  1 nft_reject_inet
+nft_ct                122880  11
+nft_chain_nat          16384  3
+nf_tables            2822144  206 nft_ct,nft_reject_inet,nft_fib_ipv6,nft_fib_ipv4,nft_chain_nat,nft_reject,nft_fib,nft_fib_inet
+ebtable_nat            16384  0
+ebtable_broute         16384  0
+ip6table_nat           24576  0
+ip6table_mangle        20480  0
+ip6table_raw           16384  0
+ip6table_security      16384  0
+iptable_nat            24576  0
+nf_nat                282624  3 ip6table_nat,nft_chain_nat,iptable_nat
+nf_conntrack         1351680  2 nf_nat,nft_ct
+nf_defrag_ipv6        122880  1 nf_conntrack
+nf_defrag_ipv4         24576  1 nf_conntrack
+libcrc32c              16384  3 nf_conntrack,nf_nat,nf_tables
+iptable_mangle         16384  0
+iptable_raw            16384  0
+iptable_security       16384  0
+rfkill                196608  0
+ip_set                364544  0
+ebtable_filter         16384  0
+ebtables              299008  3 ebtable_nat,ebtable_filter,ebtable_broute
+ip6table_filter        16384  0
+ip6_tables            172032  5 ip6table_filter,ip6table_raw,ip6table_nat,ip6table_mangle,ip6table_security
+iptable_filter         16384  0
+ip_tables             167936  5 iptable_filter,iptable_security,iptable_raw,iptable_nat,iptable_mangle
+snd_hda_intel         233472  0
+snd_intel_dspcfg       16384  1 snd_hda_intel
+snd_hda_codec         811008  1 snd_hda_intel
+snd_hda_core          634880  2 snd_hda_intel,snd_hda_codec
+snd_pcm               962560  3 snd_hda_intel,snd_hda_codec,snd_hda_core
+snd_timer             364544  1 snd_pcm
+snd                   712704  4 snd_hda_intel,snd_hda_codec,snd_timer,snd_pcm
+soundcore              12288  1 snd
+uio_pdrv_genirq        36864  0
+uio                    98304  1 uio_pdrv_genirq
+sch_fq_codel          143360  5
+fuse                 1593344  1
+nfnetlink             122880  4 nf_tables,ip_set
+amdgpu              36560896  0
+amdxcp                 16384  1 amdgpu
+drm_exec               40960  1 amdgpu
+gpu_sched             376832  1 amdgpu
+drm_buddy             126976  1 amdgpu
+radeon              15900672  2
+ixgbe                3452928  0
+drm_suballoc_helper    77824  2 amdgpu,radeon
+drm_display_helper    909312  2 amdgpu,radeon
+drm_ttm_helper         20480  2 amdgpu,radeon
+xfrm_algo              36864  1 ixgbe
+ttm                   610304  3 amdgpu,radeon,drm_ttm_helper
+mdio                   45056  1 ixgbe
+dm_mirror             167936  0
+dm_region_hash        143360  1 dm_mirror
+dm_log                 94208  2 dm_region_hash,dm_mirror
+dm_mod               1310720  2 dm_log,dm_mirror
+
+[2024-05-08 17:03:38,332][INFO] The command is: dmidecode.
+[2024-05-08 17:03:38,342][INFO] Execute command dmidecode succeed.
+ # dmidecode 3.5
+# SMBIOS entry point at 0xbffdc000
+Found SMBIOS entry point in EFI, reading table from /dev/mem.
+SMBIOS 2.8 present.
+18 structures occupying 944 bytes.
+Table at 0xBFFDB000.
+
+Handle 0x0000, DMI type 19, 31 bytes
+Memory Array Mapped Address
+	Starting Address: 0x0000001800000000k
+	Ending Address: 0x0000002000000000k
+	Range Size: 32 GB
+	Physical Array Handle: 0x1008
+	Partition Width: 1
+
+Handle 0x0001, DMI type 19, 31 bytes
+Memory Array Mapped Address
+	Starting Address: 0x0000001000000000k
+	Ending Address: 0x0000001800000000k
+	Range Size: 32 GB
+	Physical Array Handle: 0x1008
+	Partition Width: 1
+
+Handle 0x0002, DMI type 19, 31 bytes
+Memory Array Mapped Address
+	Starting Address: 0x0000000800000000k
+	Ending Address: 0x0000001000000000k
+	Range Size: 32 GB
+	Physical Array Handle: 0x1008
+	Partition Width: 1
+
+Handle 0x0003, DMI type 19, 31 bytes
+Memory Array Mapped Address
+	Starting Address: 0x0000000100000000k
+	Ending Address: 0x0000000800000000k
+	Range Size: 28 GB
+	Physical Array Handle: 0x1008
+	Partition Width: 1
+
+Handle 0x0004, DMI type 19, 31 bytes
+Memory Array Mapped Address
+	Starting Address: 0x0000000002800000k
+	Ending Address: 0x00000000C0000000k
+	Range Size: 3032 MB
+	Physical Array Handle: 0x1008
+	Partition Width: 1
+
+Handle 0x0005, DMI type 0, 26 bytes
+BIOS Information
+	Vendor: EFI Development Kit II / Sophgo
+	Version: V1.0
+	Release Date: Mar 28 2024
+	Address: 0xE8000
+	Runtime Size: 96 kB
+	ROM Size: 64 kB
+	Characteristics:
+		PCI is supported
+		BIOS is upgradeable
+		Boot from CD is supported
+		Selectable boot is supported
+		ACPI is supported
+		USB legacy is supported
+		Targeted content distribution is supported
+		UEFI is supported
+
+Handle 0x0006, DMI type 1, 27 bytes
+System Information
+	Manufacturer: SOPHGO
+	Product Name: Sophgo SG2042 EVB Board
+	Version: None
+	Serial Number: Not Set
+	UUID: 9987fd42-907e-5446-1d7d-7da0109f60a1
+	Wake-up Type: Power Switch
+	SKU Number: Not Specified
+	Family: Not Specified
+
+Handle 0x1004, DMI type 2, 17 bytes
+Base Board Information
+	Manufacturer: SOPHGO
+	Product Name: Sophgo SG2042 EVB Board
+	Version: None
+	Serial Number: Not Set
+	Asset Tag: Not Specified
+	Features:
+		Board is a hosting board
+	Location In Chassis: Not Set
+	Chassis Handle: 0x1005
+	Type: Motherboard
+	Contained Object Handles: 1
+		0x1006
+
+Handle 0x1005, DMI type 3, 24 bytes
+Chassis Information
+	Manufacturer: SOPHGO
+	Type: Unknown
+	Lock: Not Present
+	Version: None
+	Serial Number: Not Set
+	Asset Tag: Not Specified
+	Boot-up State: Unknown
+	Power Supply State: Safe
+	Thermal State: Safe
+	Security Status: None
+	OEM Information: 0x00000000
+	Height: 1 U
+	Number Of Power Cords: 1
+	Contained Elements: 0
+	SKU Number: Not Specified
+
+Handle 0x1006, DMI type 4, 50 bytes
+Processor Information
+	Socket Designation: Socket type unknown
+	Type: Central Processor
+	Family: RV64
+	Manufacturer: SOPHGO
+	ID: 00 00 00 00 00 00 00 00
+	Version: SG2042
+	Voltage: 0.0 V
+	External Clock: Unknown
+	Max Speed: 2200 MHz
+	Current Speed: Unknown
+	Status: Populated, Enabled
+	Upgrade: Other
+	L1 Cache Handle: 0x1000
+	L2 Cache Handle: 0x1002
+	L3 Cache Handle: 0x1003
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Set
+	Core Count: 64
+	Core Enabled: 64
+	Thread Count: 64
+	Characteristics:
+		64-bit capable
+		Multi-Core
+		Execute Protection
+		Enhanced Virtualization
+		Power/Performance Control
+
+Handle 0x1000, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: L1 Instruction
+	Configuration: Enabled, Not Socketed, Level 1
+	Operational Mode: Unknown
+	Location: Internal
+	Installed Size: 48 kB
+	Maximum Size: 48 kB
+	Supported SRAM Types:
+		Unknown
+	Installed SRAM Type: Unknown
+	Speed: Unknown
+	Error Correction Type: Parity
+	System Type: Instruction
+	Associativity: Other
+
+Handle 0x1001, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: L1 Data
+	Configuration: Enabled, Not Socketed, Level 1
+	Operational Mode: Unknown
+	Location: Internal
+	Installed Size: 32 kB
+	Maximum Size: 32 kB
+	Supported SRAM Types:
+		Unknown
+	Installed SRAM Type: Unknown
+	Speed: Unknown
+	Error Correction Type: Single-bit ECC
+	System Type: Data
+	Associativity: 2-way Set-associative
+
+Handle 0x1002, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: L2
+	Configuration: Enabled, Not Socketed, Level 2
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 512 kB
+	Maximum Size: 512 kB
+	Supported SRAM Types:
+		Unknown
+	Installed SRAM Type: Unknown
+	Speed: Unknown
+	Error Correction Type: Single-bit ECC
+	System Type: Unified
+	Associativity: 16-way Set-associative
+
+Handle 0x1003, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: L3
+	Configuration: Enabled, Not Socketed, Level 3
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
+	Supported SRAM Types:
+		Unknown
+	Installed SRAM Type: Unknown
+	Speed: Unknown
+	Error Correction Type: Single-bit ECC
+	System Type: Unified
+	Associativity: 8-way Set-associative
+
+Handle 0x1007, DMI type 16, 23 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: None
+	Maximum Capacity: 16 GB
+	Error Information Handle: Not Provided
+	Number Of Devices: 1
+
+Handle 0x1008, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x1007
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 32 bits
+	Size: 31704 kB
+	Form Factor: Row Of Chips
+	Set: None
+	Locator: DIMM SLOT
+	Bank Locator: BANK 0
+	Type: DDR4
+	Type Detail: Unbuffered (Unregistered)
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Memory Speed: Unknown
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 130008 MB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0007, DMI type 32, 11 bytes
+System Boot Information
+	Status: No errors detected
+
+Handle 0xFEFF, DMI type 127, 4 bytes
+End Of Table
+
+
+[2024-05-08 17:03:38,343][INFO] Checking installed cert package...
+[2024-05-08 17:03:38,344][INFO] The command is: rpm -V --nomtime --nomode --nocontexts oec-hardware.
+[2024-05-08 17:03:38,581][INFO] Execute command rpm -V --nomtime --nomode --nocontexts oec-hardware succeed.
+ S.5......    /usr/share/oech/lib/config/test_config.yaml
+
+[2024-05-08 17:03:38,583][INFO] Checking kernel...
+[2024-05-08 17:03:38,583][INFO] Kernel RPM: kernel-6.6.0-19.0.0.21.oe2403.riscv64
+[2024-05-08 17:03:38,584][INFO] OS Version: openEuler 24.03 (LTS)
+[2024-05-08 17:03:38,585][INFO] The command is: cat /proc/cmdline.
+[2024-05-08 17:03:38,594][INFO] Execute command cat /proc/cmdline succeed.
+ BOOT_IMAGE=/vmlinuz-6.6.0-19.0.0.21.oe2403.riscv64 rootwait root=/dev/nvme0n1p3 console=ttyS0,115200 selinux=0 earlycon nvme.use_threaded_interrupts=1 nvme_core.io_timeout=3000
+
+[2024-05-08 17:03:38,596][ERROR] Failed to run system. 'openEuler 24.03 (LTS)'

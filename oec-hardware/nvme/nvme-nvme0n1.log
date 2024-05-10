@@ -1,0 +1,12 @@
+[2024-05-08 19:11:25,038][INFO] Driver Name: 
+[2024-05-08 19:11:25,040][INFO] The driver version information cannot be obtained. Please view it manually.
+[2024-05-08 19:11:25,041][INFO] The command is: nvme list.
+[2024-05-08 19:11:25,087][INFO] Execute command nvme list succeed.
+ Node                  Generic               SN                   Model                                    Namespace  Usage                      Format           FW Rev  
+--------------------- --------------------- -------------------- ---------------------------------------- ---------- -------------------------- ---------------- --------
+/dev/nvme0n1          /dev/ng0n1            NEV4642004130        FORESEE XP1000F001T                      0x1          1.02  TB /   1.02  TB    512   B +  0 B   V1.28   
+
+[2024-05-08 19:11:25,089][INFO] The command is: /usr/sbin/swapon -a.
+[2024-05-08 19:11:25,099][INFO] Execute command /usr/sbin/swapon -a succeed.
+ 
+[2024-05-08 19:11:25,101][ERROR] nvme0n1 is in use now, skip this test.

@@ -1,0 +1,5 @@
+[2024-05-08 16:51:46,715][INFO] The command is: acpidump.
+[2024-05-08 16:51:46,726][ERROR] Execute command acpidump failed.
+ Cannot open directory - /sys/firmware/acpi/tablesCould not get ACPI tables, AE_NOT_FOUND
+[2024-05-08 16:51:46,728][ERROR] Test acpi failed.
+Cannot open directory - /sys/firmware/acpi/tablesCould not get ACPI tables, AE_NOT_FOUND

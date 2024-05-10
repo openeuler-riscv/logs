@@ -1,0 +1,4 @@
+[2024-05-07 22:36:26,072][INFO] Start to run 1/2 test suite: system.
+[2024-05-07 22:36:26,426][INFO] End to run 1/2 test suite: system.
+[2024-05-07 22:36:26,427][ERROR] Test system failed.
+[2024-05-07 22:36:26,429][INFO] Start to run 2/2 test suite: watchdog.

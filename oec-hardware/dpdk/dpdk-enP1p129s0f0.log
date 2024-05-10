@@ -1,0 +1,108 @@
+[2024-05-08 18:55:45,942][INFO] Driver Name: 
+[2024-05-08 18:55:45,943][INFO] The driver version information cannot be obtained. Please view it manually.
+[2024-05-08 18:55:45,967][INFO] The command is: dpdk-hugepages.py -u.
+[2024-05-08 18:55:46,168][INFO] Execute command dpdk-hugepages.py -u succeed.
+ 
+[2024-05-08 18:55:46,169][INFO] The command is: dpdk-hugepages.py -c.
+[2024-05-08 18:55:46,431][INFO] Execute command dpdk-hugepages.py -c succeed.
+ 
+[2024-05-08 18:55:46,433][INFO] The command is: dpdk-hugepages.py --setup 2G.
+[2024-05-08 18:55:46,707][INFO] Execute command dpdk-hugepages.py --setup 2G succeed.
+ 
+[2024-05-08 18:55:46,709][INFO] The command is: cat /sys/devices/system/node/node0/hugepages//hugepages-2048kB/nr_hugepages.
+[2024-05-08 18:55:46,719][INFO] Execute command cat /sys/devices/system/node/node0/hugepages//hugepages-2048kB/nr_hugepages succeed.
+ 1024
+
+[2024-05-08 18:55:46,720][INFO] The command is: mount | grep hugetlbfs | awk '{print $2}'.
+[2024-05-08 18:55:46,747][INFO] Execute command mount | grep hugetlbfs | awk '{print $2}' succeed.
+ on
+
+[2024-05-08 18:55:46,749][INFO] Hugepage successfully configured.
+[2024-05-08 18:55:46,750][INFO] Node Pages Size Total
+[2024-05-08 18:55:46,752][INFO] The command is: cat /sys/devices/system/node/node2/hugepages/hugepages-2048kB/nr_hugepages.
+[2024-05-08 18:55:46,762][INFO] Execute command cat /sys/devices/system/node/node2/hugepages/hugepages-2048kB/nr_hugepages succeed.
+ 1024
+
+[2024-05-08 18:55:46,763][INFO] 2    1024  2Mb    2Gb
+[2024-05-08 18:55:46,764][INFO] The command is: cat /sys/devices/system/node/node2/hugepages/hugepages-1048576kB/nr_hugepages.
+[2024-05-08 18:55:46,774][INFO] Execute command cat /sys/devices/system/node/node2/hugepages/hugepages-1048576kB/nr_hugepages succeed.
+ 0
+
+[2024-05-08 18:55:46,776][INFO] The command is: cat /sys/devices/system/node/node0/hugepages/hugepages-2048kB/nr_hugepages.
+[2024-05-08 18:55:46,785][INFO] Execute command cat /sys/devices/system/node/node0/hugepages/hugepages-2048kB/nr_hugepages succeed.
+ 1024
+
+[2024-05-08 18:55:46,787][INFO] 0    1024  2Mb    2Gb
+[2024-05-08 18:55:46,787][INFO] The command is: cat /sys/devices/system/node/node0/hugepages/hugepages-1048576kB/nr_hugepages.
+[2024-05-08 18:55:46,798][INFO] Execute command cat /sys/devices/system/node/node0/hugepages/hugepages-1048576kB/nr_hugepages succeed.
+ 0
+
+[2024-05-08 18:55:46,799][INFO] The command is: cat /sys/devices/system/node/node3/hugepages/hugepages-2048kB/nr_hugepages.
+[2024-05-08 18:55:46,809][INFO] Execute command cat /sys/devices/system/node/node3/hugepages/hugepages-2048kB/nr_hugepages succeed.
+ 1024
+
+[2024-05-08 18:55:46,810][INFO] 3    1024  2Mb    2Gb
+[2024-05-08 18:55:46,811][INFO] The command is: cat /sys/devices/system/node/node3/hugepages/hugepages-1048576kB/nr_hugepages.
+[2024-05-08 18:55:46,822][INFO] Execute command cat /sys/devices/system/node/node3/hugepages/hugepages-1048576kB/nr_hugepages succeed.
+ 0
+
+[2024-05-08 18:55:46,823][INFO] The command is: cat /sys/devices/system/node/node1/hugepages/hugepages-2048kB/nr_hugepages.
+[2024-05-08 18:55:46,833][INFO] Execute command cat /sys/devices/system/node/node1/hugepages/hugepages-2048kB/nr_hugepages succeed.
+ 1024
+
+[2024-05-08 18:55:46,834][INFO] 1    1024  2Mb    2Gb
+[2024-05-08 18:55:46,835][INFO] The command is: cat /sys/devices/system/node/node1/hugepages/hugepages-1048576kB/nr_hugepages.
+[2024-05-08 18:55:46,845][INFO] Execute command cat /sys/devices/system/node/node1/hugepages/hugepages-1048576kB/nr_hugepages succeed.
+ 0
+
+[2024-05-08 18:55:46,846][INFO] The command is: ethtool enP1p129s0f0 | grep Speed | awk '{print $2}'.
+[2024-05-08 18:55:46,872][INFO] Execute command ethtool enP1p129s0f0 | grep Speed | awk '{print $2}' succeed.
+ Unknown!
+
+[2024-05-08 18:55:46,874][ERROR] Failed to run dpdk-enP1p129s0f0. invalid literal for int() with base 10: 'Unkn'
+[2024-05-08 18:55:46,875][INFO] Unbinding server card...
+[2024-05-08 18:55:46,969][ERROR] Call remote server url http://192.168.0.103/api/unbind/server failed.
+[2024-05-08 18:55:46,971][INFO] Unbinding client card...
+[2024-05-08 18:55:46,972][INFO] The command is: dpdk-devbind.py -u 7062000000.pcie.
+[2024-05-08 18:55:47,857][ERROR] Execute command dpdk-devbind.py -u 7062000000.pcie failed.
+ Warning: no supported DPDK kernel modules are loadedTraceback (most recent call last):  File "/usr/bin/dpdk-devbind.py", line 798, in <module>    main()  File "/usr/bin/dpdk-devbind.py", line 794, in main    do_arg_actions()  File "/usr/bin/dpdk-devbind.py", line 753, in do_arg_actions    unbind_all(args, force_flag)  File "/usr/bin/dpdk-devbind.py", line 473, in unbind_all    for d in dev_list:  File "/usr/bin/dpdk-devbind.py", line 321, in dev_id_from_dev_name    raise ValueError("Unknown device: %s. "ValueError: Unknown device: 7062000000.pcie. Please specify device in "bus:slot.func" format
+[2024-05-08 18:55:47,858][INFO] The command is: dpdk-devbind.py -b  7062000000.pcie.
+[2024-05-08 18:55:48,108][ERROR] Execute command dpdk-devbind.py -b  7062000000.pcie failed.
+ Error: No devices specified.
+[2024-05-08 18:55:48,109][INFO] Setting client interface enP1p129s0f0 up...
+[2024-05-08 18:55:48,110][INFO] The command is: ip link set up enP1p129s0f0.
+[2024-05-08 18:55:48,123][INFO] Execute command ip link set up enP1p129s0f0 succeed.
+ 
+[2024-05-08 18:55:48,124][INFO] The command is: ip link show enP1p129s0f0 | grep 'state UP'.
+[2024-05-08 18:55:48,140][INFO] Execute command ip link show enP1p129s0f0 | grep 'state UP' succeed.
+ 
+[2024-05-08 18:55:49,142][INFO] The command is: ip link show enP1p129s0f0 | grep 'state UP'.
+[2024-05-08 18:55:49,157][INFO] Execute command ip link show enP1p129s0f0 | grep 'state UP' succeed.
+ 
+[2024-05-08 18:55:50,159][INFO] The command is: ip link show enP1p129s0f0 | grep 'state UP'.
+[2024-05-08 18:55:50,175][INFO] Execute command ip link show enP1p129s0f0 | grep 'state UP' succeed.
+ 
+[2024-05-08 18:55:51,177][INFO] The command is: ip link show enP1p129s0f0 | grep 'state UP'.
+[2024-05-08 18:55:51,193][INFO] Execute command ip link show enP1p129s0f0 | grep 'state UP' succeed.
+ 
+[2024-05-08 18:55:52,194][INFO] The command is: ip link show enP1p129s0f0 | grep 'state UP'.
+[2024-05-08 18:55:52,210][INFO] Execute command ip link show enP1p129s0f0 | grep 'state UP' succeed.
+ 
+[2024-05-08 18:55:53,212][INFO] The command is: ip link show enP1p129s0f0 | grep 'state UP'.
+[2024-05-08 18:55:53,227][INFO] Execute command ip link show enP1p129s0f0 | grep 'state UP' succeed.
+ 
+[2024-05-08 18:55:54,229][INFO] The command is: ip link show enP1p129s0f0 | grep 'state UP'.
+[2024-05-08 18:55:54,245][INFO] Execute command ip link show enP1p129s0f0 | grep 'state UP' succeed.
+ 
+[2024-05-08 18:55:55,247][INFO] The command is: ip link show enP1p129s0f0 | grep 'state UP'.
+[2024-05-08 18:55:55,262][INFO] Execute command ip link show enP1p129s0f0 | grep 'state UP' succeed.
+ 
+[2024-05-08 18:55:56,264][INFO] The command is: ip link show enP1p129s0f0 | grep 'state UP'.
+[2024-05-08 18:55:56,280][INFO] Execute command ip link show enP1p129s0f0 | grep 'state UP' succeed.
+ 
+[2024-05-08 18:55:57,281][INFO] The command is: ip link show enP1p129s0f0 | grep 'state UP'.
+[2024-05-08 18:55:57,297][INFO] Execute command ip link show enP1p129s0f0 | grep 'state UP' succeed.
+ 
+[2024-05-08 18:55:58,299][ERROR] Set interface enP1p129s0f0 up failed.
+[2024-05-08 18:55:58,653][INFO] Status: 200 OK
+[2024-05-08 18:55:58,655][INFO] Stop all test servers.

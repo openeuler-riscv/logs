@@ -1,0 +1,7 @@
+[2024-05-08 17:10:04,346][INFO] Start to run 1/2 test suite: cpufreq.
+[2024-05-08 17:10:04,421][INFO] End to run 1/2 test suite: cpufreq.
+[2024-05-08 17:10:04,422][ERROR] Test cpufreq failed.
+[2024-05-08 17:10:04,423][INFO] Start to run 2/2 test suite: system.
+[2024-05-08 17:10:04,725][INFO] End to run 2/2 test suite: system.
+[2024-05-08 17:10:04,726][ERROR] Test system failed.
+[2024-05-08 17:10:04,728][INFO] There is no cert device need to export.

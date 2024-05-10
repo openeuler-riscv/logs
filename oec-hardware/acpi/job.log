@@ -1,0 +1,43 @@
+[2024-05-08 16:51:40,877][INFO] Start to install required packages: acpica-tools
+[2024-05-08 16:51:40,879][INFO] The command is: yum install -y acpica-tools.
+[2024-05-08 16:51:46,688][INFO] Execute command yum install -y acpica-tools succeed.
+ Last metadata expiration check: 0:19:47 ago on Wed 08 May 2024 04:31:56 PM CST.
+Dependencies resolved.
+================================================================================
+ Package             Architecture   Version                     Repo       Size
+================================================================================
+Installing:
+ acpica-tools        riscv64        20210604-6.oe2403           OS        900 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 900 k
+Installed size: 3.1 M
+Downloading Packages:
+acpica-tools-20210604-6.oe2403.riscv64.rpm      1.8 MB/s | 900 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           1.8 MB/s | 900 kB     00:00     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Running scriptlet: acpica-tools-20210604-6.oe2403.riscv64                 1/1 
+  Installing       : acpica-tools-20210604-6.oe2403.riscv64                 1/1 
+  Verifying        : acpica-tools-20210604-6.oe2403.riscv64                 1/1 
+
+Installed:
+  acpica-tools-20210604-6.oe2403.riscv64                                        
+
+Complete!
+
+[2024-05-08 16:51:46,714][INFO] Start to run 1/2 test suite: acpi.
+[2024-05-08 16:51:46,729][INFO] End to run 1/2 test suite: acpi.
+[2024-05-08 16:51:46,730][ERROR] Test acpi failed.
+[2024-05-08 16:51:46,731][INFO] Start to run 2/2 test suite: system.
+[2024-05-08 16:51:47,031][INFO] End to run 2/2 test suite: system.
+[2024-05-08 16:51:47,032][ERROR] Test system failed.
+[2024-05-08 16:51:47,033][INFO] There is no cert device need to export.

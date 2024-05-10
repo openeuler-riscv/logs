@@ -1,0 +1,21 @@
+[2024-05-07 22:36:26,436][INFO] The command is: systemctl daemon-reload.
+[2024-05-07 22:36:27,427][INFO] Execute command systemctl daemon-reload succeed.
+ 
+[2024-05-07 22:36:27,428][INFO] The command is: systemctl enable oech.
+[2024-05-07 22:36:28,341][INFO] Execute command systemctl enable oech succeed.
+ 
+[2024-05-07 22:36:28,343][INFO] Load softdog driver.
+[2024-05-07 22:36:28,344][INFO] The command is: modprobe softdog.
+[2024-05-07 22:36:28,386][INFO] Execute command modprobe softdog succeed.
+ 
+[2024-05-07 22:36:28,387][INFO] Set/Get the watchdog timeout time.
+[2024-05-07 22:36:28,388][INFO] The command is: ./watchdog -g | grep '^Watchdog timeout is *'.
+[2024-05-07 22:36:28,402][INFO] Execute command ./watchdog -g | grep '^Watchdog timeout is *' succeed.
+ Watchdog timeout is 60 seconds.
+
+[2024-05-07 22:36:28,403][INFO] The command is: ./watchdog -s 20.
+[2024-05-07 22:36:28,410][INFO] Execute command ./watchdog -s 20 succeed.
+ Watchdog timeout set to 20 seconds.
+
+[2024-05-07 22:36:28,412][INFO] Set/Get watchdog timeout succeed.
+[2024-05-07 22:36:39,430][INFO] Please wait seconds.

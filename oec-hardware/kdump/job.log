@@ -1,0 +1,7 @@
+[2024-05-07 21:49:23,208][INFO] Start to install required packages: crash, kexec-tools
+[2024-05-07 21:49:23,210][INFO] The command is: yum install -y crash kexec-tools.
+[2024-05-07 21:49:27,044][ERROR] Execute command yum install -y crash kexec-tools failed.
+ Error: Unable to find a match: kexec-tools
+[2024-05-07 21:49:27,046][ERROR] Fail to install required packages.
+ Error: Unable to find a match: kexec-tools
+[2024-05-07 21:49:27,047][ERROR] Required rpm package not installed, test stopped.

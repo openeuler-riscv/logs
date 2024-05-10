@@ -1,0 +1,15 @@
+[2024-05-08 17:10:04,348][INFO] The command is: cpupower -c 0 frequency-info -p | grep governor | cut -d '"' -f 2.
+[2024-05-08 17:10:04,371][INFO] Execute command cpupower -c 0 frequency-info -p | grep governor | cut -d '"' -f 2 succeed.
+ 
+[2024-05-08 17:10:04,373][INFO] Get cpu governor succeed.
+[2024-05-08 17:10:04,374][INFO] The command is: lscpu | grep '^CPU(s):' | awk '{print $2}'.
+[2024-05-08 17:10:04,405][INFO] Execute command lscpu | grep '^CPU(s):' | awk '{print $2}' succeed.
+ 64
+
+[2024-05-08 17:10:04,407][INFO] Get the CPU(s) succeed.
+[2024-05-08 17:10:04,408][INFO] The command is: cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq.
+[2024-05-08 17:10:04,418][ERROR] Execute command cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq failed.
+ cat: /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: No such file or directory
+[2024-05-08 17:10:04,419][ERROR] Get the scaling_max_freq of cpu failed.
+[2024-05-08 17:10:04,420][ERROR] Fail to get CPU info.
+ Please check if the CPU supports cpufreq.

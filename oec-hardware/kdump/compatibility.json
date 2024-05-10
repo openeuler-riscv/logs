@@ -1,0 +1,12 @@
+{
+    "Manufacturer": "SOPHGO",
+    "Product Name": "Sophgo SG2042 EVB Board",
+    "Version": "None",
+    "OS": "openEuler 24.03 (LTS)",
+    "kernel": "6.6.0-19.0.0.21.oe2403.riscv64",
+    "ID": "1",
+    "Product URL": "https://www.sophgo.com/product/introduce/sg2042.html",
+    "server": "192.168.0.103",
+    "oech_version": "1.1.5",
+    "oech_name": "oec-hardware"
+}

@@ -1,0 +1,7 @@
+[2024-05-08 13:39:55,110][INFO] Start to run 1/2 test suite: ethernet-enP1p129s0f1.
+[2024-05-08 13:39:58,570][INFO] End to run 1/2 test suite: ethernet-enP1p129s0f1.
+[2024-05-08 13:39:58,571][ERROR] Test ethernet failed.
+[2024-05-08 13:39:58,573][INFO] Start to run 2/2 test suite: system.
+[2024-05-08 13:39:58,877][INFO] End to run 2/2 test suite: system.
+[2024-05-08 13:39:58,878][ERROR] Test system failed.
+[2024-05-08 13:39:58,879][INFO] There is no cert device need to export.

@@ -1,0 +1,100 @@
+[2024-05-08 17:17:51,066][INFO] Disk Info:
+[2024-05-08 17:17:51,068][INFO] The command is: fdisk -l.
+[2024-05-08 17:17:51,106][INFO] Execute command fdisk -l succeed.
+ Disk /dev/nvme0n1: 953.87 GiB, 1024209543168 bytes, 2000409264 sectors
+Disk model: FORESEE XP1000F001T                     
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0xd7335472
+
+Device         Boot   Start      End  Sectors  Size Id Type
+/dev/nvme0n1p1         2048   526335   524288  256M  c W95 FAT32 (LBA)
+/dev/nvme0n1p2       526336  1574911  1048576  512M ef EFI (FAT-12/16/32)
+/dev/nvme0n1p3      1574912 33554431 31979520 15.2G 83 Linux
+
+
+Disk /dev/mmcblk1: 59.48 GiB, 63864569856 bytes, 124735488 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x031f9acf
+
+Device         Boot Start    End Sectors  Size Id Type
+/dev/mmcblk1p1       2048 524287  522240  255M  c W95 FAT32 (LBA)
+
+[2024-05-08 17:17:51,107][INFO] Partition Info:
+[2024-05-08 17:17:51,108][INFO] The command is: df -h.
+[2024-05-08 17:17:51,134][INFO] Execute command df -h succeed.
+ Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p3   15G  3.3G   11G  23% /
+devtmpfs        4.0M     0  4.0M   0% /dev
+tmpfs            61G     0   61G   0% /dev/shm
+tmpfs           4.0M     0  4.0M   0% /sys/fs/cgroup
+efivarfs         28K  2.3K   26K   8% /sys/firmware/efi/efivars
+tmpfs            25G  8.8M   25G   1% /run
+tmpfs            61G     0   61G   0% /tmp
+/dev/nvme0n1p2  511M  369M  142M  73% /boot
+
+[2024-05-08 17:17:51,135][INFO] Mount Info:
+[2024-05-08 17:17:51,136][INFO] The command is: mount.
+[2024-05-08 17:17:51,149][INFO] Execute command mount succeed.
+ /dev/nvme0n1p3 on / type ext4 (rw,noatime)
+rpc_pipefs on /var/lib/nfs/rpc_pipefs type rpc_pipefs (rw,relatime)
+devtmpfs on /dev type devtmpfs (rw,nosuid,size=4096k,nr_inodes=15830640,mode=755)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,size=4096k,nr_inodes=1024,mode=755)
+cgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,xattr,release_agent=/usr/lib/systemd/systemd-cgroups-agent,name=systemd)
+cgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup (rw,nosuid,nodev,noexec,relatime,net_cls,net_prio)
+cgroup on /sys/fs/cgroup/rdma type cgroup (rw,nosuid,nodev,noexec,relatime,rdma)
+cgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,devices)
+cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,cpu,cpuacct)
+cgroup on /sys/fs/cgroup/perf_event type cgroup (rw,nosuid,nodev,noexec,relatime,perf_event)
+cgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,freezer)
+cgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,blkio)
+cgroup on /sys/fs/cgroup/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,cpuset)
+cgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,memory)
+cgroup on /sys/fs/cgroup/pids type cgroup (rw,nosuid,nodev,noexec,relatime,pids)
+cgroup on /sys/fs/cgroup/hugetlb type cgroup (rw,nosuid,nodev,noexec,relatime,hugetlb)
+efivarfs on /sys/firmware/efi/efivars type efivarfs (rw,nosuid,nodev,noexec,relatime)
+bpf on /sys/fs/bpf type bpf (rw,nosuid,nodev,noexec,relatime,mode=700)
+configfs on /sys/kernel/config type configfs (rw,nosuid,nodev,noexec,relatime)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /run type tmpfs (rw,nosuid,nodev,size=25362384k,nr_inodes=819200,mode=755)
+systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=30,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=15424)
+hugetlbfs on /dev/hugepages type hugetlbfs (rw,nosuid,nodev,relatime,pagesize=2M)
+mqueue on /dev/mqueue type mqueue (rw,nosuid,nodev,noexec,relatime)
+debugfs on /sys/kernel/debug type debugfs (rw,nosuid,nodev,noexec,relatime)
+tracefs on /sys/kernel/tracing type tracefs (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /tmp type tmpfs (rw,nosuid,nodev,nr_inodes=1048576)
+fusectl on /sys/fs/fuse/connections type fusectl (rw,nosuid,nodev,noexec,relatime)
+/dev/nvme0n1p2 on /boot type vfat (rw,noatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,errors=remount-ro,x-systemd.mount-timeout=300s)
+
+[2024-05-08 17:17:51,151][INFO] Swap Info:
+[2024-05-08 17:17:51,152][INFO] The command is: cat /proc/swaps.
+[2024-05-08 17:17:51,160][INFO] Execute command cat /proc/swaps succeed.
+ Filename				Type		Size		Used		Priority
+
+[2024-05-08 17:17:51,162][INFO] LVM Info:
+[2024-05-08 17:17:51,162][INFO] The command is: pvdisplay.
+[2024-05-08 17:17:51,223][INFO] Execute command pvdisplay succeed.
+ 
+[2024-05-08 17:17:51,224][INFO] The command is: vgdisplay.
+[2024-05-08 17:17:51,274][INFO] Execute command vgdisplay succeed.
+ 
+[2024-05-08 17:17:51,275][INFO] The command is: lvdisplay.
+[2024-05-08 17:17:51,323][INFO] Execute command lvdisplay succeed.
+ 
+[2024-05-08 17:17:51,324][INFO] Md Info:
+[2024-05-08 17:17:51,325][INFO] The command is: cat /proc/mdstat.
+[2024-05-08 17:17:51,334][INFO] Execute command cat /proc/mdstat succeed.
+ 
+[2024-05-08 17:17:52,173][INFO] The command is: /usr/sbin/swapon -a.
+[2024-05-08 17:17:52,186][INFO] Execute command /usr/sbin/swapon -a succeed.
+ 
+[2024-05-08 17:17:52,190][ERROR] No suite disk found to test.

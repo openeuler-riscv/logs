@@ -1,0 +1,79 @@
+[2024-05-08 16:37:42,397][INFO] The command is: ip link show enP2p201s0 | grep 'state UP'.
+[2024-05-08 16:37:42,414][INFO] Execute command ip link show enP2p201s0 | grep 'state UP' succeed.
+ 3: enP2p201s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP mode DEFAULT group default qlen 1000
+
+[2024-05-08 16:37:42,415][INFO] The command is: ifconfig enP2p201s0 | grep '.*inet' | awk '{print $2}'.
+[2024-05-08 16:37:42,442][INFO] Execute command ifconfig enP2p201s0 | grep '.*inet' | awk '{print $2}' succeed.
+ 192.168.0.106
+fe80::4f77:e42d:1011:65ac
+
+[2024-05-08 16:37:42,444][INFO] The command is: ifconfig enP2p201s0 | grep '.*ether' | awk '{print $2}'.
+[2024-05-08 16:37:42,470][INFO] Execute command ifconfig enP2p201s0 | grep '.*ether' | awk '{print $2}' succeed.
+ 00:e0:4c:68:00:7c
+
+[2024-05-08 16:37:42,472][INFO] The client IP address already configured.
+[2024-05-08 16:37:42,474][INFO] The command is: ping -q -c 1 -W 1 192.168.0.103 | grep 'packet loss' | awk '{print $6}'.
+[2024-05-08 16:37:42,583][INFO] Execute command ping -q -c 1 -W 1 192.168.0.103 | grep 'packet loss' | awk '{print $6}' succeed.
+ 0%
+
+[2024-05-08 16:37:42,595][INFO] Driver Name: 
+[2024-05-08 16:37:42,597][INFO] The driver version information cannot be obtained. Please view it manually.
+[2024-05-08 16:37:42,598][INFO] The command is: ls /sys/devices/platform/4c00000000.pcie/pci0002:c0/0002:c0:00.0/0002:c1:00.0/0002:c2:0e.0/0002:c9:00.0/ | grep -q infiniband.
+[2024-05-08 16:37:42,614][ERROR] Execute command ls /sys/devices/platform/4c00000000.pcie/pci0002:c0/0002:c0:00.0/0002:c1:00.0/0002:c2:0e.0/0002:c9:00.0/ | grep -q infiniband failed.
+ 
+[2024-05-08 16:37:42,615][INFO] Current ethernet doesn't support RoCE, no need test Roce.
+[2024-05-08 16:37:42,617][INFO] It will test normal ethernet enP2p201s0.
+[2024-05-08 16:37:42,618][INFO] The command is: ethtool enP2p201s0 | grep 'Port' | awk '{print $2}'.
+[2024-05-08 16:37:42,646][INFO] Execute command ethtool enP2p201s0 | grep 'Port' | awk '{print $2}' succeed.
+ Twisted
+
+[2024-05-08 16:37:42,647][INFO] The enP2p201s0 port type is Twisted, skip checking.
+[2024-05-08 16:37:42,648][INFO] The test interface is enP2p201s0.
+[2024-05-08 16:37:42,649][INFO] The server ip is 192.168.0.103.
+[2024-05-08 16:37:42,650][INFO] The client ip is 192.168.0.106
+fe80::4f77:e42d:1011:65ac
+ on enP2p201s0.
+[2024-05-08 16:37:42,651][INFO] Setting interface enP2p201s0 down.
+[2024-05-08 16:37:42,652][INFO] The command is: ip link set down enP2p201s0.
+[2024-05-08 16:37:42,684][INFO] Execute command ip link set down enP2p201s0 succeed.
+ 
+[2024-05-08 16:37:42,685][INFO] The command is: ip link show enP2p201s0 | grep 'state DOWN'.
+[2024-05-08 16:37:42,704][INFO] Execute command ip link show enP2p201s0 | grep 'state DOWN' succeed.
+ 3: enP2p201s0: <BROADCAST,MULTICAST> mtu 1500 qdisc fq_codel state DOWN mode DEFAULT group default qlen 1000
+
+[2024-05-08 16:37:42,706][INFO] Set interface enP2p201s0 down succeed.
+[2024-05-08 16:37:42,707][INFO] Setting interface enP2p201s0 up.
+[2024-05-08 16:37:42,708][INFO] The command is: ip link set up enP2p201s0.
+[2024-05-08 16:37:42,963][INFO] Execute command ip link set up enP2p201s0 succeed.
+ 
+[2024-05-08 16:37:42,964][INFO] The command is: ip link show enP2p201s0 | grep 'state UP'.
+[2024-05-08 16:37:42,983][ERROR] Execute command ip link show enP2p201s0 | grep 'state UP' failed.
+ 
+[2024-05-08 16:37:43,985][INFO] The command is: ip link show enP2p201s0 | grep 'state UP'.
+[2024-05-08 16:37:44,000][ERROR] Execute command ip link show enP2p201s0 | grep 'state UP' failed.
+ 
+[2024-05-08 16:37:45,002][INFO] The command is: ip link show enP2p201s0 | grep 'state UP'.
+[2024-05-08 16:37:45,017][INFO] Execute command ip link show enP2p201s0 | grep 'state UP' succeed.
+ 3: enP2p201s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP mode DEFAULT group default qlen 1000
+
+[2024-05-08 16:37:45,018][INFO] Set interface enP2p201s0 up succeed.
+[2024-05-08 16:37:45,019][INFO] The command is: ethtool enP2p201s0 | grep Speed | awk '{print $2}'.
+[2024-05-08 16:37:45,045][INFO] Execute command ethtool enP2p201s0 | grep Speed | awk '{print $2}' succeed.
+ 100Mb/s
+
+[2024-05-08 16:37:45,047][INFO] The speed of enP2p201s0 is 100Mb/s.
+[2024-05-08 16:37:45,048][INFO] The command is: ping -q -c 500 -i 0 192.168.0.103 | grep 'packet loss' | awk '{print $6}'.
+[2024-05-08 16:37:45,073][INFO] Execute command ping -q -c 500 -i 0 192.168.0.103 | grep 'packet loss' | awk '{print $6}' succeed.
+ 
+[2024-05-08 16:37:45,075][INFO] The command is: ping -q -c 500 -i 0 192.168.0.103 | grep 'packet loss' | awk '{print $6}'.
+[2024-05-08 16:37:45,100][INFO] Execute command ping -q -c 500 -i 0 192.168.0.103 | grep 'packet loss' | awk '{print $6}' succeed.
+ 
+[2024-05-08 16:37:45,102][INFO] The command is: ping -q -c 500 -i 0 192.168.0.103 | grep 'packet loss' | awk '{print $6}'.
+[2024-05-08 16:37:45,127][INFO] Execute command ping -q -c 500 -i 0 192.168.0.103 | grep 'packet loss' | awk '{print $6}' succeed.
+ 
+[2024-05-08 16:37:45,128][ERROR] Test icmp failed.
+[2024-05-08 16:37:45,130][INFO] Stop all test servers.
+[2024-05-08 16:37:45,626][INFO] Status: 200 OK
+[2024-05-08 16:37:45,628][INFO] The command is: ifconfig enP2p201s0:0 | grep '.*inet' | awk '{print $2}'.
+[2024-05-08 16:37:45,652][INFO] Execute command ifconfig enP2p201s0:0 | grep '.*inet' | awk '{print $2}' succeed.
+ 

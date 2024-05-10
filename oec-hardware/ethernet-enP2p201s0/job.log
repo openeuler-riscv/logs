@@ -1,0 +1,67 @@
+[2024-05-08 16:37:34,029][INFO] Start to install required packages: qperf, perftest, opensm
+[2024-05-08 16:37:34,030][INFO] The command is: yum install -y qperf perftest opensm.
+[2024-05-08 16:37:42,369][INFO] Execute command yum install -y qperf perftest opensm succeed.
+ Last metadata expiration check: 0:05:40 ago on Wed 08 May 2024 04:31:56 PM CST.
+Dependencies resolved.
+================================================================================
+ Package            Architecture    Version                    Repository  Size
+================================================================================
+Installing:
+ opensm             riscv64         3.3.24-1.oe2403            OS         468 k
+ perftest           riscv64         4.5-6.oe2403               OS         231 k
+ qperf              riscv64         0.4.11-1.oe2403            OS          59 k
+Installing dependencies:
+ libibumad          riscv64         50.0-5.oe2403              OS          26 k
+ libibverbs         riscv64         50.0-5.oe2403              OS         389 k
+ librdmacm          riscv64         50.0-5.oe2403              OS          65 k
+
+Transaction Summary
+================================================================================
+Install  6 Packages
+
+Total download size: 1.2 M
+Installed size: 4.1 M
+Downloading Packages:
+(1/6): libibumad-50.0-5.oe2403.riscv64.rpm       85 kB/s |  26 kB     00:00    
+(2/6): librdmacm-50.0-5.oe2403.riscv64.rpm      191 kB/s |  65 kB     00:00    
+(3/6): libibverbs-50.0-5.oe2403.riscv64.rpm     1.0 MB/s | 389 kB     00:00    
+(4/6): opensm-3.3.24-1.oe2403.riscv64.rpm       2.7 MB/s | 468 kB     00:00    
+(5/6): perftest-4.5-6.oe2403.riscv64.rpm        1.5 MB/s | 231 kB     00:00    
+(6/6): qperf-0.4.11-1.oe2403.riscv64.rpm        446 kB/s |  59 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           2.3 MB/s | 1.2 MB     00:00     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : libibverbs-50.0-5.oe2403.riscv64                       1/6 
+  Installing       : librdmacm-50.0-5.oe2403.riscv64                        2/6 
+  Installing       : libibumad-50.0-5.oe2403.riscv64                        3/6 
+  Installing       : opensm-3.3.24-1.oe2403.riscv64                         4/6 
+  Running scriptlet: opensm-3.3.24-1.oe2403.riscv64                         4/6 
+  Installing       : perftest-4.5-6.oe2403.riscv64                          5/6 
+  Installing       : qperf-0.4.11-1.oe2403.riscv64                          6/6 
+  Running scriptlet: qperf-0.4.11-1.oe2403.riscv64                          6/6 
+  Verifying        : libibumad-50.0-5.oe2403.riscv64                        1/6 
+  Verifying        : libibverbs-50.0-5.oe2403.riscv64                       2/6 
+  Verifying        : librdmacm-50.0-5.oe2403.riscv64                        3/6 
+  Verifying        : opensm-3.3.24-1.oe2403.riscv64                         4/6 
+  Verifying        : perftest-4.5-6.oe2403.riscv64                          5/6 
+  Verifying        : qperf-0.4.11-1.oe2403.riscv64                          6/6 
+
+Installed:
+  libibumad-50.0-5.oe2403.riscv64        libibverbs-50.0-5.oe2403.riscv64       
+  librdmacm-50.0-5.oe2403.riscv64        opensm-3.3.24-1.oe2403.riscv64         
+  perftest-4.5-6.oe2403.riscv64          qperf-0.4.11-1.oe2403.riscv64          
+
+Complete!
+
+[2024-05-08 16:37:42,395][INFO] Start to run 1/2 test suite: ethernet-enP2p201s0.
+[2024-05-08 16:37:45,654][INFO] End to run 1/2 test suite: ethernet-enP2p201s0.
+[2024-05-08 16:37:45,655][ERROR] Test ethernet failed.
+[2024-05-08 16:37:45,656][INFO] Start to run 2/2 test suite: system.
+[2024-05-08 16:37:45,954][INFO] End to run 2/2 test suite: system.
+[2024-05-08 16:37:45,955][ERROR] Test system failed.
+[2024-05-08 16:37:45,956][INFO] There is no cert device need to export.

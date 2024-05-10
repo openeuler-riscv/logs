@@ -1,0 +1,48 @@
+[2024-05-08 19:11:17,532][INFO] Start to install required packages: nvme-cli
+[2024-05-08 19:11:17,534][INFO] The command is: yum install -y nvme-cli.
+[2024-05-08 19:11:25,001][INFO] Execute command yum install -y nvme-cli succeed.
+ Last metadata expiration check: 1:54:29 ago on Wed 08 May 2024 05:16:51 PM CST.
+Dependencies resolved.
+================================================================================
+ Package            Architecture      Version                Repository    Size
+================================================================================
+Installing:
+ nvme-cli           riscv64           2.8-1.oe2403           OS           437 k
+Installing dependencies:
+ libnvme            riscv64           1.8-1.oe2403           OS            84 k
+
+Transaction Summary
+================================================================================
+Install  2 Packages
+
+Total download size: 520 k
+Installed size: 1.3 M
+Downloading Packages:
+(1/2): libnvme-1.8-1.oe2403.riscv64.rpm         259 kB/s |  84 kB     00:00    
+(2/2): nvme-cli-2.8-1.oe2403.riscv64.rpm        1.0 MB/s | 437 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           1.2 MB/s | 520 kB     00:00     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : libnvme-1.8-1.oe2403.riscv64                           1/2 
+  Installing       : nvme-cli-2.8-1.oe2403.riscv64                          2/2 
+  Running scriptlet: nvme-cli-2.8-1.oe2403.riscv64                          2/2 
+  Verifying        : libnvme-1.8-1.oe2403.riscv64                           1/2 
+  Verifying        : nvme-cli-2.8-1.oe2403.riscv64                          2/2 
+
+Installed:
+  libnvme-1.8-1.oe2403.riscv64           nvme-cli-2.8-1.oe2403.riscv64          
+
+Complete!
+
+[2024-05-08 19:11:25,026][INFO] Start to run 1/2 test suite: nvme-nvme0n1.
+[2024-05-08 19:11:25,102][INFO] End to run 1/2 test suite: nvme-nvme0n1.
+[2024-05-08 19:11:25,103][ERROR] Test nvme failed.
+[2024-05-08 19:11:25,105][INFO] Start to run 2/2 test suite: system.
+[2024-05-08 19:11:25,402][INFO] End to run 2/2 test suite: system.
+[2024-05-08 19:11:25,403][ERROR] Test system failed.
+[2024-05-08 19:11:25,404][INFO] There is no cert device need to export.

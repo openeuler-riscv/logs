@@ -1,0 +1,2 @@
+[2024-05-08 19:18:05,339][ERROR] The spdk version is too low and needs to be upgraded to 21.01.1-5.
+[2024-05-08 19:18:05,341][ERROR] Unload uio_pci_generic driver failed.

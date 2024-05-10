@@ -1,0 +1,5 @@
+[2024-05-08 17:00:38,284][INFO] The command is: /usr/share/oech/lib/tests/compatible/clock/clock.
+[2024-05-08 17:03:38,292][ERROR] Execute command /usr/share/oech/lib/tests/compatible/clock/clock failed.
+ 
+[2024-05-08 17:03:38,293][ERROR] Test clock failed.
+ 

@@ -1,0 +1,92 @@
+[2024-05-08 18:55:30,468][INFO] Driver Name: 
+[2024-05-08 18:55:30,470][INFO] The driver version information cannot be obtained. Please view it manually.
+[2024-05-08 18:55:30,492][INFO] The command is: dpdk-hugepages.py -u.
+[2024-05-08 18:55:30,694][INFO] Execute command dpdk-hugepages.py -u succeed.
+ 
+[2024-05-08 18:55:30,695][INFO] The command is: dpdk-hugepages.py -c.
+[2024-05-08 18:55:30,954][INFO] Execute command dpdk-hugepages.py -c succeed.
+ 
+[2024-05-08 18:55:30,955][INFO] The command is: dpdk-hugepages.py --setup 2G.
+[2024-05-08 18:55:31,244][INFO] Execute command dpdk-hugepages.py --setup 2G succeed.
+ 
+[2024-05-08 18:55:31,246][INFO] The command is: cat /sys/devices/system/node/node0/hugepages//hugepages-2048kB/nr_hugepages.
+[2024-05-08 18:55:31,256][INFO] Execute command cat /sys/devices/system/node/node0/hugepages//hugepages-2048kB/nr_hugepages succeed.
+ 1024
+
+[2024-05-08 18:55:31,257][INFO] The command is: mount | grep hugetlbfs | awk '{print $2}'.
+[2024-05-08 18:55:31,282][INFO] Execute command mount | grep hugetlbfs | awk '{print $2}' succeed.
+ on
+
+[2024-05-08 18:55:31,284][INFO] Hugepage successfully configured.
+[2024-05-08 18:55:31,286][INFO] Node Pages Size Total
+[2024-05-08 18:55:31,287][INFO] The command is: cat /sys/devices/system/node/node2/hugepages/hugepages-2048kB/nr_hugepages.
+[2024-05-08 18:55:31,297][INFO] Execute command cat /sys/devices/system/node/node2/hugepages/hugepages-2048kB/nr_hugepages succeed.
+ 1024
+
+[2024-05-08 18:55:31,298][INFO] 2    1024  2Mb    2Gb
+[2024-05-08 18:55:31,299][INFO] The command is: cat /sys/devices/system/node/node2/hugepages/hugepages-1048576kB/nr_hugepages.
+[2024-05-08 18:55:31,309][INFO] Execute command cat /sys/devices/system/node/node2/hugepages/hugepages-1048576kB/nr_hugepages succeed.
+ 0
+
+[2024-05-08 18:55:31,310][INFO] The command is: cat /sys/devices/system/node/node0/hugepages/hugepages-2048kB/nr_hugepages.
+[2024-05-08 18:55:31,319][INFO] Execute command cat /sys/devices/system/node/node0/hugepages/hugepages-2048kB/nr_hugepages succeed.
+ 1024
+
+[2024-05-08 18:55:31,321][INFO] 0    1024  2Mb    2Gb
+[2024-05-08 18:55:31,322][INFO] The command is: cat /sys/devices/system/node/node0/hugepages/hugepages-1048576kB/nr_hugepages.
+[2024-05-08 18:55:31,331][INFO] Execute command cat /sys/devices/system/node/node0/hugepages/hugepages-1048576kB/nr_hugepages succeed.
+ 0
+
+[2024-05-08 18:55:31,333][INFO] The command is: cat /sys/devices/system/node/node3/hugepages/hugepages-2048kB/nr_hugepages.
+[2024-05-08 18:55:31,342][INFO] Execute command cat /sys/devices/system/node/node3/hugepages/hugepages-2048kB/nr_hugepages succeed.
+ 1024
+
+[2024-05-08 18:55:31,343][INFO] 3    1024  2Mb    2Gb
+[2024-05-08 18:55:31,345][INFO] The command is: cat /sys/devices/system/node/node3/hugepages/hugepages-1048576kB/nr_hugepages.
+[2024-05-08 18:55:31,354][INFO] Execute command cat /sys/devices/system/node/node3/hugepages/hugepages-1048576kB/nr_hugepages succeed.
+ 0
+
+[2024-05-08 18:55:31,355][INFO] The command is: cat /sys/devices/system/node/node1/hugepages/hugepages-2048kB/nr_hugepages.
+[2024-05-08 18:55:31,364][INFO] Execute command cat /sys/devices/system/node/node1/hugepages/hugepages-2048kB/nr_hugepages succeed.
+ 1024
+
+[2024-05-08 18:55:31,366][INFO] 1    1024  2Mb    2Gb
+[2024-05-08 18:55:31,367][INFO] The command is: cat /sys/devices/system/node/node1/hugepages/hugepages-1048576kB/nr_hugepages.
+[2024-05-08 18:55:31,376][INFO] Execute command cat /sys/devices/system/node/node1/hugepages/hugepages-1048576kB/nr_hugepages succeed.
+ 0
+
+[2024-05-08 18:55:31,378][INFO] The command is: ethtool enP2p197s0 | grep Speed | awk '{print $2}'.
+[2024-05-08 18:55:31,404][INFO] Execute command ethtool enP2p197s0 | grep Speed | awk '{print $2}' succeed.
+ 100Mb/s
+
+[2024-05-08 18:55:31,406][INFO] The speed of enP2p197s0 is 100Mb/s.
+[2024-05-08 18:55:31,407][INFO] The command is: ping -q -c 500 -i 0 192.168.0.103 | grep 'packet loss' | awk '{print $6}'.
+[2024-05-08 18:55:31,433][INFO] Execute command ping -q -c 500 -i 0 192.168.0.103 | grep 'packet loss' | awk '{print $6}' succeed.
+ 
+[2024-05-08 18:55:31,435][INFO] The command is: ping -q -c 500 -i 0 192.168.0.103 | grep 'packet loss' | awk '{print $6}'.
+[2024-05-08 18:55:31,461][INFO] Execute command ping -q -c 500 -i 0 192.168.0.103 | grep 'packet loss' | awk '{print $6}' succeed.
+ 
+[2024-05-08 18:55:31,462][INFO] The command is: ping -q -c 500 -i 0 192.168.0.103 | grep 'packet loss' | awk '{print $6}'.
+[2024-05-08 18:55:31,489][INFO] Execute command ping -q -c 500 -i 0 192.168.0.103 | grep 'packet loss' | awk '{print $6}' succeed.
+ 
+[2024-05-08 18:55:31,491][ERROR] Test icmp failed.
+[2024-05-08 18:55:31,492][INFO] Unbinding server card...
+[2024-05-08 18:55:31,596][ERROR] Call remote server url http://192.168.0.103/api/unbind/server failed.
+[2024-05-08 18:55:31,598][INFO] Unbinding client card...
+[2024-05-08 18:55:31,599][INFO] The command is: dpdk-devbind.py -u 4c00000000.pcie.
+[2024-05-08 18:55:32,488][ERROR] Execute command dpdk-devbind.py -u 4c00000000.pcie failed.
+ Warning: no supported DPDK kernel modules are loadedTraceback (most recent call last):  File "/usr/bin/dpdk-devbind.py", line 798, in <module>    main()  File "/usr/bin/dpdk-devbind.py", line 794, in main    do_arg_actions()  File "/usr/bin/dpdk-devbind.py", line 753, in do_arg_actions    unbind_all(args, force_flag)  File "/usr/bin/dpdk-devbind.py", line 473, in unbind_all    for d in dev_list:  File "/usr/bin/dpdk-devbind.py", line 321, in dev_id_from_dev_name    raise ValueError("Unknown device: %s. "ValueError: Unknown device: 4c00000000.pcie. Please specify device in "bus:slot.func" format
+[2024-05-08 18:55:32,490][INFO] The command is: dpdk-devbind.py -b  4c00000000.pcie.
+[2024-05-08 18:55:32,735][ERROR] Execute command dpdk-devbind.py -b  4c00000000.pcie failed.
+ Error: No devices specified.
+[2024-05-08 18:55:32,737][INFO] Setting client interface enP2p197s0 up...
+[2024-05-08 18:55:32,738][INFO] The command is: ip link set up enP2p197s0.
+[2024-05-08 18:55:32,750][INFO] Execute command ip link set up enP2p197s0 succeed.
+ 
+[2024-05-08 18:55:32,752][INFO] The command is: ip link show enP2p197s0 | grep 'state UP'.
+[2024-05-08 18:55:32,768][INFO] Execute command ip link show enP2p197s0 | grep 'state UP' succeed.
+ 2: enP2p197s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP mode DEFAULT group default qlen 1000
+
+[2024-05-08 18:55:32,770][INFO] Set interface enP2p197s0 up succeed.
+[2024-05-08 18:55:33,158][INFO] Status: 200 OK
+[2024-05-08 18:55:33,159][INFO] Stop all test servers.

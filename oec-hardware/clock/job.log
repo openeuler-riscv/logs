@@ -1,0 +1,7 @@
+[2024-05-08 17:00:38,282][INFO] Start to run 1/2 test suite: clock.
+[2024-05-08 17:03:38,294][INFO] End to run 1/2 test suite: clock.
+[2024-05-08 17:03:38,295][ERROR] Test clock failed.
+[2024-05-08 17:03:38,297][INFO] Start to run 2/2 test suite: system.
+[2024-05-08 17:03:38,597][INFO] End to run 2/2 test suite: system.
+[2024-05-08 17:03:38,598][ERROR] Test system failed.
+[2024-05-08 17:03:38,599][INFO] There is no cert device need to export.

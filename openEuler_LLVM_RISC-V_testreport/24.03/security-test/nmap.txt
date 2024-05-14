@@ -1,0 +1,11 @@
+# Nmap 7.94 scan initiated Sat May 11 12:58:02 2024 as: nmap -sS -sU -oN /root/nmap/nmap.txt 127.0.0.1
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000088s latency).
+Not shown: 998 closed udp ports (port-unreach), 998 closed tcp ports (reset)
+PORT    STATE         SERVICE
+22/tcp  open          ssh
+111/tcp open          rpcbind
+68/udp  open|filtered dhcpc
+111/udp open          rpcbind
+
+# Nmap done at Sat May 11 12:58:04 2024 -- 1 IP address (1 host up) scanned in 1.88 seconds

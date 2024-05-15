@@ -2,30 +2,28 @@ openEuler RISC-V LLVM oec-hardware 测试结果
 
 
 
-| 测试项目      | 测试结果 | 失败原因                                                     |
-| ------------- | -------- | ------------------------------------------------------------ |
-| acpi          | FAIL     | 设备不支持                                                   |
-| clock         | FAIL     | 设备 rtc 未自带电池，时间不可靠                              |
-| cpufreq       | FAIL     | 设备不支持调频                                               |
-| disk          | PASS     |                                                              |
-| dpdk          | FAIL     | 测试使用板载螃蟹网卡，不支持 DPDK                            |
-| ethernet      | FAIL     | 1. 测试使用板载螃蟹网卡，不支持 Inifiniband<br>2. ip link down 后再 up 网卡反应时间较长(2~3s)<br>3. 通过 WiFi 连接到 Server，网络环境原因带宽低于测试预期值（50MB/s） |
-| kabi          | PASS     |                                                              |
-| kabiwhitelist | FAIL     | 没有提供预定义配置（Please configure the board information in the configuration file） |
-| kdump         | FAIL     | kernel-debuginfo 软件包安装问题                              |
-| memory        | PASS     |                                                              |
-| nvme-nvme0n1  | FAIL     | 作为系统盘使用中，跳过此硬盘的测试                           |
-| perf          | PASS     |                                                              |
-| spdk-nvme0n1  | FAIL     | 版本过低不支持                                               |
-| system        | FAIL     | 设备运行 kernel 版本较旧，软件仓里未包含该版本 kernel        |
-| usb           | PASS     |                                                              |
-| watchdog      | PASS     |                                                              |
+| 测试项目      | 测试结果 |
+| ------------- | -------- |
+| acpi          | FAIL     |
+| clock         | FAIL     |
+| cpufreq       | FAIL     |
+| disk          | PASS     |
+| dpdk          | FAIL     |
+| ethernet      | FAIL     |
+| kabi          | PASS     |
+| kabiwhitelist | FAIL     |
+| kdump         | FAIL     |
+| memory        | PASS     |
+| nvme-nvme0n1  | FAIL     |
+| perf          | PASS     |
+| spdk-nvme0n1  | FAIL     |
+| system        | FAIL     |
+| usb           | PASS     |
+| watchdog      | PASS     |
 
 
 
 acpi：FAIL
-
-设备不支持
 
 ````
 [2024-05-11 17:22:21,053][INFO] The command is: acpidump.
@@ -37,8 +35,6 @@ Cannot open directory - /sys/firmware/acpi/tablesCould not get ACPI tables, AE_N
 
 clock：FAIL
 
-设备 rtc 未自带电池，时间不可靠
-
 ````
 [2024-05-11 17:22:21,069][INFO] The command is: /usr/share/oech/lib/tests/compatible/clock/clock.
 [2024-05-11 17:25:21,077][ERROR] Execute command /usr/share/oech/lib/tests/compatible/clock/clock failed.
@@ -47,8 +43,6 @@ clock：FAIL
 ````
 
 cpufreq：FAIL
-
-设备不支持调频
 
 ````
 [2024-05-11 17:25:21,083][INFO] The command is: cpupower -c 0 frequency-info -p | grep governor | cut -d '"' -f 2.
@@ -69,10 +63,6 @@ cpufreq：FAIL
 ````
 
 disk：PASS
-
-dpdk-enP2p197s0：FAIL
-
-测试使用板载螃蟹网卡，不支持 DPDK
 
 ````
 [2024-05-11 19:29:38,235][INFO] Driver Name: 
@@ -166,8 +156,6 @@ dpdk-enP2p197s0：FAIL
 ````
 
 dpdk-enP2p201s0：FAIL
-
-测试使用板载螃蟹网卡，不支持 DPDK
 
 ````
 2024-05-11 19:29:43,524][INFO] Driver Name: 
@@ -282,8 +270,6 @@ dpdk-enP2p201s0：FAIL
 
 dpdk-enP1p129s0f0：FAIL
 
-测试使用板载螃蟹网卡，不支持 DPDK
-
 ````
 [2024-05-11 19:29:56,370][INFO] Driver Name: 
 [2024-05-11 19:29:56,372][INFO] The driver version information cannot be obtained. Please view it manually.
@@ -397,8 +383,6 @@ dpdk-enP1p129s0f0：FAIL
 
 dpdk-enP1p129s0f1：FAIL
 
-测试使用板载螃蟹网卡，不支持 DPDK
-
 ````
 [2024-05-11 19:30:09,179][INFO] Driver Name: 
 [2024-05-11 19:30:09,181][INFO] The driver version information cannot be obtained. Please view it manually.
@@ -511,10 +495,6 @@ dpdk-enP1p129s0f1：FAIL
 ````
 
 ethernet-enP2p197s0：FAIL
-
-- 测试使用板载螃蟹网卡，不支持 Inifiniband
-- ip link down 后再 up 网卡反应时间较长（2~3s）
-- 通过 WiFi 连接到 Server，网络环境原因带宽低于测试预期值（50MB/s）
 
 ````
 [2024-05-11 19:30:21,994][INFO] The command is: ip link show enP2p197s0 | grep 'state UP'.
@@ -644,10 +624,6 @@ fe80::3093:b23e:ace5:e73e
 
 ethernet-enP2p201s0：FAIL
 
-- 测试使用板载螃蟹网卡，不支持 Inifiniband
-- ip link down 后再 up 网卡反应时间较长（2~3s）
-- 通过 WiFi 连接到 Server，网络环境原因带宽低于测试预期值（50MB/s）
-
 ````
 [2024-05-13 10:20:07,285][INFO] The command is: ip link show enP2p201s0 | grep 'state UP'.
 [2024-05-13 10:20:07,302][INFO] Execute command ip link show enP2p201s0 | grep 'state UP' succeed.
@@ -776,10 +752,6 @@ fe80::112a:575d:6d84:a424
 
 ethernet-enP1p129s0f0：FAIL
 
-- 测试使用板载螃蟹网卡，不支持 Inifiniband
-- ip link down 后再 up 网卡反应时间较长（2~3s）
-- 通过 WiFi 连接到 Server，网络环境原因带宽低于测试预期值（50MB/s）
-
 ````
 [2024-05-13 10:31:57,174][INFO] The command is: ip link show enP1p129s0f0 | grep 'state UP'.
 [2024-05-13 10:31:57,191][INFO] Execute command ip link show enP1p129s0f0 | grep 'state UP' succeed.
@@ -907,10 +879,6 @@ fe80::3ad9:8d4c:2c19:becd
 ````
 
 ethernet-enP1p129s0f1：FAIL
-
-- 测试使用板载螃蟹网卡，不支持 Inifiniband
-- ip link down 后再 up 网卡反应时间较长（2~3s）
-- 通过 WiFi 连接到 Server，网络环境原因带宽低于测试预期值（50MB/s）
 
 ````
 [2024-05-13 10:26:20,458][INFO] The command is: ip link show enP1p129s0f1 | grep 'state UP'.
@@ -1042,8 +1010,6 @@ kabi：PASS
 
 kabiwhitelist：FAIL
 
-没有提供预定义配置（Please configure the board information in the configuration file） 
-
 ````
 [2024-05-11 19:30:53,425][INFO] The command is: bash /usr/share/oech/lib/tests/compatible/kabiwhitelist/kabi_check.sh.
 [2024-05-11 19:30:54,258][INFO] Execute command bash /usr/share/oech/lib/tests/compatible/kabiwhitelist/kabi_check.sh succeed.
@@ -1061,8 +1027,6 @@ Test results are as follows
 
 kdump：FAIL
 
-kernel-debuginfo 软件包安装问题
-
 ````
 [2024-05-11 22:15:07,736][INFO] The command is: systemctl daemon-reload.
 [2024-05-11 22:15:08,637][INFO] Execute command systemctl daemon-reload succeed.
@@ -1078,8 +1042,6 @@ kernel-debuginfo 软件包安装问题
 ````
 
 nvme-nvme0n1：FAIL
-
-作为系统盘使用中，跳过此硬盘的测试
 
 ````
 [2024-05-11 21:48:12,958][INFO] Driver Name: 
@@ -1100,16 +1062,12 @@ perf：PASS
 
 spdk-nvme0n1：FAIL
 
-版本过低不支持
-
 ````
 [2024-05-11 21:48:31,343][ERROR] The spdk version is too low and needs to be upgraded to 21.01.1-5.
 [2024-05-11 21:48:31,345][ERROR] Unload uio_pci_generic driver failed.
 ````
 
 system：FAIL
-
-设备运行 kernel 版本较旧，软件仓里未包含该版本 kernel
 
 ````
 [2024-05-11 22:02:35,281][INFO] The command is: uname -a.
@@ -1530,8 +1488,6 @@ usb：PASS
 ````
 
 watchdog：PASS
-
-设备自动重启后，再次执行oech上传日志，在 server 端显示 PASS
 
 客户端显示
 

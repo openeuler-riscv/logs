@@ -1,0 +1,1010 @@
+Welcome to 6.6.0-23.0.0.26.oe2403.riscv64
+
+System information as of time:  Wed May 22 03:07:25 AM CST 2024
+
+System load:    0.02
+Processes:      177
+Memory used:    2.5%
+Swap used:      0.0%
+Usage On:       13%
+IP address:     10.0.2.15
+Users online:   2
+
+
+[root@openeuler-riscv64 ~]# dnf install penglai-enclave-driver
+OS                                                                        9.7 kB/s | 3.0 kB     00:00
+EPOL                                                                      9.0 kB/s | 3.0 kB     00:00
+extra                                                                     9.9 kB/s | 3.0 kB     00:00
+update                                                                     10 kB/s | 3.0 kB     00:00
+penglai                                                                   3.9 kB/s | 3.1 kB     00:00
+everything                                                                 10 kB/s | 3.0 kB     00:00
+debuginfo                                                                 9.9 kB/s | 3.0 kB     00:00
+Dependencies resolved.
+==========================================================================================================
+ Package                           Architecture    Version                          Repository       Size
+==========================================================================================================
+Installing:
+ penglai-enclave-driver            riscv64         1.0-1.oe2403                     Penglai          22 k
+Installing dependencies:
+ binutils                          riscv64         2.41-4.oe2403                    OS              4.9 M
+ clang                             riscv64         17.0.6-14.oe2403                 OS               82 k
+ clang-libs                        riscv64         17.0.6-14.oe2403                 OS               24 M
+ clang-resource-filesystem         riscv64         17.0.6-14.oe2403                 OS              8.8 k
+ cpp                               riscv64         12.3.1-26.oe2403                 OS              8.3 M
+ dkms                              noarch          3.0.12-1.oe2403                  OS               82 k
+ gc                                riscv64         8.2.4-1.oe2403                   OS              243 k
+ gcc                               riscv64         12.3.1-26.oe2403                 OS               27 M
+ gcc-c++                           riscv64         12.3.1-26.oe2403                 OS               10 M
+ glibc-devel                       riscv64         2.38-26.oe2403                   OS              3.0 M
+ guile                             riscv64         5:2.2.7-4.oe2403                 OS              6.3 M
+ isl                               riscv64         0.24-2.oe2403                    OS              600 k
+ kernel-devel                      riscv64         6.6.0-23.0.0.26.oe2403           OS               15 M
+ kernel-headers                    riscv64         6.6.0-23.0.0.26.oe2403           OS              1.9 M
+ libmpc                            riscv64         1.3.1-1.oe2403                   OS               65 k
+ libstdc++-devel                   riscv64         12.3.1-26.oe2403                 OS              3.1 M
+ libtool-ltdl                      riscv64         2.4.7-3.oe2403                   OS               31 k
+ libxcrypt-devel                   riscv64         4.4.36-2.oe2403                  OS              236 k
+ lld                               riscv64         17.0.6-2.oe2403                  OS               21 k
+ lld-libs                          riscv64         17.0.6-2.oe2403                  OS              1.6 M
+ llvm                              riscv64         17.0.6-8.oe2403                  OS               29 M
+ make                              riscv64         1:4.4.1-1.oe2403                 OS              354 k
+Installing weak dependencies:
+ compiler-rt                       riscv64         17.0.6-3.oe2403                  OS              6.8 M
+ libomp                            riscv64         17.0.6-1.oe2403                  OS              365 k
+ libomp-devel                      riscv64         17.0.6-1.oe2403                  OS              487 k
+
+Transaction Summary
+==========================================================================================================
+Install  26 Packages
+
+Total download size: 143 M
+Installed size: 559 M
+Is this ok [y/N]: y
+Downloading Packages:
+(1/26): clang-17.0.6-14.oe2403.riscv64.rpm                                156 kB/s |  82 kB     00:00
+(2/26): clang-resource-filesystem-17.0.6-14.oe2403.riscv64.rpm             22 kB/s | 8.8 kB     00:00
+(3/26): binutils-2.41-4.oe2403.riscv64.rpm                                2.1 MB/s | 4.9 MB     00:02
+(4/26): compiler-rt-17.0.6-3.oe2403.riscv64.rpm                           2.2 MB/s | 6.8 MB     00:03
+(5/26): dkms-3.0.12-1.oe2403.noarch.rpm                                   133 kB/s |  82 kB     00:00
+(6/26): cpp-12.3.1-26.oe2403.riscv64.rpm                                  2.4 MB/s | 8.3 MB     00:03
+(7/26): gc-8.2.4-1.oe2403.riscv64.rpm                                     207 kB/s | 243 kB     00:01
+(8/26): clang-libs-17.0.6-14.oe2403.riscv64.rpm                           3.4 MB/s |  24 MB     00:07
+(9/26): gcc-c++-12.3.1-26.oe2403.riscv64.rpm                              3.5 MB/s |  10 MB     00:02
+(10/26): gcc-12.3.1-26.oe2403.riscv64.rpm                                 5.1 MB/s |  27 MB     00:05
+(11/26): glibc-devel-2.38-26.oe2403.riscv64.rpm                           738 kB/s | 3.0 MB     00:04
+(12/26): guile-2.2.7-4.oe2403.riscv64.rpm                                 2.2 MB/s | 6.3 MB     00:02
+(13/26): isl-0.24-2.oe2403.riscv64.rpm                                    1.3 MB/s | 600 kB     00:00
+(14/26): libmpc-1.3.1-1.oe2403.riscv64.rpm                                116 kB/s |  65 kB     00:00
+(15/26): kernel-devel-6.6.0-23.0.0.26.oe2403.riscv64.rpm                  6.8 MB/s |  15 MB     00:02
+(16/26): libomp-17.0.6-1.oe2403.riscv64.rpm                               281 kB/s | 365 kB     00:01
+(17/26): kernel-headers-6.6.0-23.0.0.26.oe2403.riscv64.rpm                993 kB/s | 1.9 MB     00:01
+(18/26): libomp-devel-17.0.6-1.oe2403.riscv64.rpm                         2.9 MB/s | 487 kB     00:00
+(19/26): libtool-ltdl-2.4.7-3.oe2403.riscv64.rpm                           79 kB/s |  31 kB     00:00
+(20/26): libstdc++-devel-12.3.1-26.oe2403.riscv64.rpm                     5.8 MB/s | 3.1 MB     00:00
+(21/26): libxcrypt-devel-4.4.36-2.oe2403.riscv64.rpm                      616 kB/s | 236 kB     00:00
+(22/26): lld-17.0.6-2.oe2403.riscv64.rpm                                  205 kB/s |  21 kB     00:00
+(23/26): lld-libs-17.0.6-2.oe2403.riscv64.rpm                             4.1 MB/s | 1.6 MB     00:00
+(24/26): penglai-enclave-driver-1.0-1.oe2403.riscv64.rpm                   57 kB/s |  22 kB     00:00
+(25/26): make-4.4.1-1.oe2403.riscv64.rpm                                  349 kB/s | 354 kB     00:01
+(26/26): llvm-17.0.6-8.oe2403.riscv64.rpm                                 7.2 MB/s |  29 MB     00:03
+----------------------------------------------------------------------------------------------------------
+Total                                                                     7.6 MB/s | 143 MB     00:18
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                                                  1/1
+  Installing       : libmpc-1.3.1-1.oe2403.riscv64                                                   1/26
+  Installing       : isl-0.24-2.oe2403.riscv64                                                       2/26
+  Installing       : libstdc++-devel-12.3.1-26.oe2403.riscv64                                        3/26
+  Installing       : libomp-17.0.6-1.oe2403.riscv64                                                  4/26
+  Installing       : gc-8.2.4-1.oe2403.riscv64                                                       5/26
+  Installing       : clang-resource-filesystem-17.0.6-14.oe2403.riscv64                              6/26
+  Installing       : libomp-devel-17.0.6-1.oe2403.riscv64                                            7/26
+  Installing       : cpp-12.3.1-26.oe2403.riscv64                                                    8/26
+  Installing       : llvm-17.0.6-8.oe2403.riscv64                                                    9/26
+  Installing       : lld-libs-17.0.6-2.oe2403.riscv64                                               10/26
+  Installing       : lld-17.0.6-2.oe2403.riscv64                                                    11/26
+  Installing       : libtool-ltdl-2.4.7-3.oe2403.riscv64                                            12/26
+  Installing       : guile-5:2.2.7-4.oe2403.riscv64                                                 13/26
+  Installing       : make-1:4.4.1-1.oe2403.riscv64                                                  14/26
+  Running scriptlet: make-1:4.4.1-1.oe2403.riscv64                                                  14/26
+  Installing       : kernel-headers-6.6.0-23.0.0.26.oe2403.riscv64                                  15/26
+  Installing       : libxcrypt-devel-4.4.36-2.oe2403.riscv64                                        16/26
+  Running scriptlet: glibc-devel-2.38-26.oe2403.riscv64                                             17/26
+  Installing       : glibc-devel-2.38-26.oe2403.riscv64                                             17/26
+  Installing       : kernel-devel-6.6.0-23.0.0.26.oe2403.riscv64                                    18/26
+  Running scriptlet: kernel-devel-6.6.0-23.0.0.26.oe2403.riscv64                                    18/26
+  Installing       : compiler-rt-17.0.6-3.oe2403.riscv64                                            19/26
+  Installing       : clang-libs-17.0.6-14.oe2403.riscv64                                            20/26
+  Installing       : binutils-2.41-4.oe2403.riscv64                                                 21/26
+  Running scriptlet: binutils-2.41-4.oe2403.riscv64                                                 21/26
+  Installing       : gcc-12.3.1-26.oe2403.riscv64                                                   22/26
+  Installing       : gcc-c++-12.3.1-26.oe2403.riscv64                                               23/26
+  Installing       : clang-17.0.6-14.oe2403.riscv64                                                 24/26
+  Installing       : dkms-3.0.12-1.oe2403.noarch                                                    25/26
+  Running scriptlet: dkms-3.0.12-1.oe2403.noarch                                                    25/26
+  Installing       : penglai-enclave-driver-1.0-1.oe2403.riscv64                                    26/26
+  Running scriptlet: penglai-enclave-driver-1.0-1.oe2403.riscv64                                    26/26
+Creating symlink /var/lib/dkms/penglai/1.0/source -> /usr/src/penglai-1.0
+Sign command: /lib/modules/6.6.0-23.0.0.26.oe2403.riscv64/build/scripts/sign-file
+Signing key: /var/lib/dkms/mok.key
+Public certificate (MOK): /var/lib/dkms/mok.pub
+Certificate or key are missing, generating self signed certificate for MOK...
+
+Building module:
+Cleaning build area...
+make -j8 KERNELRELEASE=6.6.0-23.0.0.26.oe2403.riscv64 all.........
+Signing module /var/lib/dkms/penglai/1.0/build/penglai.ko
+Cleaning build area...
+
+penglai.ko.xz:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/6.6.0-23.0.0.26.oe2403.riscv64/extra/penglai/
+Adding any weak-modules
+depmod....................
+
+  Verifying        : binutils-2.41-4.oe2403.riscv64                                                  1/26
+  Verifying        : clang-17.0.6-14.oe2403.riscv64                                                  2/26
+  Verifying        : clang-libs-17.0.6-14.oe2403.riscv64                                             3/26
+  Verifying        : clang-resource-filesystem-17.0.6-14.oe2403.riscv64                              4/26
+  Verifying        : compiler-rt-17.0.6-3.oe2403.riscv64                                             5/26
+  Verifying        : cpp-12.3.1-26.oe2403.riscv64                                                    6/26
+  Verifying        : dkms-3.0.12-1.oe2403.noarch                                                     7/26
+  Verifying        : gc-8.2.4-1.oe2403.riscv64                                                       8/26
+  Verifying        : gcc-12.3.1-26.oe2403.riscv64                                                    9/26
+  Verifying        : gcc-c++-12.3.1-26.oe2403.riscv64                                               10/26
+  Verifying        : glibc-devel-2.38-26.oe2403.riscv64                                             11/26
+  Verifying        : guile-5:2.2.7-4.oe2403.riscv64                                                 12/26
+  Verifying        : isl-0.24-2.oe2403.riscv64                                                      13/26
+  Verifying        : kernel-devel-6.6.0-23.0.0.26.oe2403.riscv64                                    14/26
+  Verifying        : kernel-headers-6.6.0-23.0.0.26.oe2403.riscv64                                  15/26
+  Verifying        : libmpc-1.3.1-1.oe2403.riscv64                                                  16/26
+  Verifying        : libomp-17.0.6-1.oe2403.riscv64                                                 17/26
+  Verifying        : libomp-devel-17.0.6-1.oe2403.riscv64                                           18/26
+  Verifying        : libstdc++-devel-12.3.1-26.oe2403.riscv64                                       19/26
+  Verifying        : libtool-ltdl-2.4.7-3.oe2403.riscv64                                            20/26
+  Verifying        : libxcrypt-devel-4.4.36-2.oe2403.riscv64                                        21/26
+  Verifying        : lld-17.0.6-2.oe2403.riscv64                                                    22/26
+  Verifying        : lld-libs-17.0.6-2.oe2403.riscv64                                               23/26
+  Verifying        : llvm-17.0.6-8.oe2403.riscv64                                                   24/26
+  Verifying        : make-1:4.4.1-1.oe2403.riscv64                                                  25/26
+  Verifying        : penglai-enclave-driver-1.0-1.oe2403.riscv64                                    26/26
+
+Installed:
+  binutils-2.41-4.oe2403.riscv64                    clang-17.0.6-14.oe2403.riscv64
+  clang-libs-17.0.6-14.oe2403.riscv64               clang-resource-filesystem-17.0.6-14.oe2403.riscv64
+  compiler-rt-17.0.6-3.oe2403.riscv64               cpp-12.3.1-26.oe2403.riscv64
+  dkms-3.0.12-1.oe2403.noarch                       gc-8.2.4-1.oe2403.riscv64
+  gcc-12.3.1-26.oe2403.riscv64                      gcc-c++-12.3.1-26.oe2403.riscv64
+  glibc-devel-2.38-26.oe2403.riscv64                guile-5:2.2.7-4.oe2403.riscv64
+  isl-0.24-2.oe2403.riscv64                         kernel-devel-6.6.0-23.0.0.26.oe2403.riscv64
+  kernel-headers-6.6.0-23.0.0.26.oe2403.riscv64     libmpc-1.3.1-1.oe2403.riscv64
+  libomp-17.0.6-1.oe2403.riscv64                    libomp-devel-17.0.6-1.oe2403.riscv64
+  libstdc++-devel-12.3.1-26.oe2403.riscv64          libtool-ltdl-2.4.7-3.oe2403.riscv64
+  libxcrypt-devel-4.4.36-2.oe2403.riscv64           lld-17.0.6-2.oe2403.riscv64
+  lld-libs-17.0.6-2.oe2403.riscv64                  llvm-17.0.6-8.oe2403.riscv64
+  make-1:4.4.1-1.oe2403.riscv64                     penglai-enclave-driver-1.0-1.oe2403.riscv64
+
+Complete!
+root@openeuler-riscv64:~[root@openeuler-riscv64 ~]#  dkms status
+penglai/1.0, 6.6.0-23.0.0.26.oe2403.riscv64, riscv64: installed
+root@openeuler-riscv64:~[root@openeuler-riscv64 ~]# cd ~/penglai-enclave-demo/penglai-enclave-demo/
+root@openeuler-riscv64:~/penglai-enclave-demo/penglai-enclave-demo[root@openeuler-riscv64 penglai-enclave-demo]# ls
+aes    crypt     evm               hello_arguement  host_stop_and_destroy  mem    seal_data
+count  deadloop  gm_test_enclaves  host             Makefile               prime
+root@openeuler-riscv64:~/penglai-enclave-demo/penglai-enclave-demo[root@openeuler-riscv64 penglai-enclave-demo]# cd aes
+root@openeuler-riscv64:~/penglai-enclave-demo/penglai-enclave-demo/aes[root@openeuler-riscv64 aes]# make
+echo /opt/penglai
+/opt/penglai
+gcc -Wall -I/opt/penglai/lib/app/include -c aes.c
+ld -static -L/opt/penglai/lib -L/opt/penglai/runtime/lib -lpenglai-enclave-eapp -lc -o aes aes.o /opt/penglai/lib/libpenglai-enclave-eapp.a /opt/penglai/runtime/lib/libc.a /opt/penglai/lib/libgcc.a -T /opt/penglai/app.lds
+ld: warning: aes has a LOAD segment with RWX permissions
+chmod -x aes
+root@openeuler-riscv64:~/penglai-enclave-demo/penglai-enclave-demo/aes[root@openeuler-riscv64 aes]# /opt/penglai/bin/penglai-host aes
+host:1: enclave attest
+0x48, 0x5D, 0x6F, 0x41,  0x8D, 0xA4, 0x5F, 0x63,  0x81, 0x27, 0x86, 0xEB,  0x70, 0xB8, 0xDA, 0x92,
+0x64, 0xB2, 0x62, 0x00,  0x3A, 0x86, 0xA7, 0x11,  0xD0, 0xCC, 0xF2, 0xA6,  0x82, 0x50, 0x26, 0x86,
+0x40, 0xBF, 0x12, 0xD9,  0x9A, 0x44, 0x4D, 0xF8,  0x9F, 0x9C, 0x46, 0x15,  0x33, 0xB0, 0x4D, 0xFC,
+0x8C, 0xA5, 0xA2, 0xD3,  0xCF, 0x21, 0xE4, 0xCF,  0x25, 0x1F, 0x4A, 0x1F,  0x37, 0x03, 0x74, 0xFE,
+host:1: enclave run
+root@openeuler-riscv64:~/penglai-enclave-demo/penglai-enclave-demo/aes[root@openeuler-riscv64 aes]# cd ../
+aes/                   deadloop/              hello_arguement/       mem/
+count/                 evm/                   host/                  prime/
+crypt/                 gm_test_enclaves/      host_stop_and_destroy/ seal_data/
+[root@openeuler-riscv64 aes]# cd ../count/
+root@openeuler-riscv64:~/penglai-enclave-demo/penglai-enclave-demo/count[root@openeuler-riscv64 count]# make -j8
+echo /opt/penglai
+/opt/penglai
+gcc -Wall -I/opt/penglai/lib/app/include -c count.c
+ld -static -L/opt/penglai/lib -L/opt/penglai/runtime/lib -lpenglai-enclave-eapp -lc -o count count.o /opt/penglai/lib/libpenglai-enclave-eapp.a /opt/penglai/runtime/lib/libc.a /opt/penglai/lib/libgcc.a -T /opt/penglai/app.lds
+chmod -x count
+root@openeuler-riscv64:~/penglai-enclave-demo/penglai-enclave-demo/count[root@openeuler-riscv64 count]# ma/opt/penglai/bin/penglai-host count
+host:1: enclave attest
+0x9C, 0xFF, 0xF2, 0x9F,  0x11, 0x86, 0x91, 0xFD,  0xED, 0x06, 0x4E, 0x38,  0x69, 0x69, 0xEA, 0x5F,
+0x81, 0x6D, 0x73, 0x67,  0xD1, 0x7E, 0x0C, 0xA4,  0x04, 0x4C, 0x14, 0xF7,  0x25, 0xD2, 0xDF, 0xA2,
+0x65, 0xA4, 0xF8, 0xDD,  0xA6, 0x75, 0x1D, 0x64,  0x0B, 0x70, 0x8D, 0xF6,  0xCE, 0xB9, 0xE7, 0x81,
+0xA8, 0x7D, 0x0E, 0x96,  0x1E, 0x10, 0xD2, 0x6E,  0x01, 0x8B, 0x44, 0x8B,  0xB4, 0x37, 0x68, 0x31,
+host:1: enclave run
+root@openeuler-riscv64:~/penglai-enclave-demo/penglai-enclave-demo/count[root@openeuler-riscv64 count]# cd ../
+aes/                   deadloop/              hello_arguement/       mem/
+count/                 evm/                   host/                  prime/
+crypt/                 gm_test_enclaves/      host_stop_and_destroy/ seal_data/
+[root@openeuler-riscv64 count]# cd ../crypt/
+root@openeuler-riscv64:~/penglai-enclave-demo/penglai-enclave-demo/crypt[root@openeuler-riscv64 crypt]# cd/opt/penglai/bin/penglai-host comake -j8
+echo /opt/penglai
+/opt/penglai
+gcc -Wall -I/opt/penglai/lib/app/include -c crypt.c
+ld -static -L/opt/penglai/lib -L/opt/penglai/runtime/lib -lpenglai-enclave-eapp -lc -o crypt crypt.o /opt/penglai/lib/libpenglai-enclave-eapp.a /opt/penglai/runtime/lib/libc.a /opt/penglai/lib/libgcc.a -T /opt/penglai/app.lds
+ld: warning: crypt has a LOAD segment with RWX permissions
+chmod -x crypt
+root@openeuler-riscv64:~/penglai-enclave-demo/penglai-enclave-demo/crypt[root@openeuler-riscv64 crypt]# ma/opt/penglai/bin/penglai-host crypt
+host:1: enclave attest
+0x2E, 0xC5, 0xDC, 0x1A,  0x93, 0x05, 0x10, 0xCB,  0x8B, 0x27, 0xE5, 0xC8,  0x5F, 0x4A, 0x45, 0x25,
+0x45, 0x3E, 0x7E, 0x3D,  0xA8, 0xDF, 0xDB, 0x5F,  0x70, 0xA9, 0x9E, 0x9B,  0x98, 0x28, 0xCE, 0x4F,
+0xD7, 0xB0, 0x60, 0xE4,  0x7A, 0xDE, 0xAD, 0xE6,  0xAE, 0x77, 0xAC, 0x93,  0xEB, 0xEF, 0x9D, 0xD4,
+0x02, 0x4B, 0x58, 0x04,  0x75, 0x15, 0xF1, 0xC2,  0x8F, 0x3D, 0x46, 0x95,  0x51, 0x63, 0xFA, 0xEE,
+host:1: enclave run
+[root@openeuler-riscv64 evm]# cd ../gm_test_enclaves/
+root@openeuler-riscv64:~/penglai-enclave-demo/penglai-enclave-demo/gm_test_enclaves[root@openeuler-riscv64 gm_test_enclaves]# ls
+Makefile  test_random.c  test_sm2.c  test_sm4_cbc.c  test_sm4_ocb.c
+root@openeuler-riscv64:~/penglai-enclave-demo/penglai-enclave-demo/gm_test_enclaves[root@openeuler-riscv64 gm_test_enclaves]# make -j8
+echo /opt/penglai
+echo /opt/penglai
+echo /opt/penglai
+/opt/penglai
+echo /opt/penglai
+gcc -Wall  -I/opt/penglai/lib/app/include -I/opt/penglai/lib/gm/include -I/opt/penglai/lib/gm/include/miracl -c test_sm2.c
+/opt/penglai
+gcc -Wall  -I/opt/penglai/lib/app/include -I/opt/penglai/lib/gm/include -I/opt/penglai/lib/gm/include/miracl -c test_random.c
+/opt/penglai
+gcc -Wall  -I/opt/penglai/lib/app/include -I/opt/penglai/lib/gm/include -I/opt/penglai/lib/gm/include/miracl -c test_sm4_cbc.c
+/opt/penglai
+gcc -Wall  -I/opt/penglai/lib/app/include -I/opt/penglai/lib/gm/include -I/opt/penglai/lib/gm/include/miracl -c test_sm4_ocb.c
+ld -static -L/opt/penglai/lib -L/opt/penglai/runtime/lib -L/opt/penglai/lib/gm -lpenglai-enclave-eapp -lc -o test_random test_random.o /opt/penglai/lib/libpenglai-enclave-eapp.a /opt/penglai/lib/libpenglai-enclave-gm.a /opt/penglai/runtime/lib/libc.a /opt/penglai/lib/libgcc.a -T /opt/penglai/app.lds
+ld -static -L/opt/penglai/lib -L/opt/penglai/runtime/lib -L/opt/penglai/lib/gm -lpenglai-enclave-eapp -lc -o test_sm4_cbc test_sm4_cbc.o /opt/penglai/lib/libpenglai-enclave-eapp.a /opt/penglai/lib/libpenglai-enclave-gm.a /opt/penglai/runtime/lib/libc.a /opt/penglai/lib/libgcc.a -T /opt/penglai/app.lds
+ld -static -L/opt/penglai/lib -L/opt/penglai/runtime/lib -L/opt/penglai/lib/gm -lpenglai-enclave-eapp -lc -o test_sm2 test_sm2.o /opt/penglai/lib/libpenglai-enclave-eapp.a /opt/penglai/lib/libpenglai-enclave-gm.a /opt/penglai/runtime/lib/libc.a /opt/penglai/lib/libgcc.a -T /opt/penglai/app.lds
+ld -static -L/opt/penglai/lib -L/opt/penglai/runtime/lib -L/opt/penglai/lib/gm -lpenglai-enclave-eapp -lc -o test_sm4_ocb test_sm4_ocb.o /opt/penglai/lib/libpenglai-enclave-eapp.a /opt/penglai/lib/libpenglai-enclave-gm.a /opt/penglai/runtime/lib/libc.a /opt/penglai/lib/libgcc.a -T /opt/penglai/app.lds
+ld: ld: warning: warning: test_sm4_ocb has a LOAD segment with RWX permissionstest_sm4_cbc has a LOAD segment with RWX permissions
+
+ld: warning: test_random has a LOAD segment with RWX permissions
+ld: warning: test_sm2 has a LOAD segment with RWX permissions
+chmod -x test_sm4_ocb
+chmod -x test_sm4_cbc
+chmod -x test_random
+chmod -x test_sm2
+root@openeuler-riscv64:~/penglai-enclave-demo/penglai-enclave-demo/gm_test_enclaves[root@openeuler-riscv64 gm_test_enclaves]# /opt/penglai/bin/penglai-host test_sm4_ocb
+host:1: enclave attest
+0xD0, 0x76, 0x32, 0x7A,  0x04, 0xCF, 0xC9, 0x08,  0xAF, 0x59, 0x90, 0xC6,  0x16, 0x34, 0x88, 0x07,
+0x8A, 0xF4, 0x5C, 0xEE,  0x2E, 0x30, 0x08, 0xCE,  0x41, 0x8E, 0xFC, 0xAB,  0xD6, 0x06, 0x75, 0x35,
+0xFA, 0x2D, 0x33, 0x2B,  0x77, 0x93, 0x48, 0xA8,  0x71, 0xA0, 0x92, 0xA4,  0x5E, 0xCE, 0x5C, 0x17,
+0x24, 0x53, 0xF4, 0x03,  0x4E, 0x9F, 0x5F, 0x44,  0xD6, 0x18, 0x62, 0x9D,  0x13, 0x71, 0x2E, 0x8E,
+host:1: enclave run
+root@openeuler-riscv64:~/penglai-enclave-demo/penglai-enclave-demo/gm_test_enclaves[root@openeuler-riscv64 gm_test_enclaves]# /opt/penglai/bin/penglai-host test_sm4_cbc
+host:1: enclave attest
+0x12, 0xC5, 0xB3, 0x1F,  0xDC, 0x73, 0x50, 0x56,  0x7A, 0x2C, 0x77, 0xA2,  0xD0, 0x8A, 0xB0, 0xB4,
+0x27, 0x13, 0x28, 0xB8,  0x72, 0x49, 0xA1, 0x8C,  0xF1, 0x1A, 0x7C, 0xB0,  0x69, 0x89, 0xE0, 0xC8,
+0x64, 0xA5, 0x0F, 0x42,  0xBE, 0xE6, 0x58, 0x41,  0x7D, 0x37, 0x65, 0xBF,  0x94, 0xEA, 0x43, 0xF8,
+0xE1, 0x62, 0x3A, 0x8A,  0x2C, 0x79, 0xBF, 0xF4,  0x60, 0x49, 0x94, 0x7F,  0x67, 0x02, 0xF7, 0x90,
+host:1: enclave run
+root@openeuler-riscv64:~/penglai-enclave-demo/penglai-enclave-demo/gm_test_enclaves[root@openeuler-riscv64 gm_test_enclaves]# /opt/penglai/bin/penglai-host test_random
+host:1: enclave attest
+0x98, 0x7A, 0x9E, 0x95,  0xB3, 0xC6, 0xC8, 0x1B,  0x39, 0xF4, 0x33, 0xC8,  0x72, 0x55, 0x1A, 0x2B,
+0xA3, 0x03, 0xDE, 0x54,  0x4D, 0x96, 0x7F, 0xE9,  0x4A, 0x17, 0xD5, 0x26,  0xAD, 0x38, 0xC6, 0x98,
+0x64, 0x94, 0x2C, 0x8F,  0x62, 0x0C, 0x7F, 0xFA,  0x8A, 0x42, 0x79, 0xA1,  0x1F, 0x02, 0xCD, 0x08,
+0x60, 0x76, 0x7C, 0x33,  0x6F, 0x50, 0x3B, 0x3F,  0x26, 0x2A, 0xA4, 0x01,  0x2A, 0xB0, 0xF9, 0x10,
+host:1: enclave run
+root@openeuler-riscv64:~/penglai-enclave-demo/penglai-enclave-demo/gm_test_enclaves[root@openeuler-riscv64 gm_test_enclaves]# /opt/penglai/bin/penglai-host test_sm2
+host:1: enclave attest
+0x01, 0x92, 0xFC, 0xD2,  0x93, 0xE2, 0x12, 0xFE,  0xA0, 0x72, 0x3A, 0xB9,  0x1C, 0x0C, 0x09, 0xCF,
+0xBC, 0x4A, 0x37, 0x9C,  0x45, 0x26, 0x0F, 0x5D,  0xAA, 0xD2, 0x90, 0xDF,  0x92, 0x10, 0xCE, 0xB9,
+0xC7, 0xB4, 0xF9, 0x57,  0xED, 0xF5, 0x25, 0x35,  0x5C, 0x62, 0x3E, 0x43,  0x72, 0x1B, 0x09, 0xF8,
+0x39, 0x35, 0x20, 0xB8,  0xA0, 0x89, 0x85, 0x93,  0x73, 0x6D, 0x55, 0x1D,  0x39, 0xC0, 0xF0, 0xB4,
+host:1: enclave run
+root@openeuler-riscv64:~/penglai-enclave-demo/penglai-enclave-demo/gm_test_enclaves[root@openeuler-riscv64 gm_test_enclaves]# cd ../
+aes/                   deadloop/              hello_arguement/       mem/
+count/                 evm/                   host/                  prime/
+crypt/                 gm_test_enclaves/      host_stop_and_destroy/ seal_data/
+[root@openeuler-riscv64 gm_test_enclaves]# cd ../mem
+root@openeuler-riscv64:~/penglai-enclave-demo/penglai-enclave-demo/mem[root@openeuler-riscv64 mem]# make
+echo /opt/penglai
+/opt/penglai
+gcc -Wall -I/opt/penglai/lib/app/include -c mem.c
+mem.c: In function ‘mem’:
+mem.c:25:15: warning: passing argument 1 of ‘EAPP_RETURN’ makes integer from pointer without a cast [-Wint-conversion]
+   25 |   EAPP_RETURN(ptr);
+      |               ^~~
+      |               |
+      |               char *
+In file included from mem.c:1:
+/opt/penglai/lib/app/include/eapp.h:17:32: note: expected ‘long unsigned int’ but argument is of type ‘char *’
+   17 | void EAPP_RETURN(unsigned long rval) __attribute__((noreturn));
+      |                  ~~~~~~~~~~~~~~^~~~
+mem.c:25:3: warning: pointer ‘ptr’ used after ‘free’ [-Wuse-after-free]
+   25 |   EAPP_RETURN(ptr);
+      |   ^~~~~~~~~~~~~~~~
+mem.c:22:3: note: call to ‘free’ here
+   22 |   free(ptr);
+      |   ^~~~~~~~~
+ld -static -L/opt/penglai/lib -L/opt/penglai/runtime/lib -lpenglai-enclave-eapp -lc -o mem mem.o /opt/penglai/lib/libpenglai-enclave-eapp.a /opt/penglai/runtime/lib/libc.a /opt/penglai/lib/libgcc.a -T /opt/penglai/app.lds
+chmod -x mem
+root@openeuler-riscv64:~/penglai-enclave-demo/penglai-enclave-demo/mem[root@openeuler-riscv64 mem]# cd ..//opt/penglai/bin/penglai-host mem
+host:1: enclave attest
+0x7F, 0x90, 0x2B, 0xA2,  0x48, 0xEB, 0xC5, 0x19,  0x6E, 0xAE, 0x5F, 0xC8,  0x43, 0xB1, 0xAC, 0xCC,
+0x0D, 0xBF, 0xA5, 0xCD,  0xB6, 0xEE, 0x48, 0x3C,  0xCD, 0x41, 0x4A, 0xE6,  0xCC, 0xC9, 0x2F, 0x1D,
+0xE4, 0xFD, 0x91, 0x06,  0x4B, 0x57, 0x00, 0xE8,  0x1B, 0x96, 0xD5, 0xEF,  0x3A, 0x8E, 0x56, 0x31,
+0x57, 0xA7, 0x58, 0x4D,  0x16, 0x7E, 0xB8, 0x78,  0xAD, 0xE2, 0xED, 0xFA,  0x16, 0x89, 0x4C, 0x7C,
+host:1: enclave run
+root@openeuler-riscv64:~/penglai-enclave-demo/penglai-enclave-demo/mem[root@openeuler-riscv64 mem]# cd ../
+aes/                   deadloop/              hello_arguement/       mem/
+count/                 evm/                   host/                  prime/
+crypt/                 gm_test_enclaves/      host_stop_and_destroy/ seal_data/
+[root@openeuler-riscv64 mem]# cd ../prime/
+root@openeuler-riscv64:~/penglai-enclave-demo/penglai-enclave-demo/prime[root@openeuler-riscv64 prime]# cdmake
+echo /opt/penglai
+/opt/penglai
+gcc -Wall -I/opt/penglai/lib/app/include -c prime.c
+ld -static -L/opt/penglai/lib -L/opt/penglai/runtime/lib -lpenglai-enclave-eapp -lc -o prime prime.o /opt/penglai/lib/libpenglai-enclave-eapp.a /opt/penglai/runtime/lib/libc.a /opt/penglai/lib/libgcc.a -T /opt/penglai/app.lds
+chmod -x prime
+root@openeuler-riscv64:~/penglai-enclave-demo/penglai-enclave-demo/prime[root@openeuler-riscv64 prime]# ma/opt/penglai/bin/penglai-host prime
+host:1: enclave attest
+0x78, 0xF5, 0x88, 0x84,  0x77, 0xE6, 0x66, 0xE3,  0x24, 0x04, 0xDD, 0xE5,  0x83, 0x6A, 0x8F, 0xB1,
+0x0D, 0xBF, 0x2D, 0xB5,  0x02, 0x74, 0x2A, 0x48,  0xEE, 0xCE, 0xAC, 0xC7,  0x27, 0xAA, 0x30, 0xD5,
+0xA2, 0x9F, 0x3E, 0xB0,  0x23, 0x9B, 0x8E, 0xB0,  0x59, 0xEC, 0xA2, 0x20,  0x2B, 0xFC, 0x4E, 0xD3,
+0xCF, 0x09, 0xF1, 0x7E,  0xBE, 0xDC, 0xA9, 0x89,  0xC5, 0xE6, 0x4B, 0x5A,  0x0C, 0xCB, 0xAB, 0x6C,
+host:1: enclave run
+root@openeuler-riscv64:~/penglai-enclave-demo/penglai-enclave-demo/prime[root@openeuler-riscv64 prime]# /opt/penglai/bin/penglai-host primcd ../seal_data/
+root@openeuler-riscv64:~/penglai-enclave-demo/penglai-enclave-demo/seal_data[root@openeuler-riscv64 seal_data]# make
+echo /opt/penglai
+/opt/penglai
+gcc -Wall  -I/opt/penglai/lib/app/include -I/opt/penglai/lib/gm/include -I/opt/penglai/lib/gm/include/miracl -c seal_data.c
+ld -static -L/opt/penglai/lib -L/opt/penglai/runtime/lib -L/opt/penglai/lib/gm -lpenglai-enclave-eapp -lc -o seal_data seal_data.o /opt/penglai/lib/libpenglai-enclave-eapp.a /opt/penglai/lib/libpenglai-enclave-gm.a /opt/penglai/runtime/lib/libc.a /opt/penglai/lib/libgcc.a -T /opt/penglai/app.lds
+ld: warning: seal_data has a LOAD segment with RWX permissions
+chmod -x seal_data
+root@openeuler-riscv64:~/penglai-enclave-demo/penglai-enclave-demo/seal_data[root@openeuler-riscv64 seal_data]# /opt/penglai/bin/penglai-host seal_data
+host:1: enclave attest
+0xAF, 0x74, 0x39, 0xFE,  0xCA, 0x19, 0xB7, 0xFA,  0x82, 0x67, 0x61, 0xDD,  0x04, 0x3D, 0xDB, 0x2D,
+0x90, 0x6A, 0xFF, 0x53,  0x76, 0x18, 0x19, 0x01,  0x84, 0xD6, 0xEC, 0x35,  0xB9, 0xB2, 0x95, 0x18,
+0x82, 0xA5, 0xE7, 0xCE,  0x86, 0xEC, 0xDA, 0x32,  0xF6, 0x92, 0x83, 0x73,  0x84, 0xBA, 0x9F, 0x61,
+0xAF, 0xB3, 0x53, 0xB4,  0x3B, 0x0F, 0x77, 0xA3,  0xF7, 0xBC, 0x42, 0xFD,  0x2E, 0x70, 0x75, 0xB6,
+host:1: enclave run
+root@openeuler-riscv64:~/penglai-enclave-demo/penglai-enclave-demo/seal_data[root@openeuler-riscv64 seal_dsdk-devel
+No match for argument: penglai-enclave-sdk
+No match for argument: penglai-enclave-sdk-devel
+Dependencies resolved.
+==========================================================================================================
+ Package                           Architecture    Version                         Repository        Size
+==========================================================================================================
+Removing:
+ penglai-enclave-driver            riscv64         1.0-1.oe2403                    @Penglai          59 k
+Removing unused dependencies:
+ binutils                          riscv64         2.41-4.oe2403                   @OS               21 M
+ clang                             riscv64         17.0.6-14.oe2403                @OS              545 k
+ clang-libs                        riscv64         17.0.6-14.oe2403                @OS               90 M
+ clang-resource-filesystem         riscv64         17.0.6-14.oe2403                @OS                0
+ compiler-rt                       riscv64         17.0.6-3.oe2403                 @OS               57 M
+ cpp                               riscv64         12.3.1-26.oe2403                @OS               19 M
+ dkms                              noarch          3.0.12-1.oe2403                 @OS              175 k
+ gc                                riscv64         8.2.4-1.oe2403                  @OS              745 k
+ gcc                               riscv64         12.3.1-26.oe2403                @OS               61 M
+ gcc-c++                           riscv64         12.3.1-26.oe2403                @OS               22 M
+ glibc-devel                       riscv64         2.38-26.oe2403                  @OS               25 M
+ guile                             riscv64         5:2.2.7-4.oe2403                @OS               44 M
+ isl                               riscv64         0.24-2.oe2403                   @OS              1.6 M
+ kernel-devel                      riscv64         6.6.0-23.0.0.26.oe2403          @OS               58 M
+ kernel-headers                    riscv64         6.6.0-23.0.0.26.oe2403          @OS              5.9 M
+ libmpc                            riscv64         1.3.1-1.oe2403                  @OS              124 k
+ libomp                            riscv64         17.0.6-1.oe2403                 @OS              969 k
+ libomp-devel                      riscv64         17.0.6-1.oe2403                 @OS               19 M
+ libstdc++-devel                   riscv64         12.3.1-26.oe2403                @OS               18 M
+ libtool-ltdl                      riscv64         2.4.7-3.oe2403                  @OS               57 k
+ libxcrypt-devel                   riscv64         4.4.36-2.oe2403                 @OS              1.6 M
+ lld                               riscv64         17.0.6-2.oe2403                 @OS              109 k
+ lld-libs                          riscv64         17.0.6-2.oe2403                 @OS              4.7 M
+ llvm                              riscv64         17.0.6-8.oe2403                 @OS              106 M
+ make                              riscv64         1:4.4.1-1.oe2403                @OS              1.5 M
+
+Transaction Summary
+==========================================================================================================
+Remove  26 Packages
+
+Freed space: 559 M
+Is this ok [y/N]: y
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                                                  1/1
+  Running scriptlet: penglai-enclave-driver-1.0-1.oe2403.riscv64                                      1/1
+  Erasing          : penglai-enclave-driver-1.0-1.oe2403.riscv64                                     1/26
+  Running scriptlet: penglai-enclave-driver-1.0-1.oe2403.riscv64                                     1/26
+
+  Running scriptlet: dkms-3.0.12-1.oe2403.noarch                                                     2/26
+Warning: The unit file, source configuration file or drop-ins of dkms.service changed on disk. Run 'systemctl daemon-reload' to reload units.
+
+  Erasing          : dkms-3.0.12-1.oe2403.noarch                                                     2/26
+  Running scriptlet: dkms-3.0.12-1.oe2403.noarch                                                     2/26
+  Erasing          : lld-17.0.6-2.oe2403.riscv64                                                     3/26
+  Erasing          : kernel-devel-6.6.0-23.0.0.26.oe2403.riscv64                                     4/26
+  Erasing          : clang-17.0.6-14.oe2403.riscv64                                                  5/26
+  Erasing          : clang-libs-17.0.6-14.oe2403.riscv64                                             6/26
+  Erasing          : gcc-c++-12.3.1-26.oe2403.riscv64                                                7/26
+  Erasing          : libomp-devel-17.0.6-1.oe2403.riscv64                                            8/26
+  Erasing          : clang-resource-filesystem-17.0.6-14.oe2403.riscv64                              9/26
+  Erasing          : libstdc++-devel-12.3.1-26.oe2403.riscv64                                       10/26
+  Erasing          : gcc-12.3.1-26.oe2403.riscv64                                                   11/26
+  Erasing          : glibc-devel-2.38-26.oe2403.riscv64                                             12/26
+  Running scriptlet: make-1:4.4.1-1.oe2403.riscv64                                                  13/26
+  Erasing          : make-1:4.4.1-1.oe2403.riscv64                                                  13/26
+  Erasing          : guile-5:2.2.7-4.oe2403.riscv64                                                 14/26
+  Erasing          : cpp-12.3.1-26.oe2403.riscv64                                                   15/26
+  Erasing          : kernel-headers-6.6.0-23.0.0.26.oe2403.riscv64                                  16/26
+  Erasing          : libxcrypt-devel-4.4.36-2.oe2403.riscv64                                        17/26
+  Erasing          : isl-0.24-2.oe2403.riscv64                                                      18/26
+  Erasing          : libmpc-1.3.1-1.oe2403.riscv64                                                  19/26
+  Erasing          : gc-8.2.4-1.oe2403.riscv64                                                      20/26
+  Erasing          : libtool-ltdl-2.4.7-3.oe2403.riscv64                                            21/26
+  Running scriptlet: binutils-2.41-4.oe2403.riscv64                                                 22/26
+  Erasing          : binutils-2.41-4.oe2403.riscv64                                                 22/26
+  Running scriptlet: binutils-2.41-4.oe2403.riscv64                                                 22/26
+  Erasing          : libomp-17.0.6-1.oe2403.riscv64                                                 23/26
+  Erasing          : compiler-rt-17.0.6-3.oe2403.riscv64                                            24/26
+  Erasing          : lld-libs-17.0.6-2.oe2403.riscv64                                               25/26
+  Erasing          : llvm-17.0.6-8.oe2403.riscv64                                                   26/26
+  Running scriptlet: llvm-17.0.6-8.oe2403.riscv64                                                   26/26
+  Verifying        : binutils-2.41-4.oe2403.riscv64                                                  1/26
+  Verifying        : clang-17.0.6-14.oe2403.riscv64                                                  2/26
+  Verifying        : clang-libs-17.0.6-14.oe2403.riscv64                                             3/26
+  Verifying        : clang-resource-filesystem-17.0.6-14.oe2403.riscv64                              4/26
+  Verifying        : compiler-rt-17.0.6-3.oe2403.riscv64                                             5/26
+  Verifying        : cpp-12.3.1-26.oe2403.riscv64                                                    6/26
+  Verifying        : dkms-3.0.12-1.oe2403.noarch                                                     7/26
+  Verifying        : gc-8.2.4-1.oe2403.riscv64                                                       8/26
+  Verifying        : gcc-12.3.1-26.oe2403.riscv64                                                    9/26
+  Verifying        : gcc-c++-12.3.1-26.oe2403.riscv64                                               10/26
+  Verifying        : glibc-devel-2.38-26.oe2403.riscv64                                             11/26
+  Verifying        : guile-5:2.2.7-4.oe2403.riscv64                                                 12/26
+  Verifying        : isl-0.24-2.oe2403.riscv64                                                      13/26
+  Verifying        : kernel-devel-6.6.0-23.0.0.26.oe2403.riscv64                                    14/26
+  Verifying        : kernel-headers-6.6.0-23.0.0.26.oe2403.riscv64                                  15/26
+  Verifying        : libmpc-1.3.1-1.oe2403.riscv64                                                  16/26
+  Verifying        : libomp-17.0.6-1.oe2403.riscv64                                                 17/26
+  Verifying        : libomp-devel-17.0.6-1.oe2403.riscv64                                           18/26
+  Verifying        : libstdc++-devel-12.3.1-26.oe2403.riscv64                                       19/26
+  Verifying        : libtool-ltdl-2.4.7-3.oe2403.riscv64                                            20/26
+  Verifying        : libxcrypt-devel-4.4.36-2.oe2403.riscv64                                        21/26
+  Verifying        : lld-17.0.6-2.oe2403.riscv64                                                    22/26
+  Verifying        : lld-libs-17.0.6-2.oe2403.riscv64                                               23/26
+  Verifying        : llvm-17.0.6-8.oe2403.riscv64                                                   24/26
+  Verifying        : make-1:4.4.1-1.oe2403.riscv64                                                  25/26
+  Verifying        : penglai-enclave-driver-1.0-1.oe2403.riscv64                                    26/26
+
+Removed:
+  binutils-2.41-4.oe2403.riscv64                    clang-17.0.6-14.oe2403.riscv64
+  clang-libs-17.0.6-14.oe2403.riscv64               clang-resource-filesystem-17.0.6-14.oe2403.riscv64
+  compiler-rt-17.0.6-3.oe2403.riscv64               cpp-12.3.1-26.oe2403.riscv64
+  dkms-3.0.12-1.oe2403.noarch                       gc-8.2.4-1.oe2403.riscv64
+  gcc-12.3.1-26.oe2403.riscv64                      gcc-c++-12.3.1-26.oe2403.riscv64
+  glibc-devel-2.38-26.oe2403.riscv64                guile-5:2.2.7-4.oe2403.riscv64
+  isl-0.24-2.oe2403.riscv64                         kernel-devel-6.6.0-23.0.0.26.oe2403.riscv64
+  kernel-headers-6.6.0-23.0.0.26.oe2403.riscv64     libmpc-1.3.1-1.oe2403.riscv64
+  libomp-17.0.6-1.oe2403.riscv64                    libomp-devel-17.0.6-1.oe2403.riscv64
+  libstdc++-devel-12.3.1-26.oe2403.riscv64          libtool-ltdl-2.4.7-3.oe2403.riscv64
+  libxcrypt-devel-4.4.36-2.oe2403.riscv64           lld-17.0.6-2.oe2403.riscv64
+  lld-libs-17.0.6-2.oe2403.riscv64                  llvm-17.0.6-8.oe2403.riscv64
+  make-1:4.4.1-1.oe2403.riscv64                     penglai-enclave-driver-1.0-1.oe2403.riscv64
+
+Complete!
+root@openeuler-riscv64:~/penglai-enclave-demo/penglai-enclave-demo/seal_dat                              /opt/penglai/bin/penglai-host seal_da dkms status
+bash: /usr/sbin/dkms: No such file or directory
+root@openeuler-riscv64:~/penglai-enclave-demo/penglai-enclave-demo/seal_data[root@openeuler-riscv64 seal_data]#
+exit
+
+
+
+[root@openeuler-riscv64 penglai-enclave-demo]# [ 1450.471755][T11280] [Penglai Driver@penglai_enclave_run] run returned successfully
+[ 1485.855812][T11297] [Penglai Driver@penglai_enclave_run] run returned successfully
+[ 1517.869632][T11309] [Penglai Driver@penglai_enclave_run] run returned successfully
+[ 1598.786770][T11367] plaintext :
+[ 1598.790145][T11367] 41, 185, 27, 74, 104, 169, 159, 151, 196, 28, 117, 8, 241, 122, 92, 122
+[ 1598.790535][T11367] 122, 252, 158, 26, 202, 131, 225, 41, 176, 133, 189, 99, 127, 246, 124, 1
+[ 1598.792296][T11367] ciphertext with tag :
+[ 1598.792507][T11367] 202, 4, 1, 21, 204, 145, 192, 6, 255, 86, 248, 141, 168, 158, 0, 98
+[ 1598.792868][T11367] 236, 96, 176, 166, 65, 166, 209, 166, 182, 191, 237, 91, 226, 129, 228, 64
+[ 1598.793131][T11367] 124, 119, 164, 231, 74, 142, 230, 110, 235, 127, 128, 168, 60, 96, 12, 15
+[ 1598.794039][T11367] Success Authenticate
+[ 1598.794209][T11367] decrypttext :
+[ 1598.794405][T11367] 41, 185, 27, 74, 104, 169, 159, 151, 196, 28, 117, 8, 241, 122, 92, 122
+[ 1598.794665][T11367] 122, 252, 158, 26, 202, 131, 225, 41, 176, 133, 189, 99, 127, 246, 124, 1
+[ 1598.794974][T11367] What if change ciphertext?
+[ 1598.795193][T11367] Fail Assenticate
+[ 1598.795362][T11367] What if change add_data?
+[ 1598.795576][T11367] Fail Assenticate
+[ 1598.795735][T11367] What if change ciphertext and add_data?
+[ 1598.795975][T11367] Fail Assenticate
+[ 1598.808075][T11367] [Penglai Driver@penglai_enclave_run] run returned successfully
+[ 1604.113306][T11369] random initialized IV :
+[ 1604.113857][T11369] 151, 23, 118, 167, 156, 0, 150, 87, 150, 173, 25, 167, 129, 103, 4, 66
+[ 1604.114171][T11369] random initialized Key :
+[ 1604.114374][T11369] 24, 68, 201, 8, 191, 89, 227, 79, 15, 2, 242, 148, 14, 32, 233, 222
+[ 1604.114762][T11369]
+[ 1604.114762][T11369]
+[ 1604.114762][T11369] Time 0, plaintext len: 199
+[ 1604.115141][T11369] plaintext, len = 199
+[ 1604.115312][T11369] 235, 27, 103, 35, 231, 231, 218, 180, 70, 172, 246, 115, 233, 25, 245, 239
+[ 1604.115575][T11369] 217, 69, 229, 177, 146, 194, 247, 225, 74, 74, 149, 229, 92, 83, 238, 168
+[ 1604.115840][T11369] 229, 251, 241, 82, 202, 52, 45, 39, 207, 181, 52, 12, 234, 28, 254, 242
+[ 1604.116123][T11369] 161, 87, 240, 208, 181, 252, 33, 101, 247, 209, 57, 32, 236, 163, 0, 107
+[ 1604.116383][T11369] 50, 5, 204, 220, 156, 250, 11, 89, 116, 139, 99, 212, 1, 176, 228, 180
+[ 1604.116653][T11369] 94, 118, 84, 183, 128, 105, 188, 137, 104, 108, 113, 35, 245, 112, 109, 165
+[ 1604.117080][T11369] 156, 148, 231, 206, 213, 33, 205, 58, 107, 57, 147, 187, 94, 253, 223, 214
+[ 1604.117358][T11369] 182, 154, 9, 183, 28, 185, 115, 19, 162, 35, 104, 66, 50, 55, 98, 233
+[ 1604.117624][T11369] 128, 132, 150, 111, 174, 195, 119, 49, 198, 204, 214, 203, 12, 182, 11, 161
+[ 1604.117883][T11369] 55, 113, 53, 70, 133, 106, 158, 39, 141, 201, 16, 74, 29, 201, 154, 104
+[ 1604.118178][T11369] 215, 239, 59, 26, 98, 130, 46, 221, 9, 61, 99, 251, 144, 173, 220, 11
+[ 1604.118435][T11369] 230, 253, 233, 243, 124, 186, 42, 179, 21, 13, 228, 72, 238, 207, 185, 128
+[ 1604.119207][T11369] Eecrypt----------
+[ 1604.119380][T11369] ciphertext, len = 208
+[ 1604.119556][T11369] 83, 240, 31, 8, 83, 229, 149, 41, 53, 100, 183, 111, 86, 158, 195, 148
+[ 1604.119841][T11369] 246, 245, 121, 128, 9, 146, 250, 132, 191, 25, 95, 247, 248, 120, 160, 53
+[ 1604.120169][T11369] 116, 168, 221, 176, 123, 108, 155, 130, 215, 0, 152, 24, 22, 18, 182, 130
+[ 1604.120437][T11369] 83, 222, 97, 101, 185, 38, 206, 14, 35, 42, 123, 61, 193, 107, 135, 33
+[ 1604.120715][T11369] 157, 222, 73, 255, 196, 153, 226, 102, 118, 0, 24, 222, 225, 237, 111, 141
+[ 1604.121377][T11369] 105, 85, 91, 177, 138, 130, 39, 233, 28, 13, 244, 57, 121, 92, 187, 192
+[ 1604.121631][T11369] 10, 239, 137, 52, 112, 106, 244, 245, 158, 192, 218, 141, 66, 209, 229, 123
+[ 1604.121931][T11369] 114, 76, 17, 242, 10, 134, 155, 19, 17, 145, 172, 172, 175, 68, 114, 197
+[ 1604.122186][T11369] 251, 100, 164, 26, 134, 216, 212, 78, 24, 137, 231, 31, 205, 92, 239, 6
+[ 1604.122454][T11369] 183, 129, 79, 182, 195, 71, 49, 163, 149, 147, 76, 132, 1, 105, 192, 45
+[ 1604.122741][T11369] 12, 206, 120, 129, 83, 118, 100, 76, 43, 213, 228, 250, 37, 45, 12, 70
+[ 1604.122998][T11369] 15, 162, 121, 36, 232, 236, 88, 18, 46, 248, 173, 135, 57, 83, 212, 21
+[ 1604.123245][T11369] 224, 254, 245, 137, 255, 149, 217, 72, 29, 125, 70, 49, 53, 57, 118, 99
+[ 1604.123808][T11369] Decrypt----------
+[ 1604.123965][T11369] decrypttext, len = 199
+[ 1604.124161][T11369] 235, 27, 103, 35, 231, 231, 218, 180, 70, 172, 246, 115, 233, 25, 245, 239
+[ 1604.124414][T11369] 217, 69, 229, 177, 146, 194, 247, 225, 74, 74, 149, 229, 92, 83, 238, 168
+[ 1604.124810][T11369] 229, 251, 241, 82, 202, 52, 45, 39, 207, 181, 52, 12, 234, 28, 254, 242
+[ 1604.125120][T11369] 161, 87, 240, 208, 181, 252, 33, 101, 247, 209, 57, 32, 236, 163, 0, 107
+[ 1604.125401][T11369] 50, 5, 204, 220, 156, 250, 11, 89, 116, 139, 99, 212, 1, 176, 228, 180
+[ 1604.125669][T11369] 94, 118, 84, 183, 128, 105, 188, 137, 104, 108, 113, 35, 245, 112, 109, 165
+[ 1604.125929][T11369] 156, 148, 231, 206, 213, 33, 205, 58, 107, 57, 147, 187, 94, 253, 223, 214
+[ 1604.126178][T11369] 182, 154, 9, 183, 28, 185, 115, 19, 162, 35, 104, 66, 50, 55, 98, 233
+[ 1604.126419][T11369] 128, 132, 150, 111, 174, 195, 119, 49, 198, 204, 214, 203, 12, 182, 11, 161
+[ 1604.126681][T11369] 55, 113, 53, 70, 133, 106, 158, 39, 141, 201, 16, 74, 29, 201, 154, 104
+[ 1604.126982][T11369] 215, 239, 59, 26, 98, 130, 46, 221, 9, 61, 99, 251, 144, 173, 220, 11
+[ 1604.127242][T11369] 230, 253, 233, 243, 124, 186, 42, 179, 21, 13, 228, 72, 238, 207, 185, 128
+[ 1604.127570][T11369]
+[ 1604.127570][T11369]
+[ 1604.127570][T11369] Time 1, plaintext len: 151
+[ 1604.127868][T11369] plaintext, len = 151
+[ 1604.128037][T11369] 218, 126, 168, 183, 68, 22, 210, 88, 83, 100, 209, 74, 240, 207, 4, 240
+[ 1604.128290][T11369] 169, 62, 54, 148, 164, 121, 110, 30, 62, 30, 147, 23, 84, 184, 16, 177
+[ 1604.128907][T11369] 114, 228, 65, 163, 64, 211, 151, 32, 224, 37, 66, 228, 63, 236, 23, 14
+[ 1604.129191][T11369] 131, 150, 37, 197, 54, 80, 117, 142, 201, 234, 140, 184, 146, 10, 4, 30
+[ 1604.129522][T11369] 79, 78, 217, 150, 191, 105, 187, 75, 130, 72, 140, 39, 186, 201, 250, 255
+[ 1604.129878][T11369] 63, 230, 102, 49, 42, 7, 118, 31, 160, 126, 5, 211, 221, 23, 144, 181
+[ 1604.130158][T11369] 195, 55, 79, 188, 91, 76, 130, 93, 76, 186, 51, 110, 119, 252, 121, 218
+[ 1604.130533][T11369] 58, 217, 110, 92, 194, 182, 245, 63, 9, 209, 26, 253, 44, 132, 11, 225
+[ 1604.130840][T11369] 165, 78, 192, 201, 166, 11, 14, 156, 90, 41, 2, 162, 6, 175, 204, 235
+[ 1604.131152][T11369] Eecrypt----------
+[ 1604.131310][T11369] ciphertext, len = 160
+[ 1604.131474][T11369] 114, 249, 72, 83, 66, 40, 157, 242, 212, 182, 69, 58, 184, 110, 24, 93
+[ 1604.131757][T11369] 56, 151, 100, 151, 176, 124, 253, 196, 213, 217, 162, 81, 232, 124, 14, 80
+[ 1604.132009][T11369] 50, 115, 44, 87, 75, 220, 30, 123, 154, 214, 249, 248, 14, 72, 42, 158
+[ 1604.132331][T11369] 93, 201, 244, 89, 26, 176, 65, 121, 187, 170, 15, 97, 150, 221, 222, 217
+[ 1604.132966][T11369] 138, 178, 179, 48, 244, 230, 65, 127, 54, 95, 34, 193, 90, 14, 95, 202
+[ 1604.133225][T11369] 140, 110, 37, 219, 77, 118, 109, 14, 42, 76, 84, 118, 92, 82, 218, 208
+[ 1604.133497][T11369] 78, 85, 253, 213, 235, 11, 54, 182, 233, 25, 140, 23, 193, 4, 215, 98
+[ 1604.133737][T11369] 47, 102, 209, 6, 134, 28, 235, 107, 91, 133, 2, 123, 97, 37, 20, 69
+[ 1604.134037][T11369] 158, 57, 94, 28, 71, 0, 23, 66, 237, 114, 109, 125, 119, 161, 134, 78
+[ 1604.134286][T11369] 198, 134, 47, 254, 200, 48, 0, 215, 236, 185, 182, 0, 127, 114, 112, 228
+[ 1604.134589][T11369] Decrypt----------
+[ 1604.134739][T11369] decrypttext, len = 151
+[ 1604.134898][T11369] 218, 126, 168, 183, 68, 22, 210, 88, 83, 100, 209, 74, 240, 207, 4, 240
+[ 1604.135184][T11369] 169, 62, 54, 148, 164, 121, 110, 30, 62, 30, 147, 23, 84, 184, 16, 177
+[ 1604.135446][T11369] 114, 228, 65, 163, 64, 211, 151, 32, 224, 37, 66, 228, 63, 236, 23, 14
+[ 1604.135741][T11369] 131, 150, 37, 197, 54, 80, 117, 142, 201, 234, 140, 184, 146, 10, 4, 30
+[ 1604.135999][T11369] 79, 78, 217, 150, 191, 105, 187, 75, 130, 72, 140, 39, 186, 201, 250, 255
+[ 1604.136286][T11369] 63, 230, 102, 49, 42, 7, 118, 31, 160, 126, 5, 211, 221, 23, 144, 181
+[ 1604.136542][T11369] 195, 55, 79, 188, 91, 76, 130, 93, 76, 186, 51, 110, 119, 252, 121, 218
+[ 1604.137190][T11369] 58, 217, 110, 92, 194, 182, 245, 63, 9, 209, 26, 253, 44, 132, 11, 225
+[ 1604.137461][T11369] 165, 78, 192, 201, 166, 11, 14, 156, 90, 41, 2, 162, 6, 175, 204, 235
+[ 1604.137737][T11369]
+[ 1604.137737][T11369]
+[ 1604.137737][T11369] Time 2, plaintext len: 106
+[ 1604.138036][T11369] plaintext, len = 106
+[ 1604.138199][T11369] 79, 127, 114, 198, 203, 184, 179, 209, 137, 25, 69, 188, 184, 93, 255, 111
+[ 1604.138496][T11369] 40, 191, 246, 225, 27, 60, 247, 168, 79, 136, 205, 104, 92, 103, 51, 123
+[ 1604.138774][T11369] 17, 249, 8, 94, 131, 80, 233, 139, 49, 69, 12, 61, 172, 60, 45, 154
+[ 1604.139038][T11369] 154, 228, 233, 36, 191, 101, 26, 171, 79, 210, 179, 155, 200, 253, 131, 220
+[ 1604.139311][T11369] 215, 140, 83, 142, 33, 141, 197, 30, 198, 251, 202, 43, 128, 212, 51, 195
+[ 1604.139576][T11369] 157, 33, 255, 45, 12, 238, 159, 45, 82, 183, 214, 54, 43, 202, 75, 17
+[ 1604.139880][T11369] Eecrypt----------
+[ 1604.140053][T11369] ciphertext, len = 112
+[ 1604.140241][T11369] 171, 73, 122, 34, 247, 101, 102, 60, 200, 29, 127, 116, 108, 30, 161, 74
+[ 1604.140692][T11369] 218, 181, 113, 63, 5, 91, 180, 168, 142, 89, 219, 5, 115, 160, 56, 245
+[ 1604.140966][T11369] 114, 165, 17, 255, 122, 162, 219, 245, 82, 96, 10, 110, 166, 189, 56, 65
+[ 1604.141246][T11369] 177, 25, 215, 240, 82, 201, 179, 139, 220, 247, 137, 153, 122, 204, 124, 131
+[ 1604.141510][T11369] 158, 112, 82, 142, 253, 134, 46, 105, 9, 225, 94, 58, 11, 51, 212, 162
+[ 1604.141786][T11369] 182, 81, 192, 75, 168, 195, 82, 92, 168, 36, 81, 39, 164, 140, 82, 6
+[ 1604.142090][T11369] 27, 254, 189, 108, 49, 143, 108, 106, 190, 226, 201, 164, 32, 206, 10, 139
+[ 1604.142377][T11369] Decrypt----------
+[ 1604.142538][T11369] decrypttext, len = 106
+[ 1604.142698][T11369] 79, 127, 114, 198, 203, 184, 179, 209, 137, 25, 69, 188, 184, 93, 255, 111
+[ 1604.142957][T11369] 40, 191, 246, 225, 27, 60, 247, 168, 79, 136, 205, 104, 92, 103, 51, 123
+[ 1604.143228][T11369] 17, 249, 8, 94, 131, 80, 233, 139, 49, 69, 12, 61, 172, 60, 45, 154
+[ 1604.143497][T11369] 154, 228, 233, 36, 191, 101, 26, 171, 79, 210, 179, 155, 200, 253, 131, 220
+[ 1604.143777][T11369] 215, 140, 83, 142, 33, 141, 197, 30, 198, 251, 202, 43, 128, 212, 51, 195
+[ 1604.144026][T11369] 157, 33, 255, 45, 12, 238, 159, 45, 82, 183, 214, 54, 43, 202, 75, 17
+[ 1604.144321][T11369]
+[ 1604.144321][T11369]
+[ 1604.144321][T11369] Time 3, plaintext len: 163
+[ 1604.144708][T11369] plaintext, len = 163
+[ 1604.144865][T11369] 225, 188, 62, 213, 79, 212, 250, 31, 17, 50, 41, 186, 52, 191, 203, 234
+[ 1604.145228][T11369] 134, 44, 168, 141, 44, 163, 90, 217, 170, 88, 25, 48, 100, 75, 108, 105
+[ 1604.145524][T11369] 119, 41, 22, 143, 183, 214, 175, 231, 80, 195, 54, 47, 189, 111, 44, 102
+[ 1604.145850][T11369] 134, 255, 34, 100, 162, 177, 5, 85, 70, 34, 119, 150, 233, 57, 17, 125
+[ 1604.146117][T11369] 87, 160, 66, 250, 56, 129, 33, 87, 76, 111, 57, 157, 170, 93, 58, 0
+[ 1604.146487][T11369] 113, 213, 198, 39, 156, 46, 104, 70, 34, 70, 150, 159, 60, 167, 106, 105
+[ 1604.146762][T11369] 80, 251, 199, 228, 27, 197, 156, 249, 153, 145, 45, 169, 10, 47, 235, 71
+[ 1604.147033][T11369] 46, 71, 53, 0, 74, 54, 95, 142, 179, 235, 152, 38, 233, 10, 169, 96
+[ 1604.147305][T11369] 210, 113, 156, 128, 43, 117, 64, 175, 45, 104, 222, 136, 240, 252, 110, 2
+[ 1604.147589][T11369] 139, 51, 85, 13, 166, 107, 28, 255, 89, 35, 191, 253, 60, 15, 113, 192
+[ 1604.147859][T11369] Eecrypt----------
+[ 1604.148023][T11369] ciphertext, len = 176
+[ 1604.148186][T11369] 132, 101, 242, 82, 30, 140, 151, 4, 241, 205, 173, 50, 114, 59, 113, 72
+[ 1604.148458][T11369] 84, 218, 118, 106, 153, 23, 33, 60, 152, 255, 34, 208, 245, 169, 13, 157
+[ 1604.148721][T11369] 183, 10, 152, 220, 251, 178, 111, 31, 8, 17, 171, 180, 181, 219, 165, 218
+[ 1604.149005][T11369] 52, 24, 142, 78, 157, 49, 48, 30, 52, 8, 194, 103, 219, 105, 52, 168
+[ 1604.149272][T11369] 140, 19, 100, 204, 92, 81, 254, 30, 55, 241, 86, 141, 32, 8, 163, 236
+[ 1604.149844][T11369] 89, 105, 123, 224, 151, 160, 125, 190, 97, 68, 217, 125, 120, 218, 229, 150
+[ 1604.150127][T11369] 169, 128, 49, 184, 222, 175, 194, 4, 225, 21, 98, 29, 32, 142, 161, 71
+[ 1604.150384][T11369] 107, 186, 248, 173, 44, 13, 42, 9, 156, 248, 19, 223, 247, 47, 235, 86
+[ 1604.150648][T11369] 131, 227, 64, 119, 0, 124, 176, 146, 178, 238, 85, 73, 230, 174, 66, 43
+[ 1604.150925][T11369] 184, 155, 152, 190, 83, 26, 57, 204, 218, 234, 107, 168, 64, 228, 20, 167
+[ 1604.151196][T11369] 8, 31, 109, 106, 198, 134, 218, 111, 130, 147, 207, 240, 47, 24, 37, 158
+[ 1604.151499][T11369] Decrypt----------
+[ 1604.151683][T11369] decrypttext, len = 163
+[ 1604.151858][T11369] 225, 188, 62, 213, 79, 212, 250, 31, 17, 50, 41, 186, 52, 191, 203, 234
+[ 1604.152312][T11369] 134, 44, 168, 141, 44, 163, 90, 217, 170, 88, 25, 48, 100, 75, 108, 105
+[ 1604.152570][T11369] 119, 41, 22, 143, 183, 214, 175, 231, 80, 195, 54, 47, 189, 111, 44, 102
+[ 1604.152839][T11369] 134, 255, 34, 100, 162, 177, 5, 85, 70, 34, 119, 150, 233, 57, 17, 125
+[ 1604.153097][T11369] 87, 160, 66, 250, 56, 129, 33, 87, 76, 111, 57, 157, 170, 93, 58, 0
+[ 1604.153351][T11369] 113, 213, 198, 39, 156, 46, 104, 70, 34, 70, 150, 159, 60, 167, 106, 105
+[ 1604.153626][T11369] 80, 251, 199, 228, 27, 197, 156, 249, 153, 145, 45, 169, 10, 47, 235, 71
+[ 1604.153878][T11369] 46, 71, 53, 0, 74, 54, 95, 142, 179, 235, 152, 38, 233, 10, 169, 96
+[ 1604.154114][T11369] 210, 113, 156, 128, 43, 117, 64, 175, 45, 104, 222, 136, 240, 252, 110, 2
+[ 1604.154395][T11369] 139, 51, 85, 13, 166, 107, 28, 255, 89, 35, 191, 253, 60, 15, 113, 192
+[ 1604.154670][T11369]
+[ 1604.154670][T11369]
+[ 1604.154670][T11369] Time 4, plaintext len: 131
+[ 1604.154974][T11369] plaintext, len = 131
+[ 1604.155131][T11369] 204, 30, 138, 140, 211, 13, 72, 254, 252, 20, 232, 63, 152, 71, 115, 48
+[ 1604.155397][T11369] 98, 69, 143, 69, 208, 161, 32, 149, 149, 208, 28, 2, 6, 76, 194, 6
+[ 1604.155641][T11369] 107, 126, 153, 97, 78, 202, 218, 5, 32, 162, 158, 165, 239, 160, 56, 35
+[ 1604.155908][T11369] 59, 253, 136, 245, 223, 38, 1, 188, 127, 151, 52, 179, 119, 74, 151, 9
+[ 1604.156163][T11369] 175, 117, 89, 11, 181, 80, 250, 34, 165, 94, 139, 137, 112, 48, 166, 155
+[ 1604.156409][T11369] 176, 66, 62, 41, 164, 42, 103, 127, 225, 62, 225, 32, 121, 125, 70, 98
+[ 1604.156667][T11369] 197, 37, 11, 66, 164, 216, 250, 137, 162, 19, 64, 46, 158, 181, 172, 3
+[ 1604.156930][T11369] 226, 16, 218, 252, 112, 225, 147, 49, 241, 220, 86, 49, 9, 33, 207, 72
+[ 1604.157435][T11369] Eecrypt----------
+[ 1604.157616][T11369] ciphertext, len = 144
+[ 1604.157773][T11369] 121, 5, 101, 140, 40, 80, 19, 79, 173, 179, 158, 235, 145, 159, 123, 80
+[ 1604.158050][T11369] 132, 128, 198, 193, 133, 76, 253, 100, 208, 188, 246, 171, 175, 11, 64, 84
+[ 1604.158312][T11369] 102, 207, 224, 205, 70, 143, 63, 36, 15, 207, 204, 41, 218, 36, 128, 31
+[ 1604.158566][T11369] 178, 58, 182, 84, 54, 54, 47, 238, 45, 145, 253, 63, 232, 173, 172, 197
+[ 1604.158819][T11369] 59, 13, 180, 64, 239, 207, 119, 16, 202, 167, 57, 158, 207, 175, 49, 100
+[ 1604.159118][T11369] 121, 42, 27, 222, 222, 100, 9, 87, 210, 2, 125, 139, 174, 226, 21, 189
+[ 1604.159377][T11369] 13, 190, 56, 135, 139, 238, 14, 164, 40, 96, 61, 8, 141, 65, 236, 69
+[ 1604.159654][T11369] 218, 57, 182, 233, 96, 237, 252, 214, 248, 55, 14, 73, 59, 200, 52, 73
+[ 1604.159915][T11369] 214, 166, 20, 137, 145, 82, 251, 183, 227, 87, 228, 27, 235, 128, 214, 135
+[ 1604.160232][T11369] Decrypt----------
+[ 1604.160380][T11369] decrypttext, len = 131
+[ 1604.160565][T11369] 204, 30, 138, 140, 211, 13, 72, 254, 252, 20, 232, 63, 152, 71, 115, 48
+[ 1604.160850][T11369] 98, 69, 143, 69, 208, 161, 32, 149, 149, 208, 28, 2, 6, 76, 194, 6
+[ 1604.161221][T11369] 107, 126, 153, 97, 78, 202, 218, 5, 32, 162, 158, 165, 239, 160, 56, 35
+[ 1604.161483][T11369] 59, 253, 136, 245, 223, 38, 1, 188, 127, 151, 52, 179, 119, 74, 151, 9
+[ 1604.161770][T11369] 175, 117, 89, 11, 181, 80, 250, 34, 165, 94, 139, 137, 112, 48, 166, 155
+[ 1604.162055][T11369] 176, 66, 62, 41, 164, 42, 103, 127, 225, 62, 225, 32, 121, 125, 70, 98
+[ 1604.162357][T11369] 197, 37, 11, 66, 164, 216, 250, 137, 162, 19, 64, 46, 158, 181, 172, 3
+[ 1604.162604][T11369] 226, 16, 218, 252, 112, 225, 147, 49, 241, 220, 86, 49, 9, 33, 207, 72
+[ 1604.162870][T11369]
+[ 1604.162870][T11369]
+[ 1604.162870][T11369] Time 5, plaintext len: 28
+[ 1604.163191][T11369] plaintext, len = 28
+[ 1604.163365][T11369] 216, 11, 220, 243, 14, 49, 152, 33, 125, 104, 94, 34, 111, 170, 81, 114
+[ 1604.163679][T11369] Eecrypt----------
+[ 1604.163843][T11369] ciphertext, len = 32
+[ 1604.164030][T11369] 213, 153, 88, 99, 243, 223, 48, 104, 185, 183, 219, 115, 160, 220, 57, 18
+[ 1604.164301][T11369] 193, 55, 173, 45, 227, 243, 247, 170, 88, 242, 17, 52, 172, 252, 179, 69
+[ 1604.164584][T11369] Decrypt----------
+[ 1604.164737][T11369] decrypttext, len = 28
+[ 1604.165186][T11369] 216, 11, 220, 243, 14, 49, 152, 33, 125, 104, 94, 34, 111, 170, 81, 114
+[ 1604.165462][T11369]
+[ 1604.165462][T11369]
+[ 1604.165462][T11369] Time 6, plaintext len: 145
+[ 1604.165763][T11369] plaintext, len = 145
+[ 1604.165946][T11369] 218, 31, 22, 90, 5, 98, 249, 208, 163, 17, 124, 43, 232, 127, 48, 162
+[ 1604.166192][T11369] 164, 241, 118, 177, 115, 119, 208, 21, 214, 42, 248, 102, 37, 199, 86, 213
+[ 1604.166492][T11369] 233, 152, 10, 154, 219, 93, 41, 152, 52, 2, 123, 249, 213, 122, 212, 233
+[ 1604.166775][T11369] 101, 51, 134, 220, 20, 226, 205, 25, 0, 174, 147, 9, 192, 212, 95, 14
+[ 1604.167051][T11369] 40, 162, 182, 22, 178, 162, 198, 236, 167, 208, 7, 127, 106, 116, 196, 231
+[ 1604.167335][T11369] 252, 41, 239, 181, 36, 231, 194, 188, 93, 172, 173, 254, 187, 158, 0, 148
+[ 1604.167629][T11369] 130, 79, 132, 102, 135, 155, 132, 155, 35, 35, 154, 185, 155, 147, 68, 18
+[ 1604.167905][T11369] 75, 191, 126, 122, 83, 94, 129, 254, 127, 210, 30, 15, 20, 29, 203, 77
+[ 1604.168176][T11369] 39, 134, 130, 9, 199, 155, 73, 60, 142, 236, 166, 201, 166, 252, 18, 180
+[ 1604.168466][T11369] Eecrypt----------
+[ 1604.168617][T11369] ciphertext, len = 160
+[ 1604.168780][T11369] 192, 27, 141, 242, 216, 226, 23, 255, 106, 52, 200, 122, 172, 237, 255, 92
+[ 1604.169286][T11369] 249, 85, 58, 86, 38, 73, 74, 69, 217, 120, 93, 78, 44, 51, 200, 45
+[ 1604.169547][T11369] 210, 105, 46, 66, 86, 231, 28, 26, 7, 181, 248, 33, 29, 138, 77, 211
+[ 1604.169828][T11369] 8, 155, 143, 118, 175, 229, 228, 106, 14, 210, 160, 5, 105, 19, 72, 86
+[ 1604.170102][T11369] 212, 135, 31, 167, 130, 113, 160, 242, 4, 161, 50, 211, 127, 222, 181, 75
+[ 1604.170358][T11369] 245, 109, 232, 187, 71, 217, 37, 242, 246, 2, 216, 182, 173, 183, 250, 11
+[ 1604.170649][T11369] 4, 230, 62, 114, 202, 164, 121, 125, 8, 167, 218, 181, 231, 209, 116, 12
+[ 1604.170928][T11369] 79, 242, 135, 235, 208, 113, 234, 182, 199, 98, 40, 186, 226, 56, 113, 241
+[ 1604.171187][T11369] 18, 146, 170, 197, 209, 54, 63, 251, 233, 40, 71, 87, 24, 125, 152, 24
+[ 1604.171458][T11369] 112, 90, 202, 148, 182, 198, 53, 161, 82, 120, 216, 250, 37, 93, 128, 79
+[ 1604.171730][T11369] Decrypt----------
+[ 1604.171900][T11369] decrypttext, len = 145
+[ 1604.172064][T11369] 218, 31, 22, 90, 5, 98, 249, 208, 163, 17, 124, 43, 232, 127, 48, 162
+[ 1604.172341][T11369] 164, 241, 118, 177, 115, 119, 208, 21, 214, 42, 248, 102, 37, 199, 86, 213
+[ 1604.172603][T11369] 233, 152, 10, 154, 219, 93, 41, 152, 52, 2, 123, 249, 213, 122, 212, 233
+[ 1604.172888][T11369] 101, 51, 134, 220, 20, 226, 205, 25, 0, 174, 147, 9, 192, 212, 95, 14
+[ 1604.173414][T11369] 40, 162, 182, 22, 178, 162, 198, 236, 167, 208, 7, 127, 106, 116, 196, 231
+[ 1604.173708][T11369] 252, 41, 239, 181, 36, 231, 194, 188, 93, 172, 173, 254, 187, 158, 0, 148
+[ 1604.173980][T11369] 130, 79, 132, 102, 135, 155, 132, 155, 35, 35, 154, 185, 155, 147, 68, 18
+[ 1604.174265][T11369] 75, 191, 126, 122, 83, 94, 129, 254, 127, 210, 30, 15, 20, 29, 203, 77
+[ 1604.174532][T11369] 39, 134, 130, 9, 199, 155, 73, 60, 142, 236, 166, 201, 166, 252, 18, 180
+[ 1604.174807][T11369]
+[ 1604.174807][T11369]
+[ 1604.174807][T11369] Time 7, plaintext len: 175
+[ 1604.175120][T11369] plaintext, len = 175
+[ 1604.175277][T11369] 26, 106, 42, 228, 41, 196, 1, 7, 115, 112, 28, 166, 47, 69, 204, 200
+[ 1604.175554][T11369] 25, 150, 110, 173, 42, 187, 203, 231, 205, 47, 87, 34, 108, 77, 195, 205
+[ 1604.175815][T11369] 70, 173, 77, 90, 209, 4, 135, 62, 250, 230, 24, 60, 14, 231, 44, 136
+[ 1604.176089][T11369] 122, 133, 4, 55, 55, 155, 215, 203, 1, 109, 14, 185, 76, 35, 79, 37
+[ 1604.176332][T11369] 92, 21, 142, 57, 42, 143, 78, 128, 109, 160, 144, 227, 171, 35, 65, 4
+[ 1604.176581][T11369] 204, 179, 72, 98, 36, 94, 234, 38, 23, 5, 106, 134, 40, 19, 219, 253
+[ 1604.176866][T11369] 215, 169, 13, 177, 216, 179, 50, 127, 146, 55, 167, 202, 233, 187, 69, 88
+[ 1604.177319][T11369] 154, 38, 20, 91, 164, 129, 29, 126, 110, 224, 246, 12, 76, 243, 129, 25
+[ 1604.177569][T11369] 82, 35, 138, 66, 182, 99, 103, 92, 96, 64, 140, 230, 18, 44, 234, 94
+[ 1604.177830][T11369] 60, 223, 27, 207, 232, 251, 205, 170, 42, 108, 129, 214, 131, 219, 223, 255
+[ 1604.178113][T11369] Eecrypt----------
+[ 1604.178269][T11369] ciphertext, len = 176
+[ 1604.178469][T11369] 214, 252, 85, 8, 252, 110, 183, 27, 208, 41, 248, 100, 126, 199, 222, 14
+[ 1604.178757][T11369] 216, 208, 233, 135, 27, 75, 16, 61, 241, 248, 238, 3, 185, 211, 77, 221
+[ 1604.179028][T11369] 141, 159, 223, 37, 115, 210, 245, 113, 207, 230, 122, 24, 140, 214, 92, 173
+[ 1604.179327][T11369] 178, 94, 25, 99, 79, 74, 215, 184, 9, 234, 188, 71, 63, 85, 168, 114
+[ 1604.179631][T11369] 244, 14, 149, 230, 155, 6, 248, 183, 22, 130, 243, 245, 137, 238, 39, 144
+[ 1604.179894][T11369] 5, 109, 55, 137, 186, 164, 81, 213, 198, 240, 176, 69, 252, 103, 90, 142
+[ 1604.180145][T11369] 34, 18, 209, 20, 96, 205, 148, 99, 189, 224, 137, 44, 90, 111, 29, 178
+[ 1604.180426][T11369] 213, 134, 46, 90, 54, 215, 247, 115, 2, 244, 226, 248, 64, 69, 58, 157
+[ 1604.180716][T11369] 85, 186, 184, 152, 58, 213, 23, 168, 138, 185, 55, 241, 82, 207, 211, 237
+[ 1604.181317][T11369] 117, 118, 38, 229, 95, 30, 248, 134, 226, 219, 246, 7, 57, 245, 22, 201
+[ 1604.181598][T11369] 66, 149, 144, 74, 184, 159, 105, 94, 212, 18, 55, 18, 141, 207, 115, 250
+[ 1604.181875][T11369] Decrypt----------
+[ 1604.182052][T11369] decrypttext, len = 175
+[ 1604.182215][T11369] 26, 106, 42, 228, 41, 196, 1, 7, 115, 112, 28, 166, 47, 69, 204, 200
+[ 1604.182534][T11369] 25, 150, 110, 173, 42, 187, 203, 231, 205, 47, 87, 34, 108, 77, 195, 205
+[ 1604.182788][T11369] 70, 173, 77, 90, 209, 4, 135, 62, 250, 230, 24, 60, 14, 231, 44, 136
+[ 1604.183062][T11369] 122, 133, 4, 55, 55, 155, 215, 203, 1, 109, 14, 185, 76, 35, 79, 37
+[ 1604.183323][T11369] 92, 21, 142, 57, 42, 143, 78, 128, 109, 160, 144, 227, 171, 35, 65, 4
+[ 1604.183583][T11369] 204, 179, 72, 98, 36, 94, 234, 38, 23, 5, 106, 134, 40, 19, 219, 253
+[ 1604.183836][T11369] 215, 169, 13, 177, 216, 179, 50, 127, 146, 55, 167, 202, 233, 187, 69, 88
+[ 1604.184088][T11369] 154, 38, 20, 91, 164, 129, 29, 126, 110, 224, 246, 12, 76, 243, 129, 25
+[ 1604.184346][T11369] 82, 35, 138, 66, 182, 99, 103, 92, 96, 64, 140, 230, 18, 44, 234, 94
+[ 1604.184603][T11369] 60, 223, 27, 207, 232, 251, 205, 170, 42, 108, 129, 214, 131, 219, 223, 255
+[ 1604.185024][T11369]
+[ 1604.185024][T11369]
+[ 1604.185024][T11369] Time 8, plaintext len: 123
+[ 1604.185321][T11369] plaintext, len = 123
+[ 1604.185484][T11369] 183, 253, 117, 231, 17, 226, 73, 221, 241, 95, 150, 217, 197, 57, 105, 68
+[ 1604.185759][T11369] 179, 179, 145, 203, 140, 230, 63, 112, 255, 221, 51, 86, 22, 59, 79, 27
+[ 1604.186059][T11369] 96, 253, 82, 253, 105, 17, 155, 51, 79, 215, 219, 165, 93, 180, 170, 2
+[ 1604.186323][T11369] 213, 193, 201, 206, 148, 138, 116, 120, 134, 76, 191, 95, 120, 254, 44, 4
+[ 1604.186622][T11369] 209, 248, 119, 5, 253, 203, 238, 191, 117, 170, 135, 108, 89, 70, 168, 75
+[ 1604.186893][T11369] 180, 14, 121, 186, 83, 131, 40, 12, 115, 44, 0, 103, 57, 111, 52, 79
+[ 1604.187188][T11369] 22, 169, 219, 134, 109, 124, 128, 173, 73, 193, 49, 220, 43, 91, 194, 79
+[ 1604.187468][T11369] Eecrypt----------
+[ 1604.187616][T11369] ciphertext, len = 128
+[ 1604.187775][T11369] 33, 29, 1, 206, 215, 6, 199, 131, 44, 214, 25, 148, 201, 102, 62, 22
+[ 1604.188025][T11369] 179, 248, 8, 10, 191, 239, 199, 136, 116, 218, 160, 57, 42, 159, 252, 188
+[ 1604.188304][T11369] 203, 211, 179, 96, 63, 214, 173, 162, 121, 133, 147, 167, 71, 162, 200, 5
+[ 1604.188551][T11369] 129, 1, 4, 101, 42, 237, 116, 119, 205, 128, 90, 37, 40, 64, 234, 218
+[ 1604.189119][T11369] 180, 131, 226, 79, 84, 0, 206, 65, 157, 120, 131, 149, 128, 66, 251, 11
+[ 1604.189397][T11369] 79, 152, 54, 47, 89, 175, 182, 94, 131, 40, 235, 251, 225, 94, 159, 94
+[ 1604.189671][T11369] 49, 187, 149, 60, 180, 164, 129, 187, 202, 150, 177, 102, 254, 88, 111, 246
+[ 1604.189970][T11369] 231, 52, 180, 69, 119, 234, 74, 19, 146, 217, 31, 66, 225, 94, 13, 1
+[ 1604.190251][T11369] Decrypt----------
+[ 1604.190414][T11369] decrypttext, len = 123
+[ 1604.190593][T11369] 183, 253, 117, 231, 17, 226, 73, 221, 241, 95, 150, 217, 197, 57, 105, 68
+[ 1604.190890][T11369] 179, 179, 145, 203, 140, 230, 63, 112, 255, 221, 51, 86, 22, 59, 79, 27
+[ 1604.191162][T11369] 96, 253, 82, 253, 105, 17, 155, 51, 79, 215, 219, 165, 93, 180, 170, 2
+[ 1604.191447][T11369] 213, 193, 201, 206, 148, 138, 116, 120, 134, 76, 191, 95, 120, 254, 44, 4
+[ 1604.191732][T11369] 209, 248, 119, 5, 253, 203, 238, 191, 117, 170, 135, 108, 89, 70, 168, 75
+[ 1604.192038][T11369] 180, 14, 121, 186, 83, 131, 40, 12, 115, 44, 0, 103, 57, 111, 52, 79
+[ 1604.192285][T11369] 22, 169, 219, 134, 109, 124, 128, 173, 73, 193, 49, 220, 43, 91, 194, 79
+[ 1604.192553][T11369]
+[ 1604.192553][T11369]
+[ 1604.192553][T11369] Time 9, plaintext len: 33
+[ 1604.192942][T11369] plaintext, len = 33
+[ 1604.193097][T11369] 233, 151, 88, 170, 77, 161, 11, 108, 55, 39, 242, 210, 21, 125, 88, 120
+[ 1604.193394][T11369] 140, 193, 186, 163, 134, 193, 197, 124, 91, 245, 33, 113, 113, 17, 61, 26
+[ 1604.193680][T11369] Eecrypt----------
+[ 1604.193857][T11369] ciphertext, len = 48
+[ 1604.194019][T11369] 75, 48, 89, 111, 130, 216, 227, 177, 139, 95, 145, 159, 253, 84, 107, 22
+[ 1604.194291][T11369] 215, 132, 34, 144, 58, 214, 94, 132, 138, 117, 26, 146, 215, 144, 93, 142
+[ 1604.194551][T11369] 245, 123, 209, 196, 255, 87, 78, 214, 177, 176, 62, 43, 17, 210, 28, 58
+[ 1604.194817][T11369] Decrypt----------
+[ 1604.194969][T11369] decrypttext, len = 33
+[ 1604.195144][T11369] 233, 151, 88, 170, 77, 161, 11, 108, 55, 39, 242, 210, 21, 125, 88, 120
+[ 1604.195442][T11369] 140, 193, 186, 163, 134, 193, 197, 124, 91, 245, 33, 113, 113, 17, 61, 26
+[ 1604.211594][T11369] [Penglai Driver@penglai_enclave_run] run returned successfully
+[ 1609.151344][T11371] [TRACE] init_time 0: random prikey:
+[ 1609.151769][T11371] 163, 49, 114, 6, 166, 79, 99, 78, 188, 110, 128, 153, 229, 238, 183, 254
+[ 1609.152073][T11371] 68, 129, 231, 202, 29, 29, 71, 63, 31, 9, 199, 89, 153, 134, 104, 202
+[ 1609.172962][T11371] [TRACE] init_time 0, sign_time 0: SUCCESS
+[ 1609.192806][T11371] [TRACE] init_time 0, sign_time 1: SUCCESS
+[ 1609.211950][T11371] [TRACE] init_time 0, sign_time 2: SUCCESS
+[ 1609.230345][T11371] [TRACE] init_time 0, sign_time 3: SUCCESS
+[ 1609.248888][T11371] [TRACE] init_time 0, sign_time 4: SUCCESS
+[ 1609.267377][T11371] [TRACE] init_time 0, sign_time 5: SUCCESS
+[ 1609.285784][T11371] [TRACE] init_time 0, sign_time 6: SUCCESS
+[ 1609.304169][T11371] [TRACE] init_time 0, sign_time 7: SUCCESS
+[ 1609.322400][T11371] [TRACE] init_time 0, sign_time 8: SUCCESS
+[ 1609.340758][T11371] [TRACE] init_time 0, sign_time 9: SUCCESS
+[ 1609.348171][T11371] [TRACE] init_time 1: random prikey:
+[ 1609.348578][T11371] 217, 227, 204, 0, 126, 50, 92, 251, 116, 40, 156, 71, 13, 188, 134, 166
+[ 1609.348839][T11371] 51, 116, 20, 229, 94, 139, 209, 103, 50, 223, 102, 230, 148, 155, 137, 47
+[ 1609.367400][T11371] [TRACE] init_time 1, sign_time 0: SUCCESS
+[ 1609.385690][T11371] [TRACE] init_time 1, sign_time 1: SUCCESS
+[ 1609.404421][T11371] [TRACE] init_time 1, sign_time 2: SUCCESS
+[ 1609.422889][T11371] [TRACE] init_time 1, sign_time 3: SUCCESS
+[ 1609.441333][T11371] [TRACE] init_time 1, sign_time 4: SUCCESS
+[ 1609.460103][T11371] [TRACE] init_time 1, sign_time 5: SUCCESS
+[ 1609.478440][T11371] [TRACE] init_time 1, sign_time 6: SUCCESS
+[ 1609.497874][T11371] [TRACE] init_time 1, sign_time 7: SUCCESS
+[ 1609.516989][T11371] [TRACE] init_time 1, sign_time 8: SUCCESS
+[ 1609.535694][T11371] [TRACE] init_time 1, sign_time 9: SUCCESS
+[ 1609.543176][T11371] [TRACE] init_time 2: random prikey:
+[ 1609.543520][T11371] 198, 78, 212, 163, 160, 115, 210, 151, 4, 57, 73, 69, 177, 56, 33, 142
+[ 1609.543820][T11371] 22, 76, 46, 216, 87, 83, 228, 163, 77, 125, 238, 178, 233, 67, 37, 75
+[ 1609.562785][T11371] [TRACE] init_time 2, sign_time 0: SUCCESS
+[ 1609.581207][T11371] [TRACE] init_time 2, sign_time 1: SUCCESS
+[ 1609.599770][T11371] [TRACE] init_time 2, sign_time 2: SUCCESS
+[ 1609.618605][T11371] [TRACE] init_time 2, sign_time 3: SUCCESS
+[ 1609.637129][T11371] [TRACE] init_time 2, sign_time 4: SUCCESS
+[ 1609.655759][T11371] [TRACE] init_time 2, sign_time 5: SUCCESS
+[ 1609.674252][T11371] [TRACE] init_time 2, sign_time 6: SUCCESS
+[ 1609.692888][T11371] [TRACE] init_time 2, sign_time 7: SUCCESS
+[ 1609.711284][T11371] [TRACE] init_time 2, sign_time 8: SUCCESS
+[ 1609.730278][T11371] [TRACE] init_time 2, sign_time 9: SUCCESS
+[ 1609.737676][T11371] [TRACE] init_time 3: random prikey:
+[ 1609.738023][T11371] 2, 235, 35, 21, 250, 10, 134, 18, 63, 177, 96, 200, 65, 144, 87, 174
+[ 1609.738320][T11371] 134, 54, 138, 36, 183, 56, 243, 150, 150, 132, 241, 253, 58, 135, 15, 32
+[ 1609.756747][T11371] [TRACE] init_time 3, sign_time 0: SUCCESS
+[ 1609.774846][T11371] [TRACE] init_time 3, sign_time 1: SUCCESS
+[ 1609.793192][T11371] [TRACE] init_time 3, sign_time 2: SUCCESS
+[ 1609.811521][T11371] [TRACE] init_time 3, sign_time 3: SUCCESS
+[ 1609.830345][T11371] [TRACE] init_time 3, sign_time 4: SUCCESS
+[ 1609.849063][T11371] [TRACE] init_time 3, sign_time 5: SUCCESS
+[ 1609.867388][T11371] [TRACE] init_time 3, sign_time 6: SUCCESS
+[ 1609.885809][T11371] [TRACE] init_time 3, sign_time 7: SUCCESS
+[ 1609.904121][T11371] [TRACE] init_time 3, sign_time 8: SUCCESS
+[ 1609.922400][T11371] [TRACE] init_time 3, sign_time 9: SUCCESS
+[ 1609.929872][T11371] [TRACE] init_time 4: random prikey:
+[ 1609.930252][T11371] 233, 147, 211, 146, 216, 235, 54, 7, 219, 249, 218, 45, 154, 23, 99, 234
+[ 1609.930529][T11371] 198, 211, 167, 55, 97, 143, 204, 177, 70, 116, 116, 145, 5, 130, 45, 39
+[ 1609.949157][T11371] [TRACE] init_time 4, sign_time 0: SUCCESS
+[ 1609.967500][T11371] [TRACE] init_time 4, sign_time 1: SUCCESS
+[ 1609.986105][T11371] [TRACE] init_time 4, sign_time 2: SUCCESS
+[ 1610.004943][T11371] [TRACE] init_time 4, sign_time 3: SUCCESS
+[ 1610.023411][T11371] [TRACE] init_time 4, sign_time 4: SUCCESS
+[ 1610.041977][T11371] [TRACE] init_time 4, sign_time 5: SUCCESS
+[ 1610.060477][T11371] [TRACE] init_time 4, sign_time 6: SUCCESS
+[ 1610.079146][T11371] [TRACE] init_time 4, sign_time 7: SUCCESS
+[ 1610.097691][T11371] [TRACE] init_time 4, sign_time 8: SUCCESS
+[ 1610.116128][T11371] [TRACE] init_time 4, sign_time 9: SUCCESS
+[ 1610.123489][T11371] [TRACE] init_time 5: random prikey:
+[ 1610.123841][T11371] 201, 234, 31, 199, 36, 179, 117, 99, 131, 198, 200, 69, 251, 43, 235, 46
+[ 1610.124155][T11371] 24, 198, 79, 46, 117, 67, 150, 123, 110, 223, 241, 236, 255, 136, 92, 160
+[ 1610.142696][T11371] [TRACE] init_time 5, sign_time 0: SUCCESS
+[ 1610.160815][T11371] [TRACE] init_time 5, sign_time 1: SUCCESS
+[ 1610.179388][T11371] [TRACE] init_time 5, sign_time 2: SUCCESS
+[ 1610.197972][T11371] [TRACE] init_time 5, sign_time 3: SUCCESS
+[ 1610.216686][T11371] [TRACE] init_time 5, sign_time 4: SUCCESS
+[ 1610.235581][T11371] [TRACE] init_time 5, sign_time 5: SUCCESS
+[ 1610.254206][T11371] [TRACE] init_time 5, sign_time 6: SUCCESS
+[ 1610.273011][T11371] [TRACE] init_time 5, sign_time 7: SUCCESS
+[ 1610.291685][T11371] [TRACE] init_time 5, sign_time 8: SUCCESS
+[ 1610.310182][T11371] [TRACE] init_time 5, sign_time 9: SUCCESS
+[ 1610.317680][T11371] [TRACE] init_time 6: random prikey:
+[ 1610.318025][T11371] 49, 9, 89, 240, 61, 115, 6, 44, 189, 144, 113, 6, 35, 239, 70, 125
+[ 1610.318273][T11371] 152, 79, 56, 25, 70, 21, 138, 226, 5, 177, 13, 227, 19, 59, 174, 182
+[ 1610.336822][T11371] [TRACE] init_time 6, sign_time 0: SUCCESS
+[ 1610.354992][T11371] [TRACE] init_time 6, sign_time 1: SUCCESS
+[ 1610.373616][T11371] [TRACE] init_time 6, sign_time 2: SUCCESS
+[ 1610.391894][T11371] [TRACE] init_time 6, sign_time 3: SUCCESS
+[ 1610.410282][T11371] [TRACE] init_time 6, sign_time 4: SUCCESS
+[ 1610.428867][T11371] [TRACE] init_time 6, sign_time 5: SUCCESS
+[ 1610.447876][T11371] [TRACE] init_time 6, sign_time 6: SUCCESS
+[ 1610.466781][T11371] [TRACE] init_time 6, sign_time 7: SUCCESS
+[ 1610.485237][T11371] [TRACE] init_time 6, sign_time 8: SUCCESS
+[ 1610.503628][T11371] [TRACE] init_time 6, sign_time 9: SUCCESS
+[ 1610.510989][T11371] [TRACE] init_time 7: random prikey:
+[ 1610.511326][T11371] 105, 196, 109, 63, 65, 248, 74, 63, 108, 245, 14, 148, 50, 120, 196, 119
+[ 1610.511648][T11371] 155, 20, 37, 144, 12, 96, 212, 206, 44, 187, 105, 2, 211, 171, 154, 206
+[ 1610.530550][T11371] [TRACE] init_time 7, sign_time 0: SUCCESS
+[ 1610.548747][T11371] [TRACE] init_time 7, sign_time 1: SUCCESS
+[ 1610.567499][T11371] [TRACE] init_time 7, sign_time 2: SUCCESS
+[ 1610.585958][T11371] [TRACE] init_time 7, sign_time 3: SUCCESS
+[ 1610.604346][T11371] [TRACE] init_time 7, sign_time 4: SUCCESS
+[ 1610.622748][T11371] [TRACE] init_time 7, sign_time 5: SUCCESS
+[ 1610.641183][T11371] [TRACE] init_time 7, sign_time 6: SUCCESS
+[ 1610.659667][T11371] [TRACE] init_time 7, sign_time 7: SUCCESS
+[ 1610.678124][T11371] [TRACE] init_time 7, sign_time 8: SUCCESS
+[ 1610.696592][T11371] [TRACE] init_time 7, sign_time 9: SUCCESS
+[ 1610.704093][T11371] [TRACE] init_time 8: random prikey:
+[ 1610.704629][T11371] 12, 120, 183, 135, 135, 64, 179, 77, 249, 199, 152, 2, 130, 55, 188, 103
+[ 1610.704893][T11371] 2, 104, 22, 56, 47, 138, 167, 134, 138, 41, 98, 165, 252, 22, 72, 142
+[ 1610.723226][T11371] [TRACE] init_time 8, sign_time 0: SUCCESS
+[ 1610.741330][T11371] [TRACE] init_time 8, sign_time 1: SUCCESS
+[ 1610.759849][T11371] [TRACE] init_time 8, sign_time 2: SUCCESS
+[ 1610.778567][T11371] [TRACE] init_time 8, sign_time 3: SUCCESS
+[ 1610.796971][T11371] [TRACE] init_time 8, sign_time 4: SUCCESS
+[ 1610.815270][T11371] [TRACE] init_time 8, sign_time 5: SUCCESS
+[ 1610.833660][T11371] [TRACE] init_time 8, sign_time 6: SUCCESS
+[ 1610.852196][T11371] [TRACE] init_time 8, sign_time 7: SUCCESS
+[ 1610.870695][T11371] [TRACE] init_time 8, sign_time 8: SUCCESS
+[ 1610.888988][T11371] [TRACE] init_time 8, sign_time 9: SUCCESS
+[ 1610.896422][T11371] [TRACE] init_time 9: random prikey:
+[ 1610.896787][T11371] 21, 81, 30, 128, 182, 244, 28, 14, 225, 49, 167, 10, 251, 5, 79, 114
+[ 1610.897073][T11371] 20, 211, 145, 43, 115, 20, 101, 236, 229, 223, 121, 2, 14, 99, 108, 55
+[ 1610.915552][T11371] [TRACE] init_time 9, sign_time 0: SUCCESS
+[ 1610.933558][T11371] [TRACE] init_time 9, sign_time 1: SUCCESS
+[ 1610.952162][T11371] [TRACE] init_time 9, sign_time 2: SUCCESS
+[ 1610.970817][T11371] [TRACE] init_time 9, sign_time 3: SUCCESS
+[ 1610.989231][T11371] [TRACE] init_time 9, sign_time 4: SUCCESS
+[ 1611.007738][T11371] [TRACE] init_time 9, sign_time 5: SUCCESS
+[ 1611.026036][T11371] [TRACE] init_time 9, sign_time 6: SUCCESS
+[ 1611.044514][T11371] [TRACE] init_time 9, sign_time 7: SUCCESS
+[ 1611.063116][T11371] [TRACE] init_time 9, sign_time 8: SUCCESS
+[ 1611.081907][T11371] [TRACE] init_time 9, sign_time 9: SUCCESS
+[ 1611.125602][T11371] [Penglai Driver@penglai_enclave_run] run returned successfully
+[ 1619.639529][T11373] result = 0
+[ 1619.647219][T11373] pubkey xA:
+[ 1619.647518][T11373] 18, 57, 31, 121, 93, 166, 30, 40, 202, 187, 167, 144, 12, 123, 82, 139
+[ 1619.647838][T11373] 225, 83, 236, 156, 157, 160, 71, 158, 124, 78, 65, 135, 155, 249, 167, 211
+[ 1619.648111][T11373]
+[ 1619.648111][T11373] yA:
+[ 1619.648338][T11373] 97, 35, 105, 77, 228, 62, 135, 150, 137, 187, 63, 183, 46, 34, 106, 126
+[ 1619.648685][T11373] 39, 111, 98, 230, 25, 4, 210, 198, 44, 116, 156, 55, 87, 15, 191, 117
+[ 1619.648976][T11373]
+[ 1619.648976][T11373] Check pub end
+[ 1619.649446][T11373] hash_len: 32
+[ 1619.649598][T11373] 68, 204, 203, 223, 29, 251, 4, 0, 249, 15, 56, 198, 85, 125, 21, 245
+[ 1619.649861][T11373] 207, 44, 216, 217, 198, 108, 129, 123, 195, 74, 91, 158, 227, 253, 225, 234
+[ 1619.657724][T11373] Verify successfully
+[ 1619.701495][T11373] [Penglai Driver@penglai_enclave_run] run returned successfully
+[ 1668.041820][T11384] [Penglai Driver@penglai_enclave_run] run returned successfully
+[ 1705.770339][T11398] Prime is running
+[ 1705.773578][T11398] [Penglai Driver@penglai_enclave_run] run returned successfully
+[ 1718.759461][T11408] [TEST 1]: Can DeriveSealingKey() derive the same key on same salt between multiple setup times?
+[ 1718.760762][T11408] 141, 240, 131, 186, 251, 167, 95, 161, 235, 83, 19, 22, 82, 7, 207, 135
+[ 1718.761081][T11408] [TEST 2]: If change salt, can DeriveSealingKey() derive different keys?
+[ 1718.761918][T11408] 106, 169, 224, 254, 118, 180, 40, 102, 102, 100, 121, 160, 45, 12, 241, 102
+[ 1718.762296][T11408] [TEST 3]: Can seal output cypher text and unseal get the correct plaintext
+[ 1718.762741][T11408] plaintext: Data to encrypt, Hello penglai, add_text: add mac text
+[ 1718.766290][T11408] seal_data encrypt success
+[ 1718.767256][T11408] seal_data decrypt authenticate Success
+[ 1718.767536][T11408] penglai_seal test finished --- ALL TEST SUCCESS!
+[ 1718.787842][T11408] [Penglai Driver@penglai_enclave_run] run returned successfully
+
+
+
+

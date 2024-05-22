@@ -1,0 +1,566 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><title>testspec 操作系统 - 基础用例</title>
+<link type="text/css" rel="stylesheet" href="http://10.0.0.11/gui/themes/default/css/tl_documents.css" />
+<style type="text/css" media="print">.notprintable { display:none;}</style>
+</head>
+<body>
+<div>
+<div style="float:right;">TestLink Community [configure $tlCfg-&gt;document_generator-&gt;company_name]</div>
+<div>&nbsp;</div><hr />
+<p style="text-align: center;"><img alt="TestLink logo" title="configure using $tlCfg->document_generator->company_logo" height="53" src="http://10.0.0.11/gui/themes/default/images/tl-logo-transparent-25.png" /></p></div>
+<div class="doc_title"><p>测试用例</p></div>
+<div class="doc_title" style="text-align:left;margin: auto;"><p>测试产品: 操作系统<br/>测试用例集: 操作系统 - 基础用例</p></div>
+<div class="summary"><p id="printedby">由TestLink打印 2024-05-21</p></div>
+<div class="pagefooter" id="copyright">2012 &copy; TestLink Community</div>
+<h1 class="general" style="page-break-before: always">内容列表</h1><div class="toc"><p style="padding-left: 20px;"><b><a href="#toc_1">1.基础用例</a></b></p>
+<p style="padding-left: 45px;"><a href="#toc_tc699229">kylinos-24014: 安装kiranUI</a></p><p style="padding-left: 45px;"><a href="#toc_tc699234">kylinos-24015: 音频设置</a></p><p style="padding-left: 45px;"><a href="#toc_tc699247">kylinos-24016: #应用打开与关闭</a></p><p style="padding-left: 45px;"><a href="#toc_tc699251">kylinos-24017: 网络设置-有线网络</a></p><p style="padding-left: 45px;"><a href="#toc_tc699256">kylinos-24018: 系统面板登录界面测试</a></p><p style="padding-left: 45px;"><a href="#toc_tc699271">kylinos-24019: 账户管理功能</a></p><p style="padding-left: 45px;"><a href="#toc_tc699290">kylinos-24020: 显示设置-单屏模式</a></p><p style="padding-left: 45px;"><a href="#toc_tc804849">kylinos-26605: 显示设置--双屏</a></p><p style="padding-left: 45px;"><a href="#toc_tc699317">kylinos-24021: 主题设置</a></p><p style="padding-left: 45px;"><a href="#toc_tc699325">kylinos-24022: 文件复制、剪切、删除</a></p></div><h1 class="doclevel" >范围</h1>
+<div class="txtlevel"><p>用于操作系统的测试流程管理。</p></div>
+ <br/><a name='toc_1'></a>
+<h1 class='doclevel'>1.测试用例集 : 基础用例</h1>
+<a name="toc_tc699229"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">测试用例 kylinos-24014: 安装kiranUI&nbsp;<span style="font-size: 80%;">[版本 : 2]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">作者:</span></td><td colspan="3">yangjingting</td></tr>
+<tr><td width="20%" valign="top"><span class="label">最后编辑人:</span></td><td colspan="3">liulei</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">步骤动作:</span></td><td><span class="label">期望的结果:</span></td></tr><tr><td width="5">1</td><td><ol>
+	<li>配置研发提供的repo源<br />
+	yum clean all&amp;&amp;yum makecache<br />
+	yum update kiran*<br />
+	yum install&nbsp;&nbsp;kiran-manual kiran-authentication-devices-sdk<br />
+	&nbsp;</li>
+	<li>安装完成后重启系统，登录系统</li>
+</ol>
+</td><td><ol>
+	<li>安装成功</li>
+	<li>可以成功进入系统，桌面无异常</li>
+</ol>
+</td></tr><tr><td width="20%" valign="top"><span class="label">测试方式:</span></td><td colspan="3">手工</td></tr>
+<tr><td width="20%" valign="top"><span class="label">测试执行时间 (分钟):</span></td><td colspan="3"></td></tr>
+<tr><td colspan="4"></td></tr><tr><td > 用例优先级:</td><td  colspan = "3" ></td></tr>
+<tr><td width="20%" valign="top"><span class="label">产品需求</span><td colspan="3">&nbsp;无<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">关键字:</span></td><td colspan="3">&nbsp;无<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc699234"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">测试用例 kylinos-24015: 音频设置&nbsp;<span style="font-size: 80%;">[版本 : 4]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">作者:</span></td><td colspan="3">yangjingting</td></tr>
+<tr><td colspan="4"><span class="label">摘要:</span><br /><table border="1" cellspacing="0" style="width:426.0000pt">
+	<tbody>
+		<tr>
+			<td style="background-color:#d7d7d7; width:142.0000pt">
+			<p><strong><strong>一级菜单</strong></strong></p>
+			</td>
+			<td style="background-color:#d7d7d7; width:132.7500pt">
+			<p><strong><strong>二级菜单</strong></strong></p>
+			</td>
+			<td style="background-color:#d7d7d7; width:151.2500pt">
+			<p><strong><strong>功能说明</strong></strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:142.0000pt">
+			<p>音频设置</p>
+			</td>
+			<td style="width:132.7500pt">
+			<p>输入</p>
+			</td>
+			<td style="width:151.2500pt">
+			<p>选择输入设备、输入音量、反馈音量</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:142.0000pt">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:132.7500pt">
+			<p>输出</p>
+			</td>
+			<td style="width:151.2500pt">
+			<p>选择输出设备、输出音量、是否开启音量增强、左右声道平衡调整</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</td></tr><tr><td colspan="4"><span class="label">前提:</span><br /><p>需要手动安装parole工具、firefox或google浏览器</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">步骤动作:</span></td><td><span class="label">期望的结果:</span></td></tr><tr><td width="5">1</td><td><ol>
+	<li>点击&ldquo;开始菜单&rdquo;》&ldquo;控制中心&rdquo;&gt;&quot;音频设置&quot;</li>
+	<li>输出设置：插入耳机，选择输出设置&gt;播放任意音乐</li>
+	<li>调整输出音量：调大和调小音量</li>
+	<li>调节&ldquo;左/右平衡&rdquo;</li>
+</ol>
+</td><td><ol>
+	<li>打开音频设置工具</li>
+	<li>可以听到声音</li>
+	<li>音量调节成功</li>
+	<li>调节成功</li>
+</ol>
+</td></tr><tr><td width="5">2</td><td><ol>
+	<li>插入麦克风，选择&quot;输入&quot;&gt;&ldquo;输入设备&rdquo;</li>
+	<li>调节输入音量：分别调大和调小音量</li>
+	<li>调节反馈音量</li>
+</ol>
+</td><td><ol>
+	<li>选择成功</li>
+	<li>调节成功</li>
+	<li>调节成功</li>
+</ol>
+</td></tr><tr><td width="20%" valign="top"><span class="label">测试方式:</span></td><td colspan="3">手工</td></tr>
+<tr><td width="20%" valign="top"><span class="label">测试执行时间 (分钟):</span></td><td colspan="3"></td></tr>
+<tr><td colspan="4"></td></tr><tr><td > 用例优先级:</td><td  colspan = "3" ></td></tr>
+<tr><td width="20%" valign="top"><span class="label">产品需求</span><td colspan="3">&nbsp;无<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">关键字:</span></td><td colspan="3">&nbsp;无<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc699247"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">测试用例 kylinos-24016: #应用打开与关闭&nbsp;<span style="font-size: 80%;">[版本 : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">作者:</span></td><td colspan="3">yangjingting</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">步骤动作:</span></td><td><span class="label">期望的结果:</span></td></tr><tr><td width="5">1</td><td><ol>
+	<li>点击开始菜单，依次打开所有应用</li>
+	<li>点击常用应用中的任意应用</li>
+</ol>
+</td><td><ol>
+	<li>所有应用可以打开，不能打开的给出合理的提示</li>
+	<li>成功打开应用</li>
+</ol>
+</td></tr><tr><td width="5">2</td><td><ol>
+	<li>选择任意应用，鼠标右键&gt;点击&quot;启动&quot;</li>
+	<li>点击&rdquo;添加到桌面&ldquo;</li>
+	<li>点击&rdquo;添加到收藏夹&ldquo;</li>
+	<li>点击&rdquo;固定到任务栏&ldquo;</li>
+</ol>
+</td><td><ol>
+	<li>打开应用</li>
+	<li>桌面显示该应用图标，双击可以启动</li>
+	<li>开始菜单收藏夹显示该应用，单击可以打开</li>
+	<li>任务栏固定显示该应用图标，单击可以打开</li>
+</ol>
+</td></tr><tr><td width="20%" valign="top"><span class="label">测试方式:</span></td><td colspan="3">手工</td></tr>
+<tr><td width="20%" valign="top"><span class="label">测试执行时间 (分钟):</span></td><td colspan="3"></td></tr>
+<tr><td colspan="4"></td></tr><tr><td > 用例优先级:</td><td  colspan = "3" ></td></tr>
+<tr><td width="20%" valign="top"><span class="label">产品需求</span><td colspan="3">&nbsp;无<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">关键字:</span></td><td colspan="3">&nbsp;无<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc699251"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">测试用例 kylinos-24017: 网络设置-有线网络&nbsp;<span style="font-size: 80%;">[版本 : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">作者:</span></td><td colspan="3">yangjingting</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">步骤动作:</span></td><td><span class="label">期望的结果:</span></td></tr><tr><td width="5">1</td><td><ol>
+	<li>点击&ldquo;开始菜单&rdquo;&gt;&quot;控制中心&quot;&gt;&quot;网络&quot;</li>
+	<li>点击有线网卡最右边的更多图标</li>
+	<li>设置IPV4方法为&ldquo;自动&rdquo;&gt;输入首选DNS&gt;点击&ldquo;保存&rdquo;</li>
+	<li>鼠标单击有线网络栏区域进行网络连接</li>
+	<li>验证自动连接是否成功：打开终端输入ip a&gt;ping局域网内其他IP</li>
+</ol>
+</td><td><ol>
+	<li>打开网络设置工具，默认显示有线连接1</li>
+	<li>打开有线网络设置界面</li>
+	<li>保存成功，返回到有线网卡界面</li>
+	<li>弹出提示框提示网络连接成功，有线网卡栏后面显示连接成功的图标</li>
+	<li>显示获取到的IP，可以ping通其他IP</li>
+</ol>
+</td></tr><tr><td width="5">2</td><td><ol>
+	<li>点击&ldquo;创建&rdquo;&gt;修改&ldquo;网络名称&rdquo;&gt;设置IPV4方法为&ldquo;手动&rdquo;&gt;输入&rdquo;IP地址、子网掩码、网关、DNS&ldquo;&gt;点击&rdquo;保存&ldquo;</li>
+	<li>鼠标单击创建的网卡栏</li>
+	<li>验证手动连接是否成功：打开终端输入ip a&gt;ping局域网内其他IP</li>
+	<li>再次点击&rdquo;创建&ldquo;&gt;设置IPV4方法为&ldquo;手动&rdquo;&gt;不输入必填项点击&rdquo;保存&ldquo;</li>
+</ol>
+</td><td><ol>
+	<li>保存成功，返回到有线网卡界面</li>
+	<li>弹出提示框提示网络连接成功，有线网卡栏后面显示连接成功的图标</li>
+	<li>显示获取到的IP与步骤1设置的一致，可以ping通其他IP</li>
+	<li>无法保存，给出错误提示</li>
+</ol>
+</td></tr><tr><td width="5">3</td><td><ol>
+	<li>断开：点击某个连接中的网卡的更多图标按钮&gt;点击&rdquo;断开&ldquo;</li>
+	<li>删除未连接的网卡：点击某个未连接的网卡的更多图标按钮&gt;点击&rdquo;删除&ldquo;<br />
+	点击&rdquo;否&ldquo;<br />
+	点击&rdquo;是&ldquo;</li>
+	<li>删除连接中的网卡：点击某个连接中的网卡的更多图标按钮&gt;点击&rdquo;删除&ldquo;&gt;点击&rdquo;是&ldquo;</li>
+</ol>
+</td><td><ol>
+	<li>断开成功，弹出网络提示弹窗，同时自动连接上其他打开了&rdquo;自动连接&ldquo;开关的网卡</li>
+	<li>选择&rdquo;否&ldquo;则不会删除网卡;选择&rdquo;是&ldquo;则删除成功，列表中不再显示该网卡，弹出删除成功提示弹窗</li>
+	<li>网卡删除成功，弹出删除成功提示弹窗</li>
+</ol>
+</td></tr><tr><td width="20%" valign="top"><span class="label">测试方式:</span></td><td colspan="3">手工</td></tr>
+<tr><td width="20%" valign="top"><span class="label">测试执行时间 (分钟):</span></td><td colspan="3"></td></tr>
+<tr><td colspan="4"></td></tr><tr><td > 用例优先级:</td><td  colspan = "3" ></td></tr>
+<tr><td width="20%" valign="top"><span class="label">产品需求</span><td colspan="3">&nbsp;无<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">关键字:</span></td><td colspan="3">&nbsp;无<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc699256"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">测试用例 kylinos-24018: 系统面板登录界面测试&nbsp;<span style="font-size: 80%;">[版本 : 2]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">作者:</span></td><td colspan="3">yangjingting</td></tr>
+<tr><td width="20%" valign="top"><span class="label">最后编辑人:</span></td><td colspan="3">liulei</td></tr>
+<tr><td colspan="4"><span class="label">摘要:</span><br /><table border="1" cellspacing="0" style="width:414.8000pt">
+	<tbody>
+		<tr>
+			<td style="width:73.1000pt">
+			<p>GN-XTMB _002</p>
+			</td>
+			<td style="width:54.0000pt">
+			<p>系统面板登录界面测试</p>
+			</td>
+			<td style="width:149.4000pt">
+			<p>在登录界面，执行关机操作(选择不同的关机模式：挂起、休眠、重启、关机)，观察系统效果</p>
+			</td>
+			<td style="width:138.3000pt">
+			<p>登录界面具有关机与启动计算机按钮，并且按钮有效。关机功能按照选择模式进行。</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:73.1000pt">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:54.0000pt">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:149.4000pt">
+			<p>在登录界面，输入正确或者错误用户名和口令，选择点击登录，观察界面信息。</p>
+			</td>
+			<td style="width:138.3000pt">
+			<p>具有用户名、口令输入入口，正确输入用户名和口令时切换到用户界面</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">步骤动作:</span></td><td><span class="label">期望的结果:</span></td></tr><tr><td width="5">1</td><td><ol>
+	<li>在登录界面，点击右下角电源按钮，选择重启</li>
+</ol>
+</td><td><ol>
+	<li>系统进入重启操作</li>
+</ol>
+</td></tr><tr><td width="5">2</td><td><ol>
+	<li>在登录界面，点击右下角电源按钮，选择关机</li>
+</ol>
+</td><td><ol>
+	<li>系统进入关机操作</li>
+</ol>
+</td></tr><tr><td width="5">3</td><td><ol>
+	<li>在登录界面，点击右下角电源按钮，选择待机（<strong>若无待机按钮该步骤可不测</strong>）</li>
+	<li>通过鼠标键盘唤醒</li>
+</ol>
+</td><td><ol>
+	<li>系统进入待机操作</li>
+	<li>正常唤醒到登录界面</li>
+</ol>
+</td></tr><tr><td width="5">4</td><td><ol>
+	<li>在登录界面，点击右下角电源按钮，选择休眠（<strong>若无休眠按钮该步骤可不测</strong>）</li>
+	<li>通过电源键唤醒</li>
+</ol>
+</td><td><ol>
+	<li>系统进入休眠操作</li>
+	<li>正常唤醒到登录界面</li>
+</ol>
+</td></tr><tr><td width="5">5</td><td><ol>
+	<li>在登录界面，输入不存在的用户名，按【Enter】键，再输入密码，按【Enter】键</li>
+</ol>
+</td><td><ol>
+	<li>用户登录失败，程序无异常且提示认证失败</li>
+</ol>
+</td></tr><tr><td width="5">6</td><td><ol>
+	<li>在登录界面，输入正确的用户名，按【Enter】键，再输入错误的密码，按【Enter】键</li>
+</ol>
+</td><td><ol>
+	<li>用户登录失败，程序无异常且提示认证失败</li>
+</ol>
+</td></tr><tr><td width="5">7</td><td><ol>
+	<li>在登录界面，输入正确用户名，按【Enter】键，再输入正确的密码，按【Enter】键</li>
+</ol>
+</td><td><ol>
+	<li>用户登录成功，跳转到用户桌面</li>
+</ol>
+</td></tr><tr><td width="20%" valign="top"><span class="label">测试方式:</span></td><td colspan="3">手工</td></tr>
+<tr><td width="20%" valign="top"><span class="label">测试执行时间 (分钟):</span></td><td colspan="3"></td></tr>
+<tr><td colspan="4"></td></tr><tr><td > 用例优先级:</td><td  colspan = "3" ></td></tr>
+<tr><td width="20%" valign="top"><span class="label">产品需求</span><td colspan="3">&nbsp;无<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">关键字:</span></td><td colspan="3">&nbsp;无<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc699271"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">测试用例 kylinos-24019: 账户管理功能&nbsp;<span style="font-size: 80%;">[版本 : 3]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">作者:</span></td><td colspan="3">yangjingting</td></tr>
+<tr><td width="20%" valign="top"><span class="label">最后编辑人:</span></td><td colspan="3">liulei</td></tr>
+<tr><td colspan="4"><span class="label">摘要:</span><br /><p>控制中心更新了用户管理，原来的用户管理mate-user-admin弃用掉了，启用新的用户管理kiran-accont-manager：</p>
+
+<ol>
+	<li>能够新建，删除用户；</li>
+	<li>能够禁用，启用用户；</li>
+	<li>在用户的认证管理中能录入指纹数据和人脸数据。</li>
+</ol>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">步骤动作:</span></td><td><span class="label">期望的结果:</span></td></tr><tr><td width="5">1</td><td><ol>
+	<li>点击&ldquo;开始菜单&rdquo;-&gt;&quot;控制面板&quot;-&gt;&ldquo;账户管理&rdquo;</li>
+	<li>新建用户：输入&ldquo;登录名、账户密码、确认密码&rdquo;，选择账户类型（普通用户或管理员）-&gt;点击&ldquo;创建&rdquo;按钮</li>
+	<li>删除用户：选择某个用户-&gt;点击&ldquo;删除用户&rdquo;按钮-&gt;选择&ldquo;是&rdquo;</li>
+</ol>
+</td><td><ol>
+	<li>打开账户管理工具成功，默认显示创建新账户界面，左边显示系统中的用户列表</li>
+	<li>新建用户成功，列表中显示新增的用户</li>
+	<li>删除成功，列表中不再显示该用户</li>
+</ol>
+</td></tr><tr><td width="5">2</td><td><ol>
+	<li>启用：选择某个用户，打开&rdquo;启用账户&ldquo;，登录该用户</li>
+	<li>禁用：选择某个用户，关闭&rdquo;启用账户&ldquo;，登录该用户</li>
+</ol>
+</td><td><ol>
+	<li>启用成功，可以登录该用户</li>
+	<li>禁用成功，无法登录该用户</li>
+</ol>
+</td></tr><tr><td width="5">3</td><td><ol>
+	<li>编辑用户头像：选择某个用户，点击头像区域-&gt;选择任意一个头像-&gt;点击&ldquo;确认&rdquo;-&gt;点击&ldquo;保存&rdquo;</li>
+	<li>修改密码：选择某个用户，点击&ldquo;修改密码&rdquo;-&gt;输入新密码并再次确认新密码-&gt;点击&ldquo;保存&rdquo;-&gt;点击&ldquo;保存&rdquo;，用新密码登录该用户</li>
+</ol>
+</td><td><ol>
+	<li>头像修改成功，账户管理工具和登录界面以及登录该用户后的开始菜单中都改变成对应头像</li>
+	<li>密码修改成功，用新密码可以登录</li>
+</ol>
+</td></tr><tr><td width="5">4</td><td><ol>
+	<li>高级设置：选择创建新账户-&gt;输入登录名和密码-&gt;点击&rdquo;高级设置&ldquo;</li>
+	<li>输入&rdquo;登录shell&ldquo;,如/bin/bash，打开&rdquo;指定用户ID&ldquo;-&gt;输入固定的ID-&gt;打开&rdquo;指定用户目录&ldquo;-&gt;输入固定的目录-&gt;点击&ldquo;确认&ldquo;-&gt;点击&rdquo;创建&ldquo;</li>
+	<li>终端输入cat /etc/passwd，查看新增的用户信息</li>
+</ol>
+</td><td><ol>
+	<li>弹出高级设置弹窗</li>
+	<li>新建用户成功</li>
+	<li>显示用户ID、家目录、登录shell与设置的一致</li>
+</ol>
+</td></tr><tr><td width="5">5</td><td><ol>
+	<li>点击开始菜单&gt;切换用户&gt;输入账号密码（例：test）登录</li>
+	<li>ctrl+alt+F1，切回root用户-&gt;点击开始菜单&gt;控制中心&gt;账户管理工具&gt;删除test用户-》是</li>
+	<li>切回test用户，查看用户桌面是否显示正常，打开终端查看提示信息是否正确</li>
+	<li>test登录点击开始菜单--》电源--》注销</li>
+	<li>ctrl+alt+F1，切回root用户-&gt;点击开始菜单&gt;控制中心&gt;账户管理工具&gt;删除test用户-》是</li>
+</ol>
+</td><td><ol>
+	<li>成功登录普通用户test</li>
+	<li>删除用户失败，弹出相关test用户正在使用的提示信息</li>
+	<li>test用户桌面显示正常，终端提示信息正确</li>
+	<li>test用户正常注销</li>
+	<li>test用户正常被删除</li>
+</ol>
+</td></tr><tr><td width="20%" valign="top"><span class="label">测试方式:</span></td><td colspan="3">手工</td></tr>
+<tr><td width="20%" valign="top"><span class="label">测试执行时间 (分钟):</span></td><td colspan="3"></td></tr>
+<tr><td colspan="4"></td></tr><tr><td > 用例优先级:</td><td  colspan = "3" ></td></tr>
+<tr><td width="20%" valign="top"><span class="label">产品需求</span><td colspan="3">&nbsp;无<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">关键字:</span></td><td colspan="3">&nbsp;无<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc699290"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">测试用例 kylinos-24020: 显示设置-单屏模式&nbsp;<span style="font-size: 80%;">[版本 : 5]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">作者:</span></td><td colspan="3">yangjingting</td></tr>
+<tr><td width="20%" valign="top"><span class="label">最后编辑人:</span></td><td colspan="3">liulei</td></tr>
+<tr><td colspan="4"><span class="label">摘要:</span><br /><ol>
+	<li>能够将屏幕向左旋转90度，向右旋转90度，左右翻转，上下翻转；</li>
+	<li>可以调整分辨率；</li>
+	<li>可以调整刷新率；</li>
+	<li>可以调整缩放率。</li>
+</ol>
+</td></tr><tr><td colspan="4"><span class="label">前提:</span><br /><p>需要准备2个普通的显示器，一个2K显示器，一个4K显示器（跟云桌面借）</p>
+
+<p>2D和3D测试可使用工具LTF，最新版本下载地址：10.0.0.66</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">步骤动作:</span></td><td><span class="label">期望的结果:</span></td></tr><tr><td width="5">1</td><td><p><strong>单屏时：</strong></p>
+
+<ol>
+	<li>点击&rdquo;开始菜单&ldquo;-&gt;&rdquo;显示设置&ldquo;</li>
+	<li>点击向左旋转90度图标-&gt;应用</li>
+	<li>点击向右旋转90度图标-&gt;应用</li>
+	<li>点击左右翻转图标-&gt;应用</li>
+	<li>点击上下翻转图标-&gt;应用</li>
+</ol>
+</td><td><ol>
+	<li>弹出显示设置弹窗</li>
+	<li>屏幕向左旋转90度</li>
+	<li>屏幕向右旋转90度</li>
+	<li>屏幕左右翻转</li>
+	<li>屏幕上下翻转</li>
+</ol>
+</td></tr><tr><td width="5">2</td><td><ol>
+	<li>修改分辨率为，如改为1680&times;1080，1680&times;1050，1600&times;900，1440&times;900，1024&times;768，点击应用</li>
+	<li>修改刷新率，点击应用</li>
+	<li>调整缩放率分别为100%和200%，点击应用</li>
+	<li>多次插拔显示线，观察显示现象</li>
+</ol>
+</td><td><ol>
+	<li>修改分辨率成功</li>
+	<li>修改成功</li>
+	<li>修改成功</li>
+	<li>显示正常，无闪烁、花屏、黑屏、系统卡死等异常现象</li>
+</ol>
+</td></tr><tr><td width="5">3</td><td><ol>
+	<li>机器关机，开机前不接入显示器，按压电源键开机</li>
+	<li>开机完成后再接入显示器</li>
+</ol>
+</td><td><ol>
+	<li>系统成功开机</li>
+	<li>能够正常显示</li>
+</ol>
+</td></tr><tr><td width="20%" valign="top"><span class="label">测试方式:</span></td><td colspan="3">手工</td></tr>
+<tr><td width="20%" valign="top"><span class="label">测试执行时间 (分钟):</span></td><td colspan="3"></td></tr>
+<tr><td colspan="4"></td></tr><tr><td > 用例优先级:</td><td  colspan = "3" ></td></tr>
+<tr><td width="20%" valign="top"><span class="label">产品需求</span><td colspan="3">&nbsp;无<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">关键字:</span></td><td colspan="3">&nbsp;无<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc804849"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">测试用例 kylinos-26605: 显示设置--双屏&nbsp;<span style="font-size: 80%;">[版本 : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">作者:</span></td><td colspan="3">liulei</td></tr>
+<tr><td colspan="4"><span class="label">前提:</span><br /><ol>
+	<li>准备两块显示器</li>
+</ol>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">步骤动作:</span></td><td><span class="label">期望的结果:</span></td></tr><tr><td width="5">1</td><td><p><strong>双屏模式--复制屏模式</strong></p>
+
+<ol>
+	<li>点击开始菜单--》控制面板--》显示设置</li>
+	<li>选择为复制屏，查看2个显示器显示内容是否一致</li>
+	<li>修改分辨率为，如改为1680&times;1080，1680&times;1050，1600&times;900，1440&times;900，1024&times;768，点击应用</li>
+	<li>点击某一台显示器，设置旋转方向</li>
+	<li>拔掉其中一个显示器</li>
+</ol>
+</td><td><ol>
+	<li>能查看到双屏信息</li>
+	<li>2个显示器显示内容一致</li>
+	<li>2个显示器显示分辨率一致</li>
+	<li>2个显示器方向相同</li>
+	<li>另一个显示器显示正常</li>
+</ol>
+</td></tr><tr><td width="5">2</td><td><p><strong>双屏模式--扩展屏模式</strong></p>
+
+<ol>
+	<li>点击开始菜单--》控制面板--》显示设置--》选择为扩展屏模式，设置其中一个显示器为主屏</li>
+	<li>修改另一个显示器为主屏</li>
+	<li>两块屏幕分别修改分辨率为，如改为1680&times;1080，1680&times;1050，1600&times;900，1440&times;900，1024&times;768，点击应用</li>
+	<li>在2个显示器都打开终端，点击&ldquo;最大化&rdquo;</li>
+	<li>拔掉其中一个显示器，查看桌面是否都显示到了连接的显示器</li>
+	<li>再接上拔掉的显示器，查看是否恢复之前设置的显示</li>
+</ol>
+</td><td><ol>
+	<li>设置成功，主屏显示器显示任务栏</li>
+	<li>修改成功，另一个显示器变为主屏，显示任务栏</li>
+	<li>两块屏幕设置的分辨率互不影响能够正常设置</li>
+	<li>最大化后终端不会扩展到另一个屏幕</li>
+	<li>桌面都显示到了连接的显示器</li>
+	<li>2个显示器恢复之前设置的显示</li>
+</ol>
+</td></tr><tr><td width="20%" valign="top"><span class="label">测试方式:</span></td><td colspan="3">手工</td></tr>
+<tr><td width="20%" valign="top"><span class="label">测试执行时间 (分钟):</span></td><td colspan="3"></td></tr>
+<tr><td colspan="4"></td></tr><tr><td > 用例优先级:</td><td  colspan = "3" ></td></tr>
+<tr><td width="20%" valign="top"><span class="label">产品需求</span><td colspan="3">&nbsp;无<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">关键字:</span></td><td colspan="3">&nbsp;无<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc699317"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">测试用例 kylinos-24021: 主题设置&nbsp;<span style="font-size: 80%;">[版本 : 2]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">作者:</span></td><td colspan="3">yangjingting</td></tr>
+<tr><td width="20%" valign="top"><span class="label">最后编辑人:</span></td><td colspan="3">liulei</td></tr>
+<tr><td colspan="4"><span class="label">摘要:</span><br /><p>1.能够正常显示主题设置界面</p>
+
+<p>2.主题设置界面正常显示深浅色主题设置、选择图标主题、选择光标主题</p>
+</td></tr><tr><td colspan="4"><span class="label">前提:</span><br /><p>gtk窗口程序，例如：终端、浏览器、控制中心、文件管理器等；</p>
+
+<p>qt自研窗口程序，例如：个性化、登录设置、账户管理、时间和日期管理等</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">步骤动作:</span></td><td><span class="label">期望的结果:</span></td></tr><tr><td width="5">1</td><td><p><strong>设置主题为冰晶白主题</strong></p>
+
+<ol>
+	<li>登录root用户，打开&quot;控制中心&quot;-&gt;&quot;个性化&quot;-&gt;&quot;主题设置&quot;-&gt;选择&quot;冰晶白主题&quot;</li>
+	<li>查看系统面板、桌面菜单栏、gtk应用程序、qt应用程序主题类型是否为冰晶白主题主题</li>
+	<li>登录普通用户test，查看各个界面</li>
+</ol>
+</td><td><ol>
+	<li>选择成功</li>
+	<li>系统桌面所有都切换为了冰晶白主题主题</li>
+	<li>test用户仍为曜岩黑主题，不受root用户更改影响</li>
+</ol>
+</td></tr><tr><td width="5">2</td><td><p><strong>设置主题为曜岩黑主题</strong></p>
+
+<ol>
+	<li>test用户打开&quot;控制中心&quot;-&gt;&quot;个性化&quot;-&gt;&quot;主题设置&quot;-&gt;选择&quot;曜岩黑主题&quot;</li>
+	<li>查看系统面板、桌面菜单栏、gtk应用程序、qt应用程序主题类型是否为冰晶白主题主题</li>
+	<li>切回root用户查看各个界面</li>
+</ol>
+</td><td><ol>
+	<li>选择成功</li>
+	<li>系统桌面所有都切换为了曜岩黑主题主题</li>
+	<li>root用户仍为冰晶白主题，不受test用户更改影响</li>
+</ol>
+</td></tr><tr><td width="5">3</td><td><p><strong>多次切换测试</strong></p>
+
+<ol>
+	<li>交叉选择&quot;曜岩黑&quot;和&quot;冰晶白&quot;</li>
+</ol>
+</td><td><p>&nbsp;</p>
+
+<ol>
+	<li>切换时各个界面正常显示</li>
+</ol>
+</td></tr><tr><td width="20%" valign="top"><span class="label">测试方式:</span></td><td colspan="3">手工</td></tr>
+<tr><td width="20%" valign="top"><span class="label">测试执行时间 (分钟):</span></td><td colspan="3"></td></tr>
+<tr><td colspan="4"></td></tr><tr><td > 用例优先级:</td><td  colspan = "3" ></td></tr>
+<tr><td width="20%" valign="top"><span class="label">产品需求</span><td colspan="3">&nbsp;无<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">关键字:</span></td><td colspan="3">&nbsp;无<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc699325"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">测试用例 kylinos-24022: 文件复制、剪切、删除&nbsp;<span style="font-size: 80%;">[版本 : 3]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">作者:</span></td><td colspan="3">yangjingting</td></tr>
+<tr><td width="20%" valign="top"><span class="label">最后编辑人:</span></td><td colspan="3">liulei</td></tr>
+<tr><td colspan="4"><span class="label">前提:</span><br /><p>以普通用户登录，且操作文件具备权限。</p>
+
+<p>打开文件资源管理器</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">步骤动作:</span></td><td><span class="label">期望的结果:</span></td></tr><tr><td width="5">1</td><td><p><strong>复制小文件：</strong></p>
+
+<ol>
+	<li>选择一个或多个文件，右键点击复制或按 Ctrl+C，在新目录空白处点击右键粘贴或者按 Ctrl+V</li>
+	<li>选择一个或多个文件，右键点击复制到&rdquo;-&gt;&quot;主文件夹&quot;或&quot;桌面&quot;</li>
+	<li>当目标位置有同名文件时进行粘贴</li>
+	<li>选择&ldquo;跳过&rdquo;</li>
+	<li>选择&ldquo;替换&rdquo;</li>
+	<li>选择&ldquo;为目标选择新的名称&rdquo;，命名后点击重命名</li>
+</ol>
+</td><td><ol>
+	<li>文件正确复制到新目录</li>
+	<li>成功复制到选中位置</li>
+	<li>弹出正确提示框&quot;文件冲突&quot;</li>
+	<li>不会粘帖文件</li>
+	<li>替代原文件</li>
+	<li>复制文件会以新的名称复制过来</li>
+</ol>
+</td></tr><tr><td width="5">2</td><td><p><strong>复制大文件：（以iso为例）</strong></p>
+
+<ol>
+	<li>选择一个ISO，右键点击复制或按 Ctrl+C，在新目录空白处点击右键粘贴或者按 Ctrl+V</li>
+	<li>复制完成后</li>
+</ol>
+</td><td><ol>
+	<li>文件复制过程中有进度条，且右下角有文件管理器托盘图标</li>
+	<li>进度条和右下角有文件管理器托盘图标消失，文件正确复制到新目录</li>
+</ol>
+</td></tr><tr><td width="5">3</td><td><p><strong>剪切：</strong></p>
+
+<ol>
+	<li>选择一个或多个文件，右键点击剪切或按 Ctrl+X，在新目录空白处点击右键粘贴或者按 Ctrl+V</li>
+	<li>选择一个或多个文件，右键点击移动到&quot;主文件夹&quot;或&quot;桌面&quot;粘贴</li>
+	<li>当目标位置有同名文件时进行粘贴</li>
+	<li>选择&ldquo;跳过&rdquo;</li>
+	<li>选择&ldquo;替换&rdquo;</li>
+	<li>选择&ldquo;为目标选择新的名称&rdquo;，命名后点击重命名</li>
+</ol>
+</td><td><ol>
+	<li>文件正确剪切到新目录</li>
+	<li>成功剪切到主文件夹或桌面</li>
+	<li>弹出正确提示框&quot;文件冲突&quot;</li>
+	<li>不会粘帖文件</li>
+	<li>替代原文件</li>
+	<li>剪切文件会以新的名称粘帖过来</li>
+</ol>
+</td></tr><tr><td width="5">4</td><td><p><strong>删除：</strong></p>
+
+<ol>
+	<li>打开文件浏览器，选中文件，点击右键-&gt;选择&quot;移动到回收站&ldquo;&quot;或者按 DEL 键</li>
+	<li>选中文件，按 shift+del，在弹出的提示框选择&quot;删除&quot;</li>
+</ol>
+</td><td><ol>
+	<li>文件被删除到回收站</li>
+	<li>文件永久删除，不进入回收站</li>
+</ol>
+</td></tr><tr><td width="20%" valign="top"><span class="label">测试方式:</span></td><td colspan="3">手工</td></tr>
+<tr><td width="20%" valign="top"><span class="label">测试执行时间 (分钟):</span></td><td colspan="3"></td></tr>
+<tr><td colspan="4"></td></tr><tr><td > 用例优先级:</td><td  colspan = "3" ></td></tr>
+<tr><td width="20%" valign="top"><span class="label">产品需求</span><td colspan="3">&nbsp;无<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">关键字:</span></td><td colspan="3">&nbsp;无<br/></td></tr>
+</table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+
+                 L M B E N C H  3 . 0   S U M M A R Y
+                 ------------------------------------
+		 (Alpha software, do not distribute)
+
+Basic system parameters
+------------------------------------------------------------------------------
+Host                 OS Description              Mhz  tlb  cache  mem   scal
+                                                     pages line   par   load
+                                                           bytes  
+--------- ------------- ----------------------- ---- ----- ----- ------ ----
+openeuler Linux 6.6.0-1       riscv64-linux-gnu 1996          64 6.9200    1
+
+Processor, Processes - times in microseconds - smaller is better
+------------------------------------------------------------------------------
+Host                 OS  Mhz null null      open slct sig  sig  fork exec sh  
+                             call  I/O stat clos TCP  inst hndl proc proc proc
+--------- ------------- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+openeuler Linux 6.6.0-1 1996 0.35 0.69 7.95 19.9 13.3 0.92 7.25 3633 12.K 17.K
+
+Basic integer operations - times in nanoseconds - smaller is better
+-------------------------------------------------------------------
+Host                 OS  intgr intgr  intgr  intgr  intgr  
+                          bit   add    mul    div    mod   
+--------- ------------- ------ ------ ------ ------ ------ 
+openeuler Linux 6.6.0-1 0.4200 0.1200 0.2100 3.0300 3.1000
+
+Basic uint64 operations - times in nanoseconds - smaller is better
+------------------------------------------------------------------
+Host                 OS int64  int64  int64  int64  int64  
+                         bit    add    mul    div    mod   
+--------- ------------- ------ ------ ------ ------ ------ 
+openeuler Linux 6.6.0-1  0.430        0.2100 3.0300 3.0900
+
+Basic float operations - times in nanoseconds - smaller is better
+-----------------------------------------------------------------
+Host                 OS  float  float  float  float
+                         add    mul    div    bogo
+--------- ------------- ------ ------ ------ ------ 
+openeuler Linux 6.6.0-1 1.5000 2.0100 7.0400 6.0300
+
+Basic double operations - times in nanoseconds - smaller is better
+------------------------------------------------------------------
+Host                 OS  double double double double
+                         add    mul    div    bogo
+--------- ------------- ------  ------ ------ ------ 
+openeuler Linux 6.6.0-1 1.5100 2.0100   10.6 9.5600
+
+Context switching - times in microseconds - smaller is better
+-------------------------------------------------------------------------
+Host                 OS  2p/0K 2p/16K 2p/64K 8p/16K 8p/64K 16p/16K 16p/64K
+                         ctxsw  ctxsw  ctxsw ctxsw  ctxsw   ctxsw   ctxsw
+--------- ------------- ------ ------ ------ ------ ------ ------- -------
+openeuler Linux 6.6.0-1   26.5   22.0   26.8   12.3   13.6    14.9    23.5
+
+*Local* Communication latencies in microseconds - smaller is better
+---------------------------------------------------------------------
+Host                 OS 2p/0K  Pipe AF     UDP  RPC/   TCP  RPC/ TCP
+                        ctxsw       UNIX         UDP         TCP conn
+--------- ------------- ----- ----- ---- ----- ----- ----- ----- ----
+openeuler Linux 6.6.0-1  26.5  61.0 105. 122.0 129.1 132.7 150.5 325.
+
+*Remote* Communication latencies in microseconds - smaller is better
+---------------------------------------------------------------------
+Host                 OS   UDP  RPC/  TCP   RPC/ TCP
+                               UDP         TCP  conn
+--------- ------------- ----- ----- ----- ----- ----
+openeuler Linux 6.6.0-1                             
+
+File & VM system latencies in microseconds - smaller is better
+-------------------------------------------------------------------------------
+Host                 OS   0K File      10K File     Mmap    Prot   Page   100fd
+                        Create Delete Create Delete Latency Fault  Fault  selct
+--------- ------------- ------ ------ ------ ------ ------- ----- ------- -----
+openeuler Linux 6.6.0-1   79.7   61.0  150.6   90.3         0.664         5.239
+
+*Local* Communication bandwidths in MB/s - bigger is better
+-----------------------------------------------------------------------------
+Host                OS  Pipe AF    TCP  File   Mmap  Bcopy  Bcopy  Mem   Mem
+                             UNIX      reread reread (libc) (hand) read write
+--------- ------------- ---- ---- ---- ------ ------ ------ ------ ---- -----
+openeuler Linux 6.6.0-1 767. 1571 617. 2163.5 5854.5 3297.8 3240.0 6148 3035.
+
+Memory latencies in nanoseconds - smaller is better
+    (WARNING - may not be correct, check graphs)
+------------------------------------------------------------------------------
+Host                 OS   Mhz   L1 $   L2 $    Main mem    Rand mem    Guesses
+--------- -------------   ---   ----   ----    --------    --------    -------
+openeuler Linux 6.6.0-1  1996 1.5040 6.0720        24.4       198.1

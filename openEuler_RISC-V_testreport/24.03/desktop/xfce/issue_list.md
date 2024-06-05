@@ -1,0 +1,19 @@
+#### xfce 桌面 issue 清单
+
+| 序号 | 问题描述                                                     | 镜像版本                      | issue_url              |
+| ---- | ------------------------------------------------------------ | ----------------------------- | -----------------------|
+| 1    | 镜像中没有邮件阅读器<br/>[Step by step]:<br/>Applications->Mail Reader<br/>[Actual]:<br/>显示Choose Preferred Application对话框<br/>[Expect]:<br/>根据xfce测试用例-22.09,应该有邮件阅读器选项 | openEuler release 24.03 (LTS) | [I9TOUD](https://gitee.com/src-openeuler/xfce4-panel/issues/I9TOUD) |
+| 2    | 镜像中没有网络浏览器<br/>[Step by step]:<br/>Applications->Web Browser<br/>[Actual]:<br/>显示Choose Preferred Application对话框<br/>[Expect]:<br/>根据xfce测试用例-22.09,应该有Mozilla Firefox浏览器选项 | openEuler release 24.03 (LTS) | [I9TOVM](https://gitee.com/src-openeuler/xfce4-panel/issues/I9TOVM) |
+| 3    | 镜像中没有剪贴板管理器设置 <br/>[Step by step]:<br/>Applications->setting->Clipman设置<br/>[Actual]:<br/>没有剪贴板管理器设置选项<br/>[Expect]:<br/>根据xfce测试用例-22.09,应该有剪贴板管理器设置选项 | openEuler release 24.03 (LTS) | [I9TOYD](https://gitee.com/src-openeuler/xfce4-panel/issues/I9TOYD) |
+| 4    | 镜像中没有面板配置文件<br/>[Step by step]:<br/>Applications->setting->面板配置文件<br/>[Actual]:<br/>没有面板配置文件选项<br/>[Expect]:<br/>根据xfce测试用例-22.09,应该有面板配置文件选项 | openEuler release 24.03 (LTS) | [I9TOZA](https://gitee.com/src-openeuler/xfce4-panel/issues/I9TOZA) |
+| 5    | 镜像中没有屏幕保护<br/>[Step by step]:<br/>Applications->settings->屏幕保护<br/>[Actual]:<br/>没有屏幕保护选项<br/>[Expect]:<br/>根据xfce测试用例-22.09,应该有屏幕保护选项 | openEuler release 24.03 (LTS) | [I9TP07](https://gitee.com/src-openeuler/xfce4-panel/issues/I9TP07) |
+| 6    | 镜像中没有通知<br/>[Step by step]:<br/>Applications->settings->通知<br/>[Actual]:<br/>没有通知选项<br/>[Expect]:<br/>根据xfce测试用例-22.09,应该有通知选项 | openEuler release 24.03 (LTS) | [I9TP0K](https://gitee.com/src-openeuler/xfce4-panel/issues/I9TP0K) |
+| 7    | 镜像中没有Xfce Theme Manager<br/>[Step by step]:<br/>Applications->setting->Xfce Theme Manager<br/>[Actual]:<br/>没有Xfce Theme Manager选项<br/>[Expect]:<br/>根据xfce测试用例-22.09,应该有Xfce Theme Manager选项 | openEuler release 24.03 (LTS) | [I9TP0Z](https://gitee.com/src-openeuler/xfce4-panel/issues/I9TP0Z) |
+| 8    | 镜像中没有办公目录<br/>[Step by step]:<br/>Applications->办公<br/>[Actual]:<br/>没有办公选项<br/>[Expect]:<br/>根据xfce测试用例-22.09,应该有办公选项 | openEuler release 24.03 (LTS) | [I9TP1I](https://gitee.com/src-openeuler/xfce4-panel/issues/I9TP1I) |
+| 9    | 镜像中没有便签<br/>[Step by step]:<br/>Applications->accessories->便笺<br/>[Actual]:<br/>没有便签选项<br/>[Expect]:<br/>根据xfce测试用例-22.09,应该有便签选项 | openEuler release 24.03 (LTS) | [I9TP20](https://gitee.com/src-openeuler/xfce4-panel/issues/I9TP20) |
+| 10   | 镜像中没有剪贴板管理器<br/>[Step by step]:<br/>Applications->accessories->剪贴板管理器<br/>[Actual]:<br/>没有剪贴板管理器选项<br/>[Expect]:<br/>根据xfce测试用例-22.09,应该有剪贴板管理器选项 | openEuler release 24.03 (LTS) | [I9TP2H](https://gitee.com/src-openeuler/xfce4-panel/issues/I9TP2H) |
+| 11   | 镜像中没有Emacs<br/>[Step by step]:<br/>Applications->accessories->Emacs<br/>[Actual]:<br/>没有Emacs选项<br/>[Expect]:<br/>根据xfce测试用例-22.09,应该有Emacs选项 | openEuler release 24.03 (LTS) | [I9TP30](https://gitee.com/src-openeuler/xfce4-panel/issues/I9TP30) |
+| 12   | 镜像中没有互联网目录<br/>[Step by step]:<br/>Applications->互联网<br/>[Actual]:<br/>没有互联网选项,包括firefox和firefox on wayland选项<br/>[Expect]:<br/>根据xfce测试用例-22.09,应该有互联网以及firefox和firefox on wayland选项 | openEuler release 24.03 (LTS) | [I9TP3G](https://gitee.com/src-openeuler/xfce4-panel/issues/I9TP3G) |
+| 13   | 镜像中没有开发目录<br/>[Step by step]:<br/>Applications->开发<br/>[Actual]:<br/>没有开发选项,包括Glade和Sysprof等菜单选项<br/>[Expect]:<br/>根据xfce测试用例-22.09,应该有开发以及Glade和Sysprof选项 | openEuler release 24.03 (LTS) | [I9TP3T](https://gitee.com/src-openeuler/xfce4-panel/issues/I9TP3T) |
+| 14   | 镜像中没有传感器查看器<br/>[Step by step]:<br/>Applications->system->传感器查看器<br/>[Actual]:<br/>没有传感器查看器选项<br/>[Expect]:<br/>根据xfce测试用例-22.09,应该有传感器查看器选项 | openEuler release 24.03 (LTS) | [I9TP48](https://gitee.com/src-openeuler/xfce4-panel/issues/I9TP48) |
+

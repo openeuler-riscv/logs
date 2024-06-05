@@ -1,0 +1,5 @@
+[openEulerROS-humble]
+name=openEulerROS-humble
+baseurl=https://build-repo.tarsier-infra.com/openEuler:/ROS/24.03/
+enabled=1
+gpgcheck=0

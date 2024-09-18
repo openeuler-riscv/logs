@@ -17,8 +17,8 @@
 | crypt  | crypt  | pass    |  pass   |
 | deadloop | deadloop| pass    |  pass   |
 | count  | count  |pass    |  pass   |
-| gm_test_enclaves | test_random |pass,直接通过源码可正常编译   |  pass  |
-| gm_test_enclaves | test_sm2 |pass,直接通过源码可正常编译   |  pass  |
-| gm_test_enclaves | test_sm4_cbc |pass,直接通过源码可正常编译   |  pass  |
-| gm_test_enclaves | test_sm4_ocb |pass,直接通过源码可正常编译   |  pass  |
-| seal_data    | seal_data    |pass,直接通过源码可正常编译  |  pass   |
+| gm_test_enclaves | test_random |pass   |  pass  |
+| gm_test_enclaves | test_sm2 |pass   |  pass  |
+| gm_test_enclaves | test_sm4_cbc |pass   |  pass  |
+| gm_test_enclaves | test_sm4_ocb |pass   |  pass  |
+| seal_data    | seal_data    |pass  |  pass   |

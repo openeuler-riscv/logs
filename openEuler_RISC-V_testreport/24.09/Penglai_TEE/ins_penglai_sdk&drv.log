@@ -1,0 +1,323 @@
+Welcome to 6.6.0-38.0.0.46.oe2409.riscv64
+
+System information as of time:  Sat Sep 14 10:37:35 AM CST 2024
+
+System load:    3.93
+Memory used:    2.3%
+Swap used:      0.0%
+Usage On:       11%
+IP address:     10.0.2.15
+Users online:   1
+
+
+[root@openeuler-riscv64 ~]# ll
+total 0
+[root@openeuler-riscv64 ~]# dnf install dnf install penglai-enclave-driverc
+[root@openeuler-riscv64 ~]# dnf install penglai-enclave-driver
+OS                                              463  B/s | 3.0 kB     00:06
+OS                                              1.3 MB/s |  19 MB     00:14
+EPOL                                             94  B/s | 3.0 kB     00:33
+EPOL                                            381 kB/s | 4.7 MB     00:12
+extra                                           561  B/s | 3.0 kB     00:05
+2403                                            528  B/s | 1.7 kB     00:03
+everything                                      541  B/s | 3.0 kB     00:05
+everything                                      1.3 MB/s |  19 MB     00:14
+debuginfo                                       553  B/s | 3.0 kB     00:05
+debuginfo                                       462 kB/s |  19 MB     00:41
+Dependencies resolved.
+================================================================================
+ Package                     Arch      Version                     Repo    Size
+================================================================================
+Installing:
+ penglai-enclave-driver      riscv64   1.0-1.oe2403                2403    22 k
+Installing dependencies:
+ binutils                    riscv64   2.41-6.oe2409               OS     4.9 M
+ clang                       riscv64   17.0.6-16.oe2403            2403    82 k
+ clang-libs                  riscv64   17.0.6-16.oe2403            2403    24 M
+ clang-resource-filesystem   riscv64   17.0.6-16.oe2403            2403   9.0 k
+ cpp                         riscv64   12.3.1-31.oe2403            2403   8.3 M
+ dkms                        noarch    3.0.12-1.oe2409             OS      79 k
+ gc                          riscv64   8.2.6-3.oe2409              OS     240 k
+ gcc                         riscv64   12.3.1-31.oe2403            2403    27 M
+ gcc-c++                     riscv64   12.3.1-31.oe2403            2403    10 M
+ glibc-devel                 riscv64   2.38-34.oe2409              OS     3.0 M
+ guile                       riscv64   5:2.2.7-4.oe2403            2403   6.3 M
+ isl                         riscv64   0.24-2.oe2409               OS     596 k
+ kernel-devel                riscv64   6.6.0-38.0.0.46.oe2409      OS      15 M
+ kernel-headers              riscv64   6.6.0-38.0.0.46.oe2409      OS     2.3 M
+ libatomic_ops               riscv64   7.8.2-3.oe2409              OS      17 k
+ libmpc                      riscv64   1.3.1-1.oe2409              OS      61 k
+ libstdc++-devel             riscv64   12.3.1-31.oe2403            2403   3.1 M
+ libtool-ltdl                riscv64   2.4.7-3.oe2409              OS      27 k
+ libxcrypt-devel             riscv64   4.4.36-2.oe2409             OS     232 k
+ lld                         riscv64   17.0.6-5.oe2409             OS      17 k
+ lld-libs                    riscv64   17.0.6-5.oe2409             OS     1.6 M
+ llvm                        riscv64   17.0.6-10.oe2403            2403    29 M
+ make                        riscv64   1:4.4.1-1.oe2409            OS     348 k
+Installing weak dependencies:
+ compiler-rt                 riscv64   17.0.6-5.oe2409             OS     3.3 M
+ libomp                      riscv64   17.0.6-3.oe2409             OS     361 k
+ libomp-devel                riscv64   17.0.6-3.oe2409             OS     483 k
+
+Transaction Summary
+================================================================================
+Install  27 Packages
+
+Total download size: 140 M
+Installed size: 532 M
+Is this ok [y/N]: y
+Downloading Packages:
+(1/27): dkms-3.0.12-1.oe2409.noarch.rpm          13 kB/s |  79 kB     00:06
+(2/27): gc-8.2.6-3.oe2409.riscv64.rpm           371 kB/s | 240 kB     00:00
+(3/27): compiler-rt-17.0.6-5.oe2409.riscv64.rpm 483 kB/s | 3.3 MB     00:07
+(4/27): binutils-2.41-6.oe2409.riscv64.rpm      699 kB/s | 4.9 MB     00:07
+(5/27): glibc-devel-2.38-34.oe2409.riscv64.rpm  4.0 MB/s | 3.0 MB     00:00
+(6/27): isl-0.24-2.oe2409.riscv64.rpm           917 kB/s | 596 kB     00:00
+(7/27): libatomic_ops-7.8.2-3.oe2409.riscv64.rp  74 kB/s |  17 kB     00:00
+(8/27): kernel-headers-6.6.0-38.0.0.46.oe2409.r 2.6 MB/s | 2.3 MB     00:00
+(9/27): libmpc-1.3.1-1.oe2409.riscv64.rpm       294 kB/s |  61 kB     00:00
+(10/27): libomp-17.0.6-3.oe2409.riscv64.rpm     1.3 MB/s | 361 kB     00:00
+(11/27): libomp-devel-17.0.6-3.oe2409.riscv64.r 1.7 MB/s | 483 kB     00:00
+(12/27): kernel-devel-6.6.0-38.0.0.46.oe2409.ri 5.7 MB/s |  15 MB     00:02
+(13/27): libtool-ltdl-2.4.7-3.oe2409.riscv64.rp  43 kB/s |  27 kB     00:00
+(14/27): libxcrypt-devel-4.4.36-2.oe2409.riscv6 341 kB/s | 232 kB     00:00
+(15/27): lld-17.0.6-5.oe2409.riscv64.rpm        102 kB/s |  17 kB     00:00
+(16/27): lld-libs-17.0.6-5.oe2409.riscv64.rpm   4.1 MB/s | 1.6 MB     00:00
+(17/27): make-4.4.1-1.oe2409.riscv64.rpm        954 kB/s | 348 kB     00:00
+(18/27): clang-resource-filesystem-17.0.6-16.oe 3.4 kB/s | 9.0 kB     00:02
+(19/27): clang-17.0.6-16.oe2403.riscv64.rpm      27 kB/s |  82 kB     00:03
+(20/27): cpp-12.3.1-31.oe2403.riscv64.rpm       2.7 MB/s | 8.3 MB     00:03
+(21/27): clang-libs-17.0.6-16.oe2403.riscv64.rp 2.9 MB/s |  24 MB     00:08
+(22/27): gcc-12.3.1-31.oe2403.riscv64.rpm       2.7 MB/s |  27 MB     00:09
+(23/27): guile-2.2.7-4.oe2403.riscv64.rpm       1.2 MB/s | 6.3 MB     00:05
+(24/27): gcc-c++-12.3.1-31.oe2403.riscv64.rpm   1.0 MB/s |  10 MB     00:10
+(25/27): penglai-enclave-driver-1.0-1.oe2403.ri  38 kB/s |  22 kB     00:00
+(26/27): libstdc++-devel-12.3.1-31.oe2403.riscv 215 kB/s | 3.1 MB     00:14
+(27/27): llvm-17.0.6-10.oe2403.riscv64.rpm      1.7 MB/s |  29 MB     00:16
+--------------------------------------------------------------------------------
+Total                                           3.4 MB/s | 140 MB     00:41
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1
+  Installing       : libmpc-1.3.1-1.oe2409.riscv64                         1/27
+[  450.020546][  T988] capability: warning: `dnf' uses 32-bit capabilities (legacy support in use)
+  Installing       : isl-0.24-2.oe2409.riscv64                             2/27
+  Installing       : libstdc++-devel-12.3.1-31.oe2403.riscv64              3/27
+  Installing       : clang-resource-filesystem-17.0.6-16.oe2403.riscv64    4/27
+  Installing       : libomp-17.0.6-3.oe2409.riscv64                        5/27
+  Installing       : libomp-devel-17.0.6-3.oe2409.riscv64                  6/27
+  Installing       : cpp-12.3.1-31.oe2403.riscv64                          7/27
+  Installing       : llvm-17.0.6-10.oe2403.riscv64                         8/27
+  Installing       : lld-libs-17.0.6-5.oe2409.riscv64                      9/27
+  Installing       : lld-17.0.6-5.oe2409.riscv64                          10/27
+  Installing       : libtool-ltdl-2.4.7-3.oe2409.riscv64                  11/27
+  Installing       : libatomic_ops-7.8.2-3.oe2409.riscv64                 12/27
+  Installing       : gc-8.2.6-3.oe2409.riscv64                            13/27
+  Installing       : guile-5:2.2.7-4.oe2403.riscv64                       14/27
+  Installing       : make-1:4.4.1-1.oe2409.riscv64                        15/27
+  Running scriptlet: make-1:4.4.1-1.oe2409.riscv64                        15/27
+  Installing       : kernel-headers-6.6.0-38.0.0.46.oe2409.riscv64        16/27
+  Installing       : libxcrypt-devel-4.4.36-2.oe2409.riscv64              17/27
+  Running scriptlet: glibc-devel-2.38-34.oe2409.riscv64                   18/27
+  Installing       : glibc-devel-2.38-34.oe2409.riscv64                   18/27
+  Installing       : kernel-devel-6.6.0-38.0.0.46.oe2409.riscv64          19/27
+  Running scriptlet: kernel-devel-6.6.0-38.0.0.46.oe2409.riscv64          19/27
+  Installing       : compiler-rt-17.0.6-5.oe2409.riscv64                  20/27
+  Installing       : clang-libs-17.0.6-16.oe2403.riscv64                  21/27
+  Installing       : binutils-2.41-6.oe2409.riscv64                       22/27
+  Running scriptlet: binutils-2.41-6.oe2409.riscv64                       22/27
+  Installing       : gcc-12.3.1-31.oe2403.riscv64                         23/27
+  Installing       : gcc-c++-12.3.1-31.oe2403.riscv64                     24/27
+  Installing       : clang-17.0.6-16.oe2403.riscv64                       25/27
+  Installing       : dkms-3.0.12-1.oe2409.noarch                          26/27
+  Running scriptlet: dkms-3.0.12-1.oe2409.noarch                          26/27
+  Installing       : penglai-enclave-driver-1.0-1.oe2403.riscv64          27/27
+  Running scriptlet: penglai-enclave-driver-1.0-1.oe2403.riscv64          27/27
+[  734.313681][ T2042] penglai: loading out-of-tree module taints kernel.
+[  734.314450][ T2042] penglai: module verification failed: signature and/or required key missing - tainting kernel
+[  734.322226][ T2042] enclave_ioctl_init...
+[  734.326947][ T2042] [Penglai KModule] register_chrdev succeeded!
+Creating symlink /var/lib/dkms/penglai/1.0/source -> /usr/src/penglai-1.0
+Sign command: /lib/modules/6.6.0-38.0.0.46.oe2409.riscv64/build/scripts/sign-file
+Signing key: /var/lib/dkms/mok.key
+Public certificate (MOK): /var/lib/dkms/mok.pub
+Certificate or key are missing, generating self signed certificate for MOK...
+
+Building module:
+Cleaning build area...
+make -j8 KERNELRELEASE=6.6.0-38.0.0.46.oe2409.riscv64 all............
+Signing module /var/lib/dkms/penglai/1.0/build/penglai.ko
+Cleaning build area...
+
+penglai.ko.xz:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/6.6.0-38.0.0.46.oe2409.riscv64/extra/penglai/
+Adding any weak-modules
+depmod...............
+
+  Verifying        : binutils-2.41-6.oe2409.riscv64                        1/27
+  Verifying        : compiler-rt-17.0.6-5.oe2409.riscv64                   2/27
+  Verifying        : dkms-3.0.12-1.oe2409.noarch                           3/27
+  Verifying        : gc-8.2.6-3.oe2409.riscv64                             4/27
+  Verifying        : glibc-devel-2.38-34.oe2409.riscv64                    5/27
+  Verifying        : isl-0.24-2.oe2409.riscv64                             6/27
+  Verifying        : kernel-devel-6.6.0-38.0.0.46.oe2409.riscv64           7/27
+  Verifying        : kernel-headers-6.6.0-38.0.0.46.oe2409.riscv64         8/27
+  Verifying        : libatomic_ops-7.8.2-3.oe2409.riscv64                  9/27
+  Verifying        : libmpc-1.3.1-1.oe2409.riscv64                        10/27
+  Verifying        : libomp-17.0.6-3.oe2409.riscv64                       11/27
+  Verifying        : libomp-devel-17.0.6-3.oe2409.riscv64                 12/27
+  Verifying        : libtool-ltdl-2.4.7-3.oe2409.riscv64                  13/27
+  Verifying        : libxcrypt-devel-4.4.36-2.oe2409.riscv64              14/27
+  Verifying        : lld-17.0.6-5.oe2409.riscv64                          15/27
+  Verifying        : lld-libs-17.0.6-5.oe2409.riscv64                     16/27
+  Verifying        : make-1:4.4.1-1.oe2409.riscv64                        17/27
+  Verifying        : clang-17.0.6-16.oe2403.riscv64                       18/27
+  Verifying        : clang-libs-17.0.6-16.oe2403.riscv64                  19/27
+  Verifying        : clang-resource-filesystem-17.0.6-16.oe2403.riscv64   20/27
+  Verifying        : cpp-12.3.1-31.oe2403.riscv64                         21/27
+  Verifying        : gcc-12.3.1-31.oe2403.riscv64                         22/27
+  Verifying        : gcc-c++-12.3.1-31.oe2403.riscv64                     23/27
+  Verifying        : guile-5:2.2.7-4.oe2403.riscv64                       24/27
+  Verifying        : libstdc++-devel-12.3.1-31.oe2403.riscv64             25/27
+  Verifying        : llvm-17.0.6-10.oe2403.riscv64                        26/27
+  Verifying        : penglai-enclave-driver-1.0-1.oe2403.riscv64          27/27
+
+Installed:
+  binutils-2.41-6.oe2409.riscv64
+  clang-17.0.6-16.oe2403.riscv64
+  clang-libs-17.0.6-16.oe2403.riscv64
+  clang-resource-filesystem-17.0.6-16.oe2403.riscv64
+  compiler-rt-17.0.6-5.oe2409.riscv64
+  cpp-12.3.1-31.oe2403.riscv64
+  dkms-3.0.12-1.oe2409.noarch
+  gc-8.2.6-3.oe2409.riscv64
+  gcc-12.3.1-31.oe2403.riscv64
+  gcc-c++-12.3.1-31.oe2403.riscv64
+  glibc-devel-2.38-34.oe2409.riscv64
+  guile-5:2.2.7-4.oe2403.riscv64
+  isl-0.24-2.oe2409.riscv64
+  kernel-devel-6.6.0-38.0.0.46.oe2409.riscv64
+  kernel-headers-6.6.0-38.0.0.46.oe2409.riscv64
+  libatomic_ops-7.8.2-3.oe2409.riscv64
+  libmpc-1.3.1-1.oe2409.riscv64
+  libomp-17.0.6-3.oe2409.riscv64
+  libomp-devel-17.0.6-3.oe2409.riscv64
+  libstdc++-devel-12.3.1-31.oe2403.riscv64
+  libtool-ltdl-2.4.7-3.oe2409.riscv64
+  libxcrypt-devel-4.4.36-2.oe2409.riscv64
+  lld-17.0.6-5.oe2409.riscv64
+  lld-libs-17.0.6-5.oe2409.riscv64
+  llvm-17.0.6-10.oe2403.riscv64
+  make-1:4.4.1-1.oe2409.riscv64
+  penglai-enclave-driver-1.0-1.oe2403.riscv64
+
+Complete!
+[root@openeuler-riscv64 ~]# dkms status
+penglai/1.0, 6.6.0-38.0.0.46.oe2409.riscv64, riscv64: installed
+[root@openeuler-riscv64 demo]# yum install -y penglai-enclave-sdk
+Last metadata expiration check: 0:27:43 ago on Sat Sep 14 10:41:59 2024.
+Dependencies resolved.
+================================================================================================================
+ Package                           Architecture          Version                       Repository          Size
+================================================================================================================
+Installing:
+ penglai-enclave-sdk               riscv64               1.0-1.oe2403                  2403               2.1 M
+
+Transaction Summary
+================================================================================================================
+Install  1 Package
+
+Total download size: 2.1 M
+Installed size: 13 M
+Downloading Packages:
+penglai-enclave-sdk-1.0-1.oe2403.riscv64.rpm                                    601 kB/s | 2.1 MB     00:03    
+----------------------------------------------------------------------------------------------------------------
+Total                                                                           596 kB/s | 2.1 MB     00:03     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                                                        1/1 
+  Installing       : penglai-enclave-sdk-1.0-1.oe2403.riscv64                                               1/1 
+  Running scriptlet: penglai-enclave-sdk-1.0-1.oe2403.riscv64                                               1/1 
+  Verifying        : penglai-enclave-sdk-1.0-1.oe2403.riscv64                                               1/1 
+
+Installed:
+  penglai-enclave-sdk-1.0-1.oe2403.riscv64                                                                      
+
+Complete!
+[root@openeuler-riscv64 demo]#  ll
+total 68
+-rw-r--r-- 1 root root 9347 Sep 14 10:54 LICENSE
+-rw-r--r-- 1 root root  407 Sep 14 10:54 Makefile
+-rw-r--r-- 1 root root 4813 Sep 14 10:54 README.md
+drwxr-xr-x 2 root root 4096 Sep 14 10:54 aes
+drwxr-xr-x 2 root root 4096 Sep 14 10:54 count
+drwxr-xr-x 2 root root 4096 Sep 14 10:54 crypt
+drwxr-xr-x 2 root root 4096 Sep 14 10:54 deadloop
+drwxr-xr-x 7 root root 4096 Sep 14 10:54 evm
+drwxr-xr-x 2 root root 4096 Sep 14 10:54 gm_test_enclaves
+drwxr-xr-x 4 root root 4096 Sep 14 10:54 hello_arguement
+drwxr-xr-x 2 root root 4096 Sep 14 10:54 host_stop_and_destroy
+drwxr-xr-x 2 root root 4096 Sep 14 10:54 mem
+drwxr-xr-x 2 root root 4096 Sep 14 10:54 prime
+drwxr-xr-x 2 root root 4096 Sep 14 10:54 seal_data
+[root@openeuler-riscv64 demo]# cd aes && make 
+Makefile:5: /opt/penglai/app.mk: No such file or directory
+make: *** No rule to make target '/opt/penglai/app.mk'.  Stop.
+[root@openeuler-riscv64 aes]# cd /opt/penglai/
+bin/             penglai_sdk_ssl/ runtime/         
+[root@openeuler-riscv64 aes]# cd /opt/penglai/
+bin/             penglai_sdk_ssl/ runtime/         
+[root@openeuler-riscv64 aes]# yum install -y penglai-enclave*
+Last metadata expiration check: 0:53:33 ago on Sat Sep 14 11:17:18 2024.
+Package penglai-enclave-driver-1.0-1.oe2403.riscv64 is already installed.
+Package penglai-enclave-sdk-1.0-1.oe2403.riscv64 is already installed.
+Dependencies resolved.
+================================================================================================================
+ Package                                Architecture         Version                    Repository         Size
+================================================================================================================
+Installing:
+ penglai-enclave-sdk-devel              riscv64              1.0-1.oe2403               2403              373 k
+ penglai-enclave-sdk-doc                riscv64              1.0-1.oe2403               2403              264 k
+
+Transaction Summary
+================================================================================================================
+Install  2 Packages
+
+Total download size: 636 k
+Installed size: 2.6 M
+Downloading Packages:
+(1/2): penglai-enclave-sdk-devel-1.0-1.oe2403.riscv64.rpm                       113 kB/s | 373 kB     00:03    
+(2/2): penglai-enclave-sdk-doc-1.0-1.oe2403.riscv64.rpm                          77 kB/s | 264 kB     00:03    
+----------------------------------------------------------------------------------------------------------------
+Total                                                                           184 kB/s | 636 kB     00:03     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                                                        1/1 
+  Installing       : penglai-enclave-sdk-doc-1.0-1.oe2403.riscv64                                           1/2 
+  Installing       : penglai-enclave-sdk-devel-1.0-1.oe2403.riscv64                                         2/2 
+  Verifying        : penglai-enclave-sdk-devel-1.0-1.oe2403.riscv64                                         1/2 
+  Verifying        : penglai-enclave-sdk-doc-1.0-1.oe2403.riscv64                                           2/2 
+
+Installed:
+  penglai-enclave-sdk-devel-1.0-1.oe2403.riscv64          penglai-enclave-sdk-doc-1.0-1.oe2403.riscv64         
+
+Complete!
+[root@openeuler-riscv64 aes]# modprobe penglai
+[ 8468.640427][ T2987] penglai: loading out-of-tree module taints kernel.
+[ 8468.641689][ T2987] penglai: module verification failed: signature and/or required key missing - tainting kernel
+[ 8468.650690][ T2987] enclave_ioctl_init...
+[ 8468.655595][ T2987] [Penglai KModule] register_chrdev succeeded!
+[root@openeuler-riscv64 aes]#

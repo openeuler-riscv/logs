@@ -1,0 +1,178 @@
+[BEGIN] 2024/9/14 14:59:20
+[root@openeuler-riscv64 ~]# ll
+total 4
+drwxr-xr-x 14 root root 4096 Sep 14 10:54 demo
+[root@openeuler-riscv64 ~]# cd demo/
+[root@openeuler-riscv64 demo]# ll
+total 68
+-rw-r--r-- 1 root root 9347 Sep 14 10:54 LICENSE
+-rw-r--r-- 1 root root  407 Sep 14 10:54 Makefile
+-rw-r--r-- 1 root root 4813 Sep 14 10:54 README.md
+drwxr-xr-x 2 root root 4096 Sep 14 12:17 aes
+drwxr-xr-x 2 root root 4096 Sep 14 10:54 count
+drwxr-xr-x 2 root root 4096 Sep 14 10:54 crypt
+drwxr-xr-x 2 root root 4096 Sep 14 10:54 deadloop
+drwxr-xr-x 7 root root 4096 Sep 14 10:54 evm
+drwxr-xr-x 2 root root 4096 Sep 14 10:54 gm_test_enclaves
+drwxr-xr-x 4 root root 4096 Sep 14 10:54 hello_arguement
+drwxr-xr-x 2 root root 4096 Sep 14 10:54 host_stop_and_destroy
+drwxr-xr-x 2 root root 4096 Sep 14 10:54 mem
+drwxr-xr-x 2 root root 4096 Sep 14 10:54 prime
+drwxr-xr-x 2 root root 4096 Sep 14 10:54 seal_data
+[root@openeuler-riscv64 demo]# for i in ls -d ./^C
+[root@openeuler-riscv64 demo]# make clean
+make -C prime clean
+make[1]: Entering directory '/root/demo/prime'
+rm -f *.o prime prime.dump
+make[1]: Leaving directory '/root/demo/prime'
+make -C aes clean
+make[1]: Entering directory '/root/demo/aes'
+rm -f *.o aes aes.dump
+make[1]: Leaving directory '/root/demo/aes'
+make -C mem clean
+make[1]: Entering directory '/root/demo/mem'
+rm -f *.o mem mem.dump
+make[1]: Leaving directory '/root/demo/mem'
+make -C crypt clean
+make[1]: Entering directory '/root/demo/crypt'
+rm -f *.o crypt crypt.dump
+make[1]: Leaving directory '/root/demo/crypt'
+make -C deadloop clean
+make[1]: Entering directory '/root/demo/deadloop'
+rm -f *.o deadloop deadloop.dump
+make[1]: Leaving directory '/root/demo/deadloop'
+make -C count clean
+make[1]: Entering directory '/root/demo/count'
+rm -f *.o count count.dump
+make[1]: Leaving directory '/root/demo/count'
+make -C evm clean
+make[1]: Entering directory '/root/demo/evm'
+rm -f *.o evm
+make[1]: Leaving directory '/root/demo/evm'
+make -C evm/host clean
+make[1]: Entering directory '/root/demo/evm/host'
+rm -f *.o evm_host
+make[1]: Leaving directory '/root/demo/evm/host'
+[root@openeuler-riscv64 demo]# make all
+make -C prime
+make[1]: Entering directory '/root/demo/prime'
+echo /opt/penglai
+/opt/penglai
+gcc -Wall -I/opt/penglai/lib/app/include -c prime.c
+ld -static -L/opt/penglai/lib -L/opt/penglai/runtime/lib -lpenglai-enclave-eapp -lc -o prime prime.o /opt/penglai/lib/libpenglai-enclave-eapp.a /opt/penglai/runtime/lib/libc.a /opt/penglai/lib/libgcc.a -T /opt/penglai/app.lds
+ld: warning: prime has a LOAD segment with RWX permissions
+chmod -x prime
+make[1]: Leaving directory '/root/demo/prime'
+make -C aes
+make[1]: Entering directory '/root/demo/aes'
+echo /opt/penglai
+/opt/penglai
+gcc -Wall -I/opt/penglai/lib/app/include -c aes.c
+ld -static -L/opt/penglai/lib -L/opt/penglai/runtime/lib -lpenglai-enclave-eapp -lc -o aes aes.o /opt/penglai/lib/libpenglai-enclave-eapp.a /opt/penglai/runtime/lib/libc.a /opt/penglai/lib/libgcc.a -T /opt/penglai/app.lds
+ld: warning: aes has a LOAD segment with RWX permissions
+chmod -x aes
+make[1]: Leaving directory '/root/demo/aes'
+make -C mem
+make[1]: Entering directory '/root/demo/mem'
+echo /opt/penglai
+/opt/penglai
+gcc -Wall -I/opt/penglai/lib/app/include -c mem.c
+mem.c: In function ‘mem’:
+mem.c:25:15: warning: passing argument 1 of ‘EAPP_RETURN’ makes integer from pointer without a cast [-Wint-conversion]
+   25 |   EAPP_RETURN(ptr);
+      |               ^~~
+      |               |
+      |               char *
+In file included from mem.c:1:
+/opt/penglai/lib/app/include/eapp.h:17:32: note: expected ‘long unsigned int’ but argument is of type ‘char *’
+   17 | void EAPP_RETURN(unsigned long rval) __attribute__((noreturn));
+      |                  ~~~~~~~~~~~~~~^~~~
+mem.c:25:3: warning: pointer ‘ptr’ used after ‘free’ [-Wuse-after-free]
+   25 |   EAPP_RETURN(ptr);
+      |   ^~~~~~~~~~~~~~~~
+mem.c:22:3: note: call to ‘free’ here
+   22 |   free(ptr);
+      |   ^~~~~~~~~
+ld -static -L/opt/penglai/lib -L/opt/penglai/runtime/lib -lpenglai-enclave-eapp -lc -o mem mem.o /opt/penglai/lib/libpenglai-enclave-eapp.a /opt/penglai/runtime/lib/libc.a /opt/penglai/lib/libgcc.a -T /opt/penglai/app.lds
+chmod -x mem
+make[1]: Leaving directory '/root/demo/mem'
+make -C crypt
+make[1]: Entering directory '/root/demo/crypt'
+echo /opt/penglai
+/opt/penglai
+gcc -Wall -I/opt/penglai/lib/app/include -c crypt.c
+ld -static -L/opt/penglai/lib -L/opt/penglai/runtime/lib -lpenglai-enclave-eapp -lc -o crypt crypt.o /opt/penglai/lib/libpenglai-enclave-eapp.a /opt/penglai/runtime/lib/libc.a /opt/penglai/lib/libgcc.a -T /opt/penglai/app.lds
+ld: warning: crypt has a LOAD segment with RWX permissions
+chmod -x crypt
+make[1]: Leaving directory '/root/demo/crypt'
+make -C deadloop
+make[1]: Entering directory '/root/demo/deadloop'
+echo /opt/penglai
+/opt/penglai
+gcc -Wall -I/opt/penglai/lib/app/include -c deadloop.c
+ld -static -L/opt/penglai/lib -L/opt/penglai/runtime/lib -lpenglai-enclave-eapp -lc -o deadloop deadloop.o /opt/penglai/lib/libpenglai-enclave-eapp.a /opt/penglai/runtime/lib/libc.a /opt/penglai/lib/libgcc.a -T /opt/penglai/app.lds
+chmod -x deadloop
+make[1]: Leaving directory '/root/demo/deadloop'
+make -C count
+make[1]: Entering directory '/root/demo/count'
+echo /opt/penglai
+/opt/penglai
+gcc -Wall -I/opt/penglai/lib/app/include -c count.c
+ld -static -L/opt/penglai/lib -L/opt/penglai/runtime/lib -lpenglai-enclave-eapp -lc -o count count.o /opt/penglai/lib/libpenglai-enclave-eapp.a /opt/penglai/runtime/lib/libc.a /opt/penglai/lib/libgcc.a -T /opt/penglai/app.lds
+chmod -x count
+make[1]: Leaving directory '/root/demo/count'
+[root@openeuler-riscv64 demo]# vi Makefile 
+[root@openeuler-riscv64 demo]# make all
+Makefile:8: *** missing separator.  Stop.
+[root@openeuler-riscv64 demo]# vi Makefile 
+[root@openeuler-riscv64 demo]# make all
+Makefile:8: *** missing separator.  Stop.
+[root@openeuler-riscv64 demo]# vi Makefile 
+[root@openeuler-riscv64 demo]# make all
+make -C prime
+make[1]: Entering directory '/root/demo/prime'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/root/demo/prime'
+make -C aes
+make[1]: Entering directory '/root/demo/aes'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/root/demo/aes'
+make -C mem
+make[1]: Entering directory '/root/demo/mem'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/root/demo/mem'
+make -C crypt
+make[1]: Entering directory '/root/demo/crypt'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/root/demo/crypt'
+make -C deadloop
+make[1]: Entering directory '/root/demo/deadloop'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/root/demo/deadloop'
+make -C count
+make[1]: Entering directory '/root/demo/count'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/root/demo/count'
+[root@openeuler-riscv64 demo]# make -C seal_data/
+make: Entering directory '/root/demo/seal_data'
+ld -static -L/opt/penglai/lib -L/opt/penglai/runtime/lib -L/opt/penglai/lib/gm -lpenglai-enclave-eapp -lc -o seal_data seal_data.o /opt/penglai/lib/libpenglai-enclave-eapp.a /opt/penglai/lib/libpenglai-enclave-gm.a /opt/penglai/runtime/lib/libc.a /opt/penglai/lib/libgcc.a -T /opt/penglai/app.lds
+ld: warning: seal_data has a LOAD segment with RWX permissions
+ld: /opt/penglai/lib/libpenglai-enclave-gm.a(SM4_Enc.o): in function `.L41':
+(.text+0x322): undefined reference to `__memcpy_chk'
+make: *** [Makefile:35: seal_data] Error 1
+make: Leaving directory '/root/demo/seal_data'
+[root@openeuler-riscv64 demo]# make -C 
+.git/                  crypt/                 gm_test_enclaves/      mem/
+aes/                   deadloop/              hello_arguement/       prime/
+count/                 evm/                   host_stop_and_destroy/ seal_data/
+[root@openeuler-riscv64 demo]# make -C gm_test_enclaves/
+make: Entering directory '/root/demo/gm_test_enclaves'
+ld -static -L/opt/penglai/lib -L/opt/penglai/runtime/lib -L/opt/penglai/lib/gm -lpenglai-enclave-eapp -lc -o test_sm2 test_sm2.o /opt/penglai/lib/libpenglai-enclave-eapp.a /opt/penglai/lib/libpenglai-enclave-gm.a /opt/penglai/runtime/lib/libc.a /opt/penglai/lib/libgcc.a -T /opt/penglai/app.lds
+ld: warning: test_sm2 has a LOAD segment with RWX permissions
+ld: /opt/penglai/lib/libpenglai-enclave-gm.a(SM2_sv.o): in function `.L45':
+(.text+0x96c): undefined reference to `__memcpy_chk'
+ld: /opt/penglai/lib/libpenglai-enclave-gm.a(SM2_sv.o): in function `.L50':
+(.text+0xe1c): undefined reference to `__memcpy_chk'
+make: *** [Makefile:58: test_sm2] Error 1
+make: Leaving directory '/root/demo/gm_test_enclaves'
+[root@openeuler-riscv64 demo]#
